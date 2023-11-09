@@ -1,13 +1,99 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.toggle-switch {
+  @apply w-fit h-fit bg-AeroBlue rounded-full flex justify-between items-center p-1 cursor-pointer transition duration-300;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.switch-state {
+  @apply w-fit px-2 py-1 space-x-1 rounded-full flex justify-center items-center font-medium text-[10px] md:text-xs transition duration-500;
 }
+
+.table {
+  @apply bg-CaribbeanGreen text-white font-semibold;
+}
+
+.chart {
+  @apply bg-CaribbeanGreen text-white font-semibold;
+}
+
+@font-face {
+  font-family: "test-sohne-regular";
+  src: url(./assets/fonts/Test-Söhne/TestSöhne-Buch.otf);
+}
+
+@font-face {
+  font-family: "test-sohne-medium";
+  src: url(./assets/fonts/Test-Söhne/TestSöhne-Kräftig.otf);
+}
+
+@font-face {
+  font-family: "test-sohne-light";
+  src: url(./assets/fonts/Test-Söhne/TestSöhne-Leicht.otf);
+}
+
+@font-face {
+  font-family: "test-sohne-extralight";
+  src: url(./assets/fonts/Test-Söhne/TestSöhne-Extraleicht.otf);
+}
+
+@font-face {
+  font-family: "test-sohne-bold";
+  src: url(./assets/fonts/Test-Söhne/TestSöhne-Fett.otf);
+}
+
+@font-face {
+  font-family: "test-sohne-semibold";
+  src: url(./assets/fonts/Test-Söhne/TestSöhne-Halbfett.otf);
+}
+
+body {
+  font-family: "test-sohne-regular";
+}
+
+.font-test-sohne-bold {
+  font-family: "test-sohne-bold";
+}
+.font-test-sohne-semibold {
+  font-family: "test-sohne-semibold";
+}
+
+.font-test-sohne-regular {
+  font-family: "test-sohne-regular";
+}
+
+.font-test-sohne-medium {
+  font-family: "test-sohne-medium";
+}
+
+.font-test-sohne-light {
+  font-family: "test-sohne-light";
+}
+
+.font-test-sohne-extralight {
+  font-family: "test-sohne-extralight";
+}
+
+.slide {
+  border-radius: 50%;
+  animation: scroll 60s linear infinite;
+}
+.slide div {
+  width: 20rem !important;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translatex(-1000%);
+  }
+}
+
+/* @media screen and (max-width: 496px) {
+  .slide span {
+    width: 5rem !important;
+    height: 5rem !important;
+  }
+} */
