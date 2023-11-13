@@ -13,7 +13,7 @@ const ResetPasswordHeroSection = () => {
               <img src={forgot_password_text_bg} alt="" />
               <span className="absolute top-2.5 left-10">Forgot Password?</span>
             </span>
-            <h2 className="text-4xl sm:text-5xl lg:text-[75px] lg:leading-[5rem] font-test-sohne-medium">
+            <h2 className=" text-4xl sm:text-5xl lg:text-[75px] lg:leading-[5rem] font-test-sohne-medium">
               Resset Password
             </h2>
             <Slide />
