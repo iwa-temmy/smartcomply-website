@@ -1,7 +1,10 @@
-<svg width="1280" height="314" viewBox="0 0 1280 314" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M-148.037 293.824C-126.015 309.619 -62.5365 330.626 15.1958 288.297C112.361 235.385 223.419 153.396 367.239 172.898C511.058 192.399 624.42 196.996 777.252 100.007C930.084 3.01844 966.613 -22.1949 1077.31 20.7718C1188 63.7384 1288.12 157.313 1409.39 54.1607" stroke="url(#paint0_linear_209_4780)" stroke-opacity="0.32"/>
+<svg width="1280" height="389" viewBox="0 0 1280 389" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M-148.037 356.824C-126.015 372.619 -62.5365 393.626 15.1958 351.297C112.361 298.385 223.419 216.396 367.239 235.898C511.058 255.399 624.42 259.996 777.252 163.007C930.084 66.0184 966.613 40.8051 1077.31 83.7718C1188 126.738 1288.12 220.313 1409.39 117.161" stroke="url(#paint0_linear_209_4075)" stroke-opacity="0.32"/>
+<circle cx="1106.07" cy="96.7318" r="5.86479" transform="rotate(-8.74828 1106.07 96.7318)" fill="#E6F3FF" stroke="#CFABFF"/>
+<circle cx="490.731" cy="247.517" r="5.86479" transform="rotate(-8.74828 490.731 247.517)" fill="white" stroke="#9747FF"/>
+<circle cx="795.116" cy="151.022" r="5.86479" transform="rotate(-8.74828 795.116 151.022)" fill="#E6F3FF" stroke="#9747FF"/>
 <defs>
-<linearGradient id="paint0_linear_209_4780" x1="383.406" y1="146.018" x2="1303.79" y2="-133.862" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear_209_4075" x1="383.406" y1="209.018" x2="1303.79" y2="-70.8617" gradientUnits="userSpaceOnUse">
 <stop stop-color="#9747FF"/>
 <stop offset="0.442536" stop-color="#CFABFF"/>
 <stop offset="0.782668" stop-color="#9747FF"/>

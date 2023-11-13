@@ -1,0 +1,39 @@
+.slider {
+    overflow: hidden;
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .slide.active {
+    opacity: 1;
+  }
+  
+  .dot {
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-right: 5px;
+    background-color: #bec0ca;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: #602300;
+  }
+  
+  @media screen and (max-width: 496px) {
+    .dot {
+      width: 0.3rem;
+      height: 0.3rem;
+      margin-right: 3px;
+    }
+  }

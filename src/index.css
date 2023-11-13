@@ -75,6 +75,18 @@ body {
   font-family: "test-sohne-extralight";
 }
 
+.slide_bg {
+  background: url(./assets//icons/slides_bg_img.svg) no-repeat right 10% top 10%;
+}
+
+.signup_hero_section_bg {
+  background: url(./assets//icons/auth_bg_line.svg) no-repeat right 10%;
+}
+
+.signin_hero_section_bg {
+  background: url(./assets//icons/auth_bg_line.svg) no-repeat right 10%;
+}
+
 .slide {
   border-radius: 50%;
   animation: scroll 60s linear infinite;
@@ -90,10 +102,3 @@ body {
     transform: translatex(-1000%);
   }
 }
-
-/* @media screen and (max-width: 496px) {
-  .slide span {
-    width: 5rem !important;
-    height: 5rem !important;
-  }
-} */

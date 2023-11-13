@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
+import Navbar from "../connected/Navbar";
+import Footer from "../connected/Footer";
+import SigninHeroSection from "../sections/signinSection/SigninHeroSection";
 
 const Signin = () => {
   return (
-    <div>Signin</div>
-  )
-}
+    <div>
+      <Navbar />
+      <SigninHeroSection />
+      <Footer />
+    </div>
+  );
+};
 
-export default Signin
+export default Signin;
