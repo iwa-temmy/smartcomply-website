@@ -23,9 +23,13 @@ const Navbar = () => {
           <img src={smart_comply_logo} alt="" />
         </Link>
         <div className="hidden xl:flex flex-row items-center space-x-7 text-base">
-          <Link to="">Home</Link>
-          <Link to="">Features</Link>
-          <Link to="">Frameworks</Link>
+          <Link to="/">Home</Link>
+          <Link to="/features">Features</Link>
+          <Link to="/frameworks/iso27001">F1</Link>
+          {/* <Link to="/frameworks/soc2">F2</Link>
+          <Link to="/frameworks/pcidss">F3</Link>
+          <Link to="/frameworks/ndpr">F4</Link> */}
+          <Link to="/frameworks/integration">In</Link>
           <Link to="">Pricing</Link>
           <Link to="">Resources</Link>
           <Link to="">About us</Link>

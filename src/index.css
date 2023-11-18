@@ -94,6 +94,83 @@ body {
 .slide div {
   width: 20rem !important;
 }
+
+.transition_duration {
+  transition-duration: 3000ms;
+}
+
+.home_hero_bg_img,
+.feature_hero_bg_img {
+  background-image: linear-gradient(to bottom, transparent, #fff),
+    url("./assets/images/home_hero_bg_img_real.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 120vh;
+}
+
+.framework_iso27001_hero_bg {
+  background: linear-gradient(
+    206deg,
+    rgba(255, 200, 127, 0.19) 16.3%,
+    rgba(255, 199, 199, 0.19) 85.91%
+  );
+}
+
+.framework_soc2_hero_bg {
+  background: linear-gradient(
+    206deg,
+    rgba(189, 139, 255, 0.19) 16.3%,
+    rgba(255, 199, 199, 0.15) 85.91%
+  );
+}
+
+.framework_pcidss_hero_bg {
+  background: linear-gradient(
+    206deg,
+    rgba(8, 204, 133, 0.19) 16.3%,
+    rgba(255, 218, 166, 0.19) 85.91%
+  );
+}
+
+.framework_ndpr_hero_bg {
+  background: linear-gradient(
+    206deg,
+    rgba(255, 86, 86, 0.12) 16.3%,
+    rgba(255, 218, 166, 0.19) 85.91%
+  );
+}
+
+.framework_integration_hero_bg {
+  background: linear-gradient(
+    206deg,
+    rgba(255, 86, 86, 0.12) 16.3%,
+    rgba(255, 218, 166, 0.19) 85.91%
+  );
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeInClass {
+  animation-name: fadeIn;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
 @keyframes scroll {
   0% {
     transform: translateX(0);

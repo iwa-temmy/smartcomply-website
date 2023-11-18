@@ -32,7 +32,7 @@ const SignupHeroSection = () => {
                     <div className="bg-BlueChalk flex flex-col items-center space-y-6 py-12 rounded-lg md:w-44 md:h-48">
                       <div className="flex flex-col text-[10px] font-test-sohne-light ">
                         <span>Audit questions</span>
-                        <span>complete</span>
+                        <span>completed</span>
                       </div>
                       <div className="bg-white rounded-[4px] py-1 px-2 flex items-center space-x-8 relative -right-2 md:-right-6">
                         <span className="w-8 md:w-12 h-1 rounded-3xl bg-AztecPurple"></span>

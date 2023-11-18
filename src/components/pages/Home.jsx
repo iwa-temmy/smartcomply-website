@@ -10,8 +10,10 @@ import EasyQuickAndEfficient from "../sections/homeSection/EasyQuickAndEfficient
 const Home = () => {
   return (
     <div>
-      <Navbar />
-      <HomeHeroSection />
+      <div className="home_hero_bg_img">
+        <Navbar />
+        <HomeHeroSection />
+      </div>
       <EasyQuickAndEfficient />
       <ApraisalFromCustomer />
       <SubscribeToNewsLetterSection />
