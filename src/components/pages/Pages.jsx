@@ -10,6 +10,10 @@ import FrameWorkSoc2 from "./FrameWorkSoc2";
 import FrameWorkPcidss from "./FrameWorkPcidss";
 import FrameWorkNdpr from "./FrameWorkNdpr";
 import Integration from "./Integration";
+import Blog from "./Blog";
+import Glossary from "./Glossary";
+import Pricing from "./Pricing";
+import Faq from "./Faq";
 import ForgetPassword from "./ForgetPassword";
 import ErrorPage from "./ErrorPage";
 
@@ -21,7 +25,11 @@ const Pages = () => {
       <Route path="/features" element={<Features />} />
       <Route path="/frameworks/iso27001" element={<FrameWorkIso27001 />} />
       <Route path="/frameworks/soc2" element={<FrameWorkSoc2 />} />
+      <Route path="/faq" element={<Faq />} />
       <Route path="/frameworks/pcidss" element={<FrameWorkPcidss />} />
+      <Route path="/blog" element={<Blog />} />
+      <Route path="/glossary" element={<Glossary />} />
+      <Route path="/pricing" element={<Pricing />} />
       <Route path="/frameworks/ndpr" element={<FrameWorkNdpr />} />
       <Route path="/frameworks/integration" element={<Integration />} />
       <Route path="/auth/sign-in" element={<Signin />} />

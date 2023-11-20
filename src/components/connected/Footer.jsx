@@ -46,19 +46,20 @@ const Footer = () => {
               <div className="space-y-7">
                 <h4 className="font-test-sohne-semibold ">Products</h4>
                 <div className="flex flex-col space-y-4">
-                  <Link to="">ISO27001</Link>
-                  <Link to="">PCI DSS</Link>
-                  <Link to="">SOC 2</Link>
-                  <Link to="">NDPR</Link>
+                  <Link to="/frameworks/iso27001">ISO27001</Link>
+                  <Link to="/frameworks/pcidss">PCI DSS</Link>
+                  <Link to="/frameworks/soc2">SOC 2</Link>
+                  <Link to="/frameworks/ndpr">NDPR</Link>
                 </div>
               </div>
               <div className="space-y-7">
                 <h4 className="font-test-sohne-semibold ">Company</h4>
                 <div className="flex flex-col space-y-4">
-                  <Link to="">About</Link>
-                  <Link to="">Contact Us</Link>
-                  <Link to="">Blog</Link>
-                  <Link to="">FAQs</Link>
+                  <Link to="/about-us">About</Link>
+                  {/* <Link to="">Contact Us</Link> */}
+                  <Link to="/blog">Blog</Link>
+                  <Link to="/faq">FAQs</Link>
+                  <Link to="/glossary">Glossary</Link>
                 </div>
               </div>
               <div className="flex flex-row space-x-4 md:space-x-0 md:flex-col md:space-y-5">

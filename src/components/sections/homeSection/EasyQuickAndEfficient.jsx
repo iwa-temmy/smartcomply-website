@@ -2,7 +2,7 @@ import React from "react";
 
 const EasyQuickAndEfficient = () => {
   return (
-    <div className="py-4 md:pt-10 md:sp">
+    <div className="py-4 md:pt-10">
       <div className="container mx-auto space-y-1.5 md:space-y-3 mb-10">
         <h3 className="flex flex-col text-3xl lg:text-[56px] lg:leading-[4rem] font-test-sohne-medium">
           Easy, Quick, and Efficient

@@ -1,6 +1,5 @@
 import React from "react";
-import integration_hero_img from "../../../assets/images/integration_hero_img.svg";
-import IntegrationBody from "./IntegrationBody";
+import integration_hero_img from "../../../assets/images/integration_hero_img.png";
 
 const IntegrationHeroSection = () => {
   return (
@@ -21,7 +20,6 @@ const IntegrationHeroSection = () => {
           </div>
         </div>
       </div>
-      <IntegrationBody />
     </div>
   );
 };

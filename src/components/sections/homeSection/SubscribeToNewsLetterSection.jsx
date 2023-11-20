@@ -1,5 +1,7 @@
 import React from "react";
 import CustomLink from "../../primitive/CustomLink";
+import initial_white_icon from "../../../assets/icons/inital_white_arrow.svg";
+import hover_white_icon from "../../../assets/icons/hover_white_arrow.svg";
 
 const SubscribeToNewsLetterSection = () => {
   return (
@@ -30,7 +32,9 @@ const SubscribeToNewsLetterSection = () => {
               <CustomLink
                 to=""
                 title="Subscribe"
-                className="bg-Ebony px-4 py-1.5 text-sm md:text-base text-white"
+                className="bg-Ebony text-sm md:text-base text-white hover:bg-ShipGrey"
+                inital_arrow={initial_white_icon}
+                hover_arrow={hover_white_icon}
               />
             </div>
           </div>

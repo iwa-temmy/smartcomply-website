@@ -34,18 +34,18 @@ const IntegrationBody = () => {
           />
         ))}
       </div>
-      <div className="w-full md:w-[70%] bg-red-100">
-        <div className="grid grid-cols-3 gap-24">
+      <div className="w-full md:w-[70%]">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-x-24 gap-y-8">
           {activeTab === "all" && (
             <>
               {allIntegrationInfo.map((card, index) => (
-                <Link to={`:projectId`} key={index}>
+                <div key={index}>
                   <IntegrationCard
-                    projectImg={card.logo}
-                    projectType={card.category}
-                    projectName={card.name}
+                    logo={card.logo}
+                    category={card.category}
+                    name={card.name}
                   />
-                </Link>
+                </div>
               ))}
             </>
           )}
@@ -54,9 +54,9 @@ const IntegrationBody = () => {
               {employeeManagementIntegrationInfo.map((card, index) => (
                 <Link to={`:projectId`} key={index}>
                   <IntegrationCard
-                    projectImg={card.logo}
-                    projectType={card.category}
-                    projectName={card.name}
+                    logo={card.logo}
+                    category={card.category}
+                    name={card.name}
                   />
                 </Link>
               ))}
@@ -67,9 +67,9 @@ const IntegrationBody = () => {
               {cloudServicesIntegrationInfo.map((card, index) => (
                 <IntegrationCard
                   key={index}
-                  projectImg={card.logo}
-                  projectType={card.category}
-                  projectName={card.name}
+                  logo={card.logo}
+                  category={card.category}
+                  name={card.name}
                 />
               ))}
             </>
@@ -79,9 +79,9 @@ const IntegrationBody = () => {
               {codeRepositoryIntegrationInfo.map((card, index) => (
                 <IntegrationCard
                   key={index}
-                  projectImg={card.logo}
-                  projectType={card.category}
-                  projectName={card.name}
+                  logo={card.logo}
+                  category={card.category}
+                  name={card.name}
                 />
               ))}
             </>
@@ -91,9 +91,9 @@ const IntegrationBody = () => {
               {privacyAndRiskmanagementIntegrationInfo.map((card, index) => (
                 <IntegrationCard
                   key={index}
-                  projectImg={card.logo}
-                  projectType={card.category}
-                  projectName={card.name}
+                  logo={card.logo}
+                  category={card.category}
+                  name={card.name}
                 />
               ))}
             </>
@@ -103,9 +103,9 @@ const IntegrationBody = () => {
               {taskManagementIntegrationInfo.map((card, index) => (
                 <IntegrationCard
                   key={index}
-                  projectImg={card.logo}
-                  projectType={card.category}
-                  projectName={card.name}
+                  logo={card.logo}
+                  category={card.category}
+                  name={card.name}
                 />
               ))}
             </>

@@ -2,6 +2,8 @@ import React from "react";
 import create_account_text_bg from "../../../assets/icons/create_account_text_bg.svg";
 import CustomLink from "../../primitive/CustomLink";
 import Slide from "./Slide";
+import initial_black_icon from "../../../assets/icons/inital_black_arrow.svg";
+import hover_black_icon from "../../../assets/icons/hover_black_arrow.svg";
 
 const SignupHeroSection = () => {
   return (
@@ -135,7 +137,9 @@ const SignupHeroSection = () => {
               <CustomLink
                 to=""
                 title="Create Account"
-                className="bg-Oasis px-3.5 py-1.5 text-sm md:text-base text-Ebony mb-2"
+                className="bg-Oasis text-sm md:text-base text-Ebony mb-2"
+                inital_arrow={initial_black_icon}
+                hover_arrow={hover_black_icon}
               />
             </div>
             <div className="p-2.5">
@@ -149,7 +153,9 @@ const SignupHeroSection = () => {
                 <CustomLink
                   to="/auth/sign-in"
                   title="Sign in"
-                  className="bg-PaleViolet px-3.5 py-1.5 text-sm md:text-base text-Ebony"
+                  className="bg-PaleViolet text-sm md:text-base text-Ebony"
+                  inital_arrow={initial_black_icon}
+                  hover_arrow={hover_black_icon}
                 />
               </div>
             </div>

@@ -43,86 +43,12 @@ const HomeHeroSectionAnimationImg = () => {
   const translateClass = isTranslate ? "-translate-x-4" : "translate-x-4";
 
   return (
-    <div className="relative">
-      <div className="absolute -top-2 -right-9">
-        <div className="bg-white flex flex-col items-center justify-center rounded-3xl px-5 py-6 space-y-2 w-36 scale-75 z-50">
-          <img src={snyk_logo} className="w-16" alt="" />
-          <h3 className="text-[8px] text-DeepSapphire font-test-sohne-medium">
-            Snyk
-          </h3>
-          <div className="flex items-center space-x-2">
-            <p className="text-[7px]">
-              Connect to Snyke to automate document collection.
-            </p>
-          </div>
-          <button className="w-full rounded-sm py-2 bg-Iron text-DeepSapphire text-[10px]">
-            Connect
-          </button>
-        </div>
-      </div>
-      <div className="absolute top-5 -left-10">
-        <div
-          className={`bg-white rounded-2xl p-4 space-y-2 w-48 ${scaleClass} transition-all transition_duration`}
-        >
-          <h3 className="text-xs md:text-sm text-DeepSapphire font-test-sohne-medium">
-            NDPR
-          </h3>
-          <div className="flex items-center space-x-2">
-            <p className="text-[10px]">Documents pendind</p>
-            <span className="w-4 h-4 bg-yellow-400 rounded-full"></span>
-          </div>
-          <div className="space-y-1">
-            <p className="text-[8px] text-DeepSapphire text-right">
-              <span className="font-test-sohne-semibold">80%</span>{" "}
-              <span>completion</span>
-            </p>
-            <div className="relative">
-              <span className="absolute top-0 w-full h-1.5 bg-gray-200 rounded-3xl"></span>
-              <span className="absolute top-0 w-[80%] bg-DeepSapphire h-1.5 rounded-3xl"></span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="w-[450px] h-[500px] rounded-xl border-2 border-white bg-white/[.2] backdrop-blur-[4px]">
-        <div className="absolute bottom-32 -left-20 z-30 fadeInClass">
-          <div className="bg-white flex flex-col items-center justify-center rounded-3xl px-4 pt-3 pb-5 w-32 scale-125 transition-all duration-1000">
-            <img src={jira_logo} className="w-16" alt="" />
-            <h3 className="text-[8px] text-DeepSapphire font-test-sohne-medium">
-              Jira cloud
-            </h3>
-
-            <div className="flex flex-col items-center justify-center space-y-2.5">
-              <p className="text-[5px]">
-                Connect to Snyke to automate document collection.
-              </p>
-              <button className="w-full rounded-sm py-2 bg-Iron text-DeepSapphire text-[10px]">
-                Connect
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className="absolute bottom-32 -left-16 z-20">
-          <div className="bg-white flex flex-col items-center justify-center rounded-3xl px-4 pt-3 pb-5 w-32 scale-100 transition-all duration-1000">
-            <img src={jira_logo} className="w-16" alt="" />
-            <h3 className="text-[8px] text-DeepSapphire font-test-sohne-medium">
-              Jira cloud
-            </h3>
-
-            <div className="flex flex-col items-center justify-center space-y-2.5">
-              <p className="text-[5px]">
-                Connect to Snyke to automate document collection.
-              </p>
-              <button className="w-full rounded-sm py-2 bg-Iron text-DeepSapphire text-[10px]">
-                Connect
-              </button>
-            </div>
-          </div>
-        </div>{" "}
-        <div className="absolute bottom-5 right-12">
-          <div className="bg-white flex flex-col items-center justify-center rounded-3xl px-4 py-6 space-y-2 w-36 scale-100 transition-all duration-1000 z-50">
+    <div className="relative ">
+      <div className="relative">
+        <div className="absolute -top-2 -right-9">
+          <div className="bg-white flex flex-col items-center justify-center rounded-3xl px-5 py-6 space-y-2 w-36 scale-75 z-50">
             <img src={snyk_logo} className="w-16" alt="" />
-            <h3 className="text-[8px] text-DeepSapphire font-test-sohne-medium">
+            <h3 className="text-[5px] lg:text-[8px] text-DeepSapphire font-test-sohne-medium">
               Snyk
             </h3>
             <div className="flex items-center space-x-2">
@@ -130,83 +56,161 @@ const HomeHeroSectionAnimationImg = () => {
                 Connect to Snyke to automate document collection.
               </p>
             </div>
-            <button className="w-full rounded-sm py-2 bg-Iron text-DeepSapphire text-[10px]">
+            <button className="w-full rounded-sm py-2 bg-Iron text-DeepSapphire text-[6px] lg:text-[10px]">
               Connect
             </button>
           </div>
         </div>
-        <div className="absolute bottom-10 left-2">
-          <img
-            src={arr_3}
-            className={`${translateClass} transition-all transition_duration`}
-            alt=""
-          />
-        </div>
-        <div className="absolute bottom-32 left-16">
-          <img src={arr_2} alt="" />
-        </div>
-        <div className="absolute bottom-32 -right-2">
-          <img
-            src={arr_1}
-            className={`${rotateClass} transition-all transition_duration`}
-            alt=""
-          />
-        </div>
-        <div className="absolute bottom-56 right-20">
+        <div className="absolute top-5 -left-10 z-10">
           <div
-            className={`bg-white rounded-2xl p-4 space-y-2 w-48 ${secondScaleClass} transition-all transition_duration`}
+            className={`bg-white rounded-2xl p-4 space-y-2 w-48 ${scaleClass} transition-all transition_duration`}
           >
             <h3 className="text-xs md:text-sm text-DeepSapphire font-test-sohne-medium">
-              IS027001
+              NDPR
             </h3>
             <div className="flex items-center space-x-2">
-              <p className="text-[10px]">Audit questions completed</p>
-              <span className="w-4 h-4 bg-green-500 rounded-full"></span>
+              <p className="text-[6px] lg:text-[10px]">Documents pendind</p>
+              <span className="w-4 h-4 bg-yellow-400 rounded-full"></span>
             </div>
             <div className="space-y-1">
-              <p className="text-[8px] text-DeepSapphire text-right">
-                <span className="font-test-sohne-semibold">70%</span>{" "}
+              <p className="text-[5px] lg:text-[8px] text-DeepSapphire text-right">
+                <span className="font-test-sohne-semibold">80%</span>{" "}
                 <span>completion</span>
               </p>
               <div className="relative">
                 <span className="absolute top-0 w-full h-1.5 bg-gray-200 rounded-3xl"></span>
-                <span className="absolute top-0 w-[70%] bg-DeepSapphire h-1.5 rounded-3xl"></span>
+                <span className="absolute top-0 w-[80%] bg-DeepSapphire h-1.5 rounded-3xl"></span>
               </div>
             </div>
           </div>
         </div>
-        <div className="absolute bottom-4 left-24 z-20 ">
-          <div className="bg-white flex flex-col items-center justify-center rounded-3xl p-4 space-y-1 w-32 scale-100 transition-all duration-1000">
-            <img src={google_cloud_logo} className="w-16" alt="" />
-            <h3 className="text-[7px] text-DeepSapphire font-test-sohne-medium">
-              Google cloud
-            </h3>
-            <div className="flex items-center space-x-2">
-              <p className="text-[6px]">
-                Connect to Snyke to automate document collection.
-              </p>
+
+        <div className="w-[300px] h-[400px] lg:w-[450px] lg:h-[500px] rounded-xl border-2 border-white bg-white/[.2] backdrop-blur-[4px] relative z-30">
+          <div className="absolute bottom-32 -left-20 z-30 fadeInClass">
+            <div className="bg-white flex flex-col items-center justify-center rounded-3xl px-4 pt-3 pb-5 w-32 scale-125 transition-all duration-1000">
+              <img src={jira_logo} className="w-16" alt="" />
+              <h3 className="text-[5px] lg:text-[8px] text-DeepSapphire font-test-sohne-medium">
+                Jira cloud
+              </h3>
+
+              <div className="flex flex-col items-center justify-center space-y-2.5">
+                <p className="text-[5px]">
+                  Connect to Snyke to automate document collection.
+                </p>
+                <button className="w-full rounded-sm py-2 bg-Iron text-DeepSapphire text-[6px] lg:text-[10px]">
+                  Connect
+                </button>
+              </div>
             </div>
-            <button className="w-full rounded-sm py-1 border border-Iron text-DeepSapphire text-[10px]">
-              Connect
-            </button>
-            <p className="text-[6px]">Disconnect</p>
           </div>
-        </div>
-        <div className="absolute -bottom-1 left-20 z-30 fadeInClass">
-          <div className="bg-white flex flex-col items-center justify-center rounded-3xl p-4 space-y-1 w-32 scale-125 transition-all duration-1000">
-            <img src={google_cloud_logo} className="w-16" alt="" />
-            <h3 className="text-[7px] text-DeepSapphire font-test-sohne-medium">
-              Google cloud
-            </h3>
-            <div className="flex items-center space-x-2">
-              <p className="text-[6px]">
-                Connect to Snyke to automate document collection.
-              </p>
+          <div className="absolute bottom-32 -left-16 z-20">
+            <div className="bg-white flex flex-col items-center justify-center rounded-3xl px-4 pt-3 pb-5 w-32 scale-100 transition-all duration-1000">
+              <img src={jira_logo} className="w-16" alt="" />
+              <h3 className="text-[5px] lg:text-[8px] text-DeepSapphire font-test-sohne-medium">
+                Jira cloud
+              </h3>
+
+              <div className="flex flex-col items-center justify-center space-y-2.5">
+                <p className="text-[5px]">
+                  Connect to Snyke to automate document collection.
+                </p>
+                <button className="w-full rounded-sm py-2 bg-Iron text-DeepSapphire text-[6px] lg:text-[10px]">
+                  Connect
+                </button>
+              </div>
             </div>
-            <button className="w-full rounded-sm py-1 border border-Iron text-DeepSapphire text-[10px]">
-              Connect
-            </button>
-            <p className="text-[6px]">Disconnect</p>
+          </div>{" "}
+          <div className="absolute bottom-5 right-12">
+            <div className="bg-white flex flex-col items-center justify-center rounded-3xl px-4 py-6 space-y-2 w-36 scale-100 transition-all duration-1000 z-50">
+              <img src={snyk_logo} className="w-16" alt="" />
+              <h3 className="text-[5px] lg:text-[8px] text-DeepSapphire font-test-sohne-medium">
+                Snyk
+              </h3>
+              <div className="flex items-center space-x-2">
+                <p className="text-[7px]">
+                  Connect to Snyke to automate document collection.
+                </p>
+              </div>
+              <button className="w-full rounded-sm py-2 bg-Iron text-DeepSapphire text-[6px] lg:text-[10px]">
+                Connect
+              </button>
+            </div>
+          </div>
+          <div className="absolute bottom-10 left-2">
+            <img
+              src={arr_3}
+              className={`${translateClass} transition-all transition_duration`}
+              alt=""
+            />
+          </div>
+          <div className="absolute bottom-32 left-16">
+            <img src={arr_2} alt="" />
+          </div>
+          <div className="absolute bottom-32 -right-2">
+            <img
+              src={arr_1}
+              className={`${rotateClass} transition-all transition_duration`}
+              alt=""
+            />
+          </div>
+          <div className="absolute bottom-56 right-20">
+            <div
+              className={`bg-white rounded-2xl p-4 space-y-2 w-36 lg:w-48 ${secondScaleClass} transition-all transition_duration`}
+            >
+              <h3 className="text-xs md:text-sm text-DeepSapphire font-test-sohne-medium">
+                IS027001
+              </h3>
+              <div className="flex items-center space-x-2">
+                <p className="text-[6px] lg:text-[10px]">
+                  Audit questions completed
+                </p>
+                <span className="w-2 lg:w-4 h-2 lg:h-4 bg-green-500 rounded-full"></span>
+              </div>
+              <div className="space-y-1">
+                <p className="text-[5px] lg:text-[8px] text-DeepSapphire text-right">
+                  <span className="font-test-sohne-semibold">70%</span>{" "}
+                  <span>completion</span>
+                </p>
+                <div className="relative">
+                  <span className="absolute top-0 w-full h-1.5 bg-gray-200 rounded-3xl"></span>
+                  <span className="absolute top-0 w-[70%] bg-DeepSapphire h-1.5 rounded-3xl"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="absolute bottom-4 left-24 z-20 ">
+            <div className="bg-white flex flex-col items-center justify-center rounded-3xl p-4 space-y-1 w-32 scale-100 transition-all duration-1000">
+              <img src={google_cloud_logo} className="w-16" alt="" />
+              <h3 className="text-[7px] text-DeepSapphire font-test-sohne-medium">
+                Google cloud
+              </h3>
+              <div className="flex items-center space-x-2">
+                <p className="text-[6px]">
+                  Connect to Snyke to automate document collection.
+                </p>
+              </div>
+              <button className="w-full rounded-sm py-1 border border-Iron text-DeepSapphire text-[6px] lg:text-[10px]">
+                Connect
+              </button>
+              <p className="text-[6px]">Disconnect</p>
+            </div>
+          </div>
+          <div className="absolute -bottom-1 left-20 z-30 fadeInClass">
+            <div className="bg-white flex flex-col items-center justify-center rounded-3xl p-4 space-y-1 w-32 scale-125 transition-all duration-1000">
+              <img src={google_cloud_logo} className="w-16" alt="" />
+              <h3 className="text-[7px] text-DeepSapphire font-test-sohne-medium">
+                Google cloud
+              </h3>
+              <div className="flex items-center space-x-2">
+                <p className="text-[6px]">
+                  Connect to Snyke to automate document collection.
+                </p>
+              </div>
+              <button className="w-full rounded-sm py-1 border border-Iron text-DeepSapphire text-[6px] lg:text-[10px]">
+                Connect
+              </button>
+              <p className="text-[6px]">Disconnect</p>
+            </div>
           </div>
         </div>
       </div>

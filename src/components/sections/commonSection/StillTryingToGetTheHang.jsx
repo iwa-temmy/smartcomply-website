@@ -2,6 +2,8 @@ import React from "react";
 import its_ok_bg from "../../../assets/images/Unionn.png";
 import still_rying_to_get_the_hang from "../../../assets/images/still_rying_to_get_the_hang.png";
 import CustomLink from "../../primitive/CustomLink";
+import initial_black_icon from "../../../assets/icons/inital_black_arrow.svg";
+import hover_black_icon from "../../../assets/icons/hover_black_arrow.svg";
 
 const StillTryingToGetTheHang = () => {
   return (
@@ -30,12 +32,16 @@ const StillTryingToGetTheHang = () => {
           <CustomLink
             to=""
             title="Schedule a demo"
-            className="bg-PaleViolet px-4 py-1.5 text-sm md:text-base text-Ebony"
+            className="bg-PaleViolet text-sm md:text-base text-Ebony"
+            inital_arrow={initial_black_icon}
+            hover_arrow={hover_black_icon}
           />
           <CustomLink
             to=""
             title="Try for free"
-            className="bg-Chardonnay px-4 py-1.5 text-sm md:text-base text-Ebony"
+            className="bg-Chardonnay text-sm md:text-base text-Ebony"
+            inital_arrow={initial_black_icon}
+            hover_arrow={hover_black_icon}
           />
         </div>
       </div>

@@ -3,6 +3,7 @@ import Navbar from "../connected/Navbar";
 import IntegrationHeroSection from "../sections/IntegrationSection/IntegrationHeroSection";
 import Footer from "../connected/Footer";
 import StillTryingToGetTheHang from "../sections/commonSection/StillTryingToGetTheHang";
+import IntegrationBody from "../sections/IntegrationSection/IntegrationBody";
 
 const Integration = () => {
   return (
@@ -12,6 +13,7 @@ const Integration = () => {
         <Navbar />
         <IntegrationHeroSection />
       </div>
+      <IntegrationBody />
       <StillTryingToGetTheHang />
       <Footer />
     </div>
