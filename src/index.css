@@ -20,33 +20,63 @@
 
 @font-face {
   font-family: "test-sohne-regular";
-  src: url(./assets/fonts/Test-Söhne/TestSöhne-Buch.otf);
+  src: url(./assets/fonts/test-sohne/test-sohne-buch.otf);
 }
 
 @font-face {
   font-family: "test-sohne-medium";
-  src: url(./assets/fonts/Test-Söhne/TestSöhne-Kräftig.otf);
+  src: url(./assets/fonts/test-sohne/test-sohne-kraftig.otf);
 }
 
 @font-face {
   font-family: "test-sohne-light";
-  src: url(./assets/fonts/Test-Söhne/TestSöhne-Leicht.otf);
+  src: url(./assets/fonts/test-sohne/test-sohne-leicht.otf);
 }
 
 @font-face {
   font-family: "test-sohne-extralight";
-  src: url(./assets/fonts/Test-Söhne/TestSöhne-Extraleicht.otf);
+  src: url(./assets/fonts/test-sohne/test-sohne-extraleicht.otf);
 }
 
 @font-face {
   font-family: "test-sohne-bold";
-  src: url(./assets/fonts/Test-Söhne/TestSöhne-Fett.otf);
+  src: url(./assets/fonts/test-sohne/test-sohne-fett.otf);
 }
 
 @font-face {
   font-family: "test-sohne-semibold";
-  src: url(./assets/fonts/Test-Söhne/TestSöhne-Halbfett.otf);
+  src: url(./assets/fonts/test-sohne/test-sohne-Halbfett.otf);
 }
+
+/* @font-face {
+  font-family: "test-sohne-regular";
+  src: url(./assets/fonts/test-sohne/TestSöhne-Buch.otf);
+}
+
+@font-face {
+  font-family: "test-sohne-medium";
+  src: url(./assets/fonts/test-sohne/TestSöhne-Kräftig.otf);
+}
+
+@font-face {
+  font-family: "test-sohne-light";
+  src: url(./assets/fonts/test-sohne/TestSöhne-Leicht.otf);
+}
+
+@font-face {
+  font-family: "test-sohne-extralight";
+  src: url(./assets/fonts/test-sohne/TestSöhne-Extraleicht.otf);
+}
+
+@font-face {
+  font-family: "test-sohne-bold";
+  src: url(./assets/fonts/test-sohne/TestSöhne-Fett.otf);
+}
+
+@font-face {
+  font-family: "test-sohne-semibold";
+  src: url(./assets/fonts/test-sohne/TestSöhne-Halbfett.otf);
+} */
 
 body {
   font-family: "test-sohne-regular";
