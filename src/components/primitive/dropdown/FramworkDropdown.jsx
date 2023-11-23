@@ -8,7 +8,7 @@ import img_5 from "../../../assets/icons/integration__.svg";
 
 const FramworkDropdown = () => {
   return (
-    <div>
+    <div className="relative z-40">
       <div className="group inline-block">
         <button className="outline-none focus:outline-none flex items-center">
           <span>Framworks</span>
@@ -24,7 +24,7 @@ const FramworkDropdown = () => {
         </button>
         <div className="">
           <ul className="pt-4 transform scale-0 group-hover:scale-100 absolute transition duration-150 space-y-2 py-3 ease-in-out origin-top xl:w-fit px-4">
-            <div className="rounded-lg px-4 py-6 space-y-3 bg-white z-50">
+            <div className="rounded-lg px-4 py-6 space-y-3 bg-white z-40">
               <div className="flex items-center space-x-5 border-b-[0.1px] border-b-Wisteria pb-3">
                 <Link
                   to="/frameworks/iso27001"

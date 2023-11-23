@@ -10,21 +10,23 @@ import ConnectYourInfastructure from "../sections/homeSection/ConnectYourInfastr
 import Partners from "../sections/aboutSection/Partners";
 import LearnMoreCard from "../sections/homeSection/LearnMoreCard";
 import WantToKnowUs from "../sections/homeSection/WantToKnowUs";
+import FastGrowingBrands from "../sections/homeSection/FastGrowingBrands";
 
 const Home = () => {
   return (
     <div>
-      <div className="home_hero_bg_img  mb-32">
+      <div className="home_hero_bg_img">
         <Navbar />
         <HomeHeroSection />
       </div>
+      <FastGrowingBrands />
       <WantToKnowUs />
       <EasyQuickAndEfficient />
       <ApraisalFromCustomer />
-      <SubscribeToNewsLetterSection />
       <ConnectYourInfastructure />
       <Partners />
       <LearnMoreCard />
+      <SubscribeToNewsLetterSection />
       <StillTryingToGetTheHang />
       <Footer />
     </div>

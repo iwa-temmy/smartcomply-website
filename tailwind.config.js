@@ -48,6 +48,11 @@ module.exports = {
         GreyCloud: "#B4B4B4",
         Wisteria: "#9D85BB",
         ShipGrey: "#3C3D48",
+        HintOfGreen: "#E4FDF1",
+        MountainMist: "#949494",
+        OldLace: "#FFF5E8",
+        CrystalBlue: "#47B2FF",
+        LilyWhite: "#ECF7FF",
       },
     },
     container: {

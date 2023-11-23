@@ -89,7 +89,7 @@ const SigninHeroSection = () => {
                 <CustomLink
                   to=""
                   title="Sign In"
-                  className="bg-PaleViolet text-sm md:text-base text-Ebony mb-2"
+                  className="bg-PaleViolet text-sm md:text-base text-Ebony"
                   inital_arrow={initial_black_icon}
                   hover_arrow={hover_black_icon}
                 />

@@ -4,8 +4,8 @@ import img_5 from "../../../assets/icons/integration__.svg";
 
 const ResourcesDropdown = () => {
   return (
-    <div>
-      <div className="group inline-block z-50">
+    <div className="relative z-40">
+      <div className="group inline-block">
         <button className="outline-none focus:outline-none flex items-center">
           <span>Resources</span>
           <span className="pt-1">
@@ -19,7 +19,7 @@ const ResourcesDropdown = () => {
           </span>
         </button>
         <div className="">
-          <ul className="pt-4 transform scale-0 group-hover:scale-100 absolute transition duration-150 space-y-2 py-3 ease-in-out origin-top xl:w-fit px-4 z-50">
+          <ul className="pt-4 transform scale-0 group-hover:scale-100 absolute transition duration-150 space-y-2 py-3 ease-in-out origin-top xl:w-44 px-4 z-40">
             <div className="rounded-lg px-4 py-6 space-y-3 bg-white relative ">
               <div className="border-b-[0.1px] border-b-Wisteria pb-3">
                 <Link

@@ -9,7 +9,7 @@ import checked_icon from "../../../assets/icons/checked_icon.svg";
 
 const FeaturesDetails = () => {
   return (
-    <div className="relative xl:-top-24">
+    <div className="relative xl:-top-24 ">
       <div className="container mx-auto">
         <div className="flex flex-col items-center space-y-4 md:flex-row">
           <div className="w-full md:w-1/2">

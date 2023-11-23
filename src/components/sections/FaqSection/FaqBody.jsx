@@ -34,7 +34,7 @@ const FaqBody = () => {
     <div className="container mx-auto flex flex-col items-center justify-center pb-24">
       {searchValue.map((faq, index) => {
         return (
-          <div key={index} className="w-[60%] py-2">
+          <div key={index} className="w-full md:w-[60%] py-2">
             <div
               onClick={() => toggle(index)}
               className="bg-RoseWhite pl-10 pr-4 py-4 rounded-xl border border-SunsetOrange cursor-pointer"

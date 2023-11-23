@@ -128,13 +128,20 @@ body {
   transition-duration: 3000ms;
 }
 
-.home_hero_bg_img,
-.feature_hero_bg_img {
+.home_hero_bg_img {
   background-image: linear-gradient(to bottom, transparent, #fff),
     url("./assets/images/home_hero_bg_img_real.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  height: 120vh;
+}
+
+.feature_hero_bg_img {
+  background-image: linear-gradient(to bottom, transparent, #fff),
+    url("./assets/images/feature_hero_bg_img.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 120vh;
 }
 
@@ -214,6 +221,31 @@ body {
   z-index: 1;
 }
 
+.startup_right_border_dashed {
+  border-right-width: 1px;
+  border-right-style: dashed;
+  border-right-color: #08cc85;
+}
+
+.growth_right_border_dashed {
+  border-right-width: 1px;
+  border-right-style: dashed;
+  border-right-color: #cfabff;
+}
+
+.pricing_hero_bg_line {
+  background: url("./assets/images/pricing_hero_section_line.svg") no-repeat
+    left 0% top 80%;
+  background-size: contain;
+  /* background-position: center; */
+}
+/* .iso27001_hero_bg_line {
+  background: url("./assets/images/iso27001_hero_bg_line.svg") no-repeat left 0%
+    top 80%;
+  background-size: contain;
+  background-position: center;
+} */
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -231,7 +263,8 @@ body {
 
 .fadeInClass {
   animation-name: fadeIn;
-  animation-duration: 5s;
+  animation-duration: 4s;
+  /* animation-delay: 2s; */
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;

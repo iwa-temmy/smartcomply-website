@@ -7,7 +7,7 @@ import github_logo from "../assets/logos/github_logo.svg";
 import gitlab_logo from "../assets/logos/gitlab_logo.svg";
 import knowbe4_logo from "../assets/logos/knowbe4_logo.svg";
 import shortcut_logo from "../assets/logos/shortcut_logo.svg";
-import lacework_logo from "../assets/logos/lacework_logo.svg";
+import lacework_logo from "../assets/logos/lacework_logo.png";
 import snyk_logo from "../assets/logos/snyk_logo.svg";
 import jira_logo from "../assets/logos/jira_logo.svg";
 import digital_ocean_logo from "../assets/logos/digital_ocean_logo.svg";

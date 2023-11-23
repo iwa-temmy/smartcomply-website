@@ -7,7 +7,7 @@ import FeaturesDetails from "../sections/featuresSection/FeaturesDetails";
 const Features = () => {
   return (
     <div>
-      <div className="feature_hero_bg_img">
+      <div className="feature_hero_bg_img ">
         <Navbar />
         <FeaturesHeroSection />
       </div>

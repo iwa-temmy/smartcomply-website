@@ -9,7 +9,7 @@ import jira_logo_2 from "../../../assets/logos/jira_logo_2.svg";
 
 const ConnectYourInfastructure = () => {
   return (
-    <div className="connect_your_infastructure_hero_bg_img pt-8 pb-4 md:pt-44 md:pb-20">
+    <div className="connect_your_infastructure_hero_bg_img pt-8 pb-4 md:pt-10 md:pb-20">
       <div className="container mx-auto space-y-10">
         <h3 className="flex flex-col text-3xl lg:text-[56px] lg:leading-[4rem] font-test-sohne-medium">
           <span>Connect Your Infrastructure &</span>

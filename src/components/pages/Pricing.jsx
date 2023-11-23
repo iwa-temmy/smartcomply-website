@@ -8,7 +8,7 @@ import StillTryingToGetTheHang from "../sections/commonSection/StillTryingToGetT
 const Pricing = () => {
   return (
     <div>
-      <div className="relative">
+      <div className="relative pricing_hero_bg_line">
         <div className="absolute top-24 right-0 framework_pricing_hero_bg rounded-l-[254.5px] w-[65%] h-[40vh] md:h-[50vh] -z-20"></div>
         <Navbar />
         <PricingHeroSection />

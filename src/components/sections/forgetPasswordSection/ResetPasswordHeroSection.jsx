@@ -4,6 +4,8 @@ import CustomLink from "../../primitive/CustomLink";
 import Slide from "../signupSection/Slide";
 import initial_black_icon from "../../../assets/icons/inital_black_arrow.svg";
 import hover_black_icon from "../../../assets/icons/hover_black_arrow.svg";
+import initial_white_icon from "../../../assets/icons/inital_white_arrow.svg";
+import hover_white_icon from "../../../assets/icons/hover_white_arrow.svg";
 
 const ResetPasswordHeroSection = () => {
   return (
@@ -77,6 +79,8 @@ const ResetPasswordHeroSection = () => {
                   to=""
                   title="Reset Password"
                   className="bg-SunsetOrange text-sm md:text-base text-white mb-2"
+                  inital_arrow={initial_white_icon}
+                  hover_arrow={hover_white_icon}
                 />
                 <CustomLink
                   to="/auth/sign-in"
@@ -84,7 +88,7 @@ const ResetPasswordHeroSection = () => {
                   className="bg-PaleViolet text-sm md:text-base text-Ebony mb-2"
                   inital_arrow={initial_black_icon}
                   hover_arrow={hover_black_icon}
-               />
+                />
               </div>
               <div className="p-2.5">
                 <div className="w-full bg-BlueChalk py-4 px-5 rounded-xl flex items-center justify-between">
@@ -100,7 +104,7 @@ const ResetPasswordHeroSection = () => {
                     className="bg-Oasis text-sm md:text-base text-Ebony"
                     inital_arrow={initial_black_icon}
                     hover_arrow={hover_black_icon}
-                 />
+                  />
                 </div>
               </div>
             </div>

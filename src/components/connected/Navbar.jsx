@@ -7,6 +7,7 @@ import initial_white_icon from "../../assets/icons/inital_white_arrow.svg";
 import hover_white_icon from "../../assets/icons/hover_white_arrow.svg";
 import ResourcesDropdown from "../primitive/dropdown/ResourcesDropdown";
 import LanguageSwitcher from "../primitive/LanguageSwitcher";
+import MobileSidebar from "./MobileSidebar";
 
 const Navbar = () => {
   // const [isChartActive, setIsChartActive] = useState(false);
@@ -23,27 +24,28 @@ const Navbar = () => {
   // };
 
   return (
-    <div className="container mx-auto ">
-      <nav className="flex flex-row items-center justify-between py-4">
-        <Link to="/">
-          <img src={smart_comply_logo} alt="" />
-        </Link>
-        <div className="hidden xl:flex flex-row items-center space-x-6 text-base">
-          <Link to="/">Home</Link>
-          <Link to="/features">Features</Link>
-          <FramworkDropdown />
-          <Link to="/pricing">Pricing</Link>
-          <ResourcesDropdown />
-          <Link to="/about-us">About us</Link>
-          <CustomLink
-            to="/auth/sign-up"
-            title="Get started"
-            className="bg-Ebony text-sm md:text-base text-white hover:bg-ShipGrey"
-            inital_arrow={initial_white_icon}
-            hover_arrow={hover_white_icon}
-          />
-          <LanguageSwitcher />
-          {/* <div className="flex items-center space-x-2">
+    <div className="">
+      <div className="container mx-auto">
+        <nav className="flex flex-row items-center justify-between py-4">
+          <Link to="/">
+            <img src={smart_comply_logo} alt="" />
+          </Link>
+          <div className="hidden xl:flex flex-row items-center space-x-6 text-base">
+            <Link to="/">Home</Link>
+            <Link to="/features">Features</Link>
+            <FramworkDropdown />
+            <Link to="/pricing">Pricing</Link>
+            <ResourcesDropdown />
+            <Link to="/about-us">About us</Link>
+            <CustomLink
+              to="/auth/sign-up"
+              title="Get started"
+              className="bg-Ebony text-sm md:text-base text-white hover:bg-ShipGrey"
+              inital_arrow={initial_white_icon}
+              hover_arrow={hover_white_icon}
+            />
+            <LanguageSwitcher />
+            {/* <div className="flex items-center space-x-2">
             <span className="font-test-sohne-semibold">Fren</span>
             <div className="toggle-switch">
               <div
@@ -63,15 +65,12 @@ const Navbar = () => {
               Eng
             </span>
           </div> */}
-        </div>
-        <div className="block xl:hidden">
-          <div className="flex flex-col space-y-2 justify-center items-center cursor-pointer w-fit transition-all duration-500">
-            <span className="w-7 h-[1.5px] bg-black"></span>
-            <span className="w-7 h-[1.5px] bg-black"></span>
-            <span className="w-7 h-[1.5px] bg-black"></span>
           </div>
-        </div>
-      </nav>
+          <div className="block xl:hidden">
+            <MobileSidebar />
+          </div>
+        </nav>
+      </div>
     </div>
   );
 };

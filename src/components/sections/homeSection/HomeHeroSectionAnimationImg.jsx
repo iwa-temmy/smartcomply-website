@@ -43,10 +43,10 @@ const HomeHeroSectionAnimationImg = () => {
   const translateClass = isTranslate ? "-translate-x-4" : "translate-x-4";
 
   return (
-    <div className="relative ">
+    <div className="relative">
       <div className="relative">
-        <div className="absolute -top-2 -right-9">
-          <div className="bg-white flex flex-col items-center justify-center rounded-3xl px-5 py-6 space-y-2 w-36 scale-75 z-50">
+        <div className="absolute -top-2 -right-2 md:-right-9">
+          <div className="bg-white flex flex-col items-center justify-center rounded-3xl px-5 py-6 space-y-2 w-36 scale-75 z-40">
             <img src={snyk_logo} className="w-16" alt="" />
             <h3 className="text-[5px] lg:text-[8px] text-DeepSapphire font-test-sohne-medium">
               Snyk
@@ -78,8 +78,8 @@ const HomeHeroSectionAnimationImg = () => {
                 <span>completion</span>
               </p>
               <div className="relative">
-                <span className="absolute top-0 w-full h-1.5 bg-gray-200 rounded-3xl"></span>
-                <span className="absolute top-0 w-[80%] bg-DeepSapphire h-1.5 rounded-3xl"></span>
+                <span className="absolute top-0 w-full h-0.5 md:h-1.5 bg-gray-200 rounded-3xl"></span>
+                <span className="absolute top-0 w-[80%] bg-DeepSapphire h-0.5 md:h-1.5 rounded-3xl"></span>
               </div>
             </div>
           </div>
@@ -121,7 +121,7 @@ const HomeHeroSectionAnimationImg = () => {
             </div>
           </div>{" "}
           <div className="absolute bottom-5 right-12">
-            <div className="bg-white flex flex-col items-center justify-center rounded-3xl px-4 py-6 space-y-2 w-36 scale-100 transition-all duration-1000 z-50">
+            <div className="bg-white flex flex-col items-center justify-center rounded-3xl px-4 py-6 space-y-2 w-36 scale-100 transition-all duration-1000 z-40">
               <img src={snyk_logo} className="w-16" alt="" />
               <h3 className="text-[5px] lg:text-[8px] text-DeepSapphire font-test-sohne-medium">
                 Snyk
@@ -153,27 +153,27 @@ const HomeHeroSectionAnimationImg = () => {
               alt=""
             />
           </div>
-          <div className="absolute bottom-56 right-20">
+          <div className="absolute bottom-56 right-16 md:right-20">
             <div
-              className={`bg-white rounded-2xl p-4 space-y-2 w-36 lg:w-48 ${secondScaleClass} transition-all transition_duration`}
+              className={`bg-white rounded-2xl p-4 md:space-y-2 w-32 lg:w-48 ${secondScaleClass} transition-all transition_duration`}
             >
               <h3 className="text-xs md:text-sm text-DeepSapphire font-test-sohne-medium">
                 IS027001
               </h3>
-              <div className="flex items-center space-x-2">
-                <p className="text-[6px] lg:text-[10px]">
+              <div className="flex items-center space-x-1 md:space-x-2">
+                <p className="text-[4px] lg:text-[10px]">
                   Audit questions completed
                 </p>
-                <span className="w-2 lg:w-4 h-2 lg:h-4 bg-green-500 rounded-full"></span>
+                <span className="w-1 lg:w-4 h-1 lg:h-4 bg-green-500 rounded-full"></span>
               </div>
               <div className="space-y-1">
-                <p className="text-[5px] lg:text-[8px] text-DeepSapphire text-right">
+                <p className="text-[3px] lg:text-[8px] text-DeepSapphire text-right">
                   <span className="font-test-sohne-semibold">70%</span>{" "}
                   <span>completion</span>
                 </p>
                 <div className="relative">
-                  <span className="absolute top-0 w-full h-1.5 bg-gray-200 rounded-3xl"></span>
-                  <span className="absolute top-0 w-[70%] bg-DeepSapphire h-1.5 rounded-3xl"></span>
+                  <span className="absolute top-0 w-full h-0.5 md:h-1.5 bg-gray-200 rounded-3xl"></span>
+                  <span className="absolute top-0 w-[70%] bg-DeepSapphire h-0.5 md:h-1.5 rounded-3xl"></span>
                 </div>
               </div>
             </div>
