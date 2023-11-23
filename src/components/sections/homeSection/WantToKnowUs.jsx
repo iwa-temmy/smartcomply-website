@@ -30,7 +30,7 @@ const WantToKnowUs = () => {
           </div>
         </div>
         <div className="w-full md:w-9/12 relative">
-          <div className="absolute top-0 fadeInClass z-40">
+          <div className="absolute top-0 fadeInClass z-10">
             <img src={image_s_1} className="w-full" alt="" />
           </div>
           <div className="absolute top-0">

@@ -28,29 +28,31 @@ const FeatureHeroSectionAnimationImg = () => {
     };
   }, []);
 
-  const translateCardOne = cardOne ? "-translate-y-24" : "";
-  const translateCardTwo = cardTwo ? "translate-y-24" : "";
-  const translateCardThree = cardThree ? "-translate-y-24" : "";
+  const translateCardOne = cardOne ? "-translate-y-8 md:-translate-y-24" : "";
+  const translateCardTwo = cardTwo ? "translate-y-32 md:translate-y-24" : "";
+  const translateCardThree = cardThree
+    ? "-translate-y-6 md:-translate-y-24"
+    : "";
   return (
-    <div className="flex space-x-4 md:space-x-8">
+    <div className="grid grid-cols-3 gap-x-4 md:gap-x-8">
       <div
         className={`relative top-40 ${translateCardOne} transition-all transition_duration`}
       >
-        <div className="bg-white px-3 py-4 space-y-3 rounded-2xl shadow-2xl shadow-white">
+        <div className="bg-white px-1.5 md:px-3 py-2 md:py-4 space-y-3 rounded-2xl shadow-2xl shadow-white">
           <div className="w-full px-1 py-1 flex items-center space-x-2">
             <span className="w-3 md:w-4 h-3 md:h-4 rounded-full bg-BlueChalk"></span>
-            <span className="text-CharcoalGrey text-sm md:text-base">
+            <span className="text-CharcoalGrey text-[8px] md:text-base">
               ISO27001
             </span>
           </div>
           <div className="bg-BlueChalk flex flex-col items-center space-y-6 py-12 rounded-lg md:w-56 md:h-60">
-            <div className="flex flex-col text-[10px] md:text-base font-test-sohne-light ">
+            <div className="flex flex-col text-[6px] md:text-base font-test-sohne-light ">
               <span>Audit questions</span>
               <span>completed</span>
             </div>
-            <div className="bg-white rounded-[4px] py-1.5 px-2 flex items-center space-x-8 relative -right-2 md:-right-6">
-              <span className="w-12 md:w-20 h-[5px] rounded-3xl bg-PaleViolet"></span>
-              <span className="text-[5px] sm:text-[7px] font-test-sohne-light">
+            <div className="bg-white rounded-[4px] py-0.5 md:py-1.5 px-2 flex items-center space-x-4 relative -right-2 md:-right-6">
+              <span className="w-6 md:w-20 h-0.5 md:h-[5px] rounded-3xl bg-PaleViolet"></span>
+              <span className="text-[3px] sm:text-[7px] font-test-sohne-light">
                 70% completion
               </span>
             </div>
@@ -63,21 +65,21 @@ const FeatureHeroSectionAnimationImg = () => {
       <div
         className={`flex flex-col items-center relative -top-20 ${translateCardTwo} transition-all transition_duration`}
       >
-        <div className="bg-white px-3 py-4 space-y-3 rounded-2xl shadow-2xl shadow-white">
+        <div className="bg-white px-1.5 md:px-3 py-2 md:py-4 space-y-3 rounded-2xl shadow-2xl shadow-white">
           <div className="w-full px-1 py-1 flex items-center space-x-2">
             <span className="w-3 md:w-4 h-3 md:h-4 rounded-full bg-BlueChalk"></span>
-            <span className="text-CharcoalGrey text-sm md:text-base">
+            <span className="text-CharcoalGrey text-[8px] md:text-base">
               ISO27001
             </span>
           </div>
           <div className="bg-PastelPink flex flex-col items-center space-y-6 py-12 rounded-lg md:w-56 md:h-60">
-            <div className="flex flex-col text-[10px] md:text-base font-test-sohne-light ">
+            <div className="flex flex-col text-[6px] md:text-base font-test-sohne-light ">
               <span>Documents</span>
               <span>Pending</span>
             </div>
-            <div className="bg-white rounded-[4px] py-1.5 px-2 flex items-center space-x-4 relative -right-2 md:-right-6">
-              <span className="w-12 md:w-24 h-[5px] rounded-3xl bg-Geraldine"></span>
-              <span className="text-[5px] sm:text-[7px] font-test-sohne-light">
+            <div className="bg-white rounded-[4px] py-0.5 md:py-1.5 px-2 flex items-center space-x-4 relative -right-2 md:-right-6">
+              <span className="w-6 md:w-24 h-0.5 md:h-[5px] rounded-3xl bg-Geraldine"></span>
+              <span className="text-[3px] sm:text-[7px] font-test-sohne-light">
                 80% completion
               </span>
             </div>
@@ -90,21 +92,21 @@ const FeatureHeroSectionAnimationImg = () => {
       <div
         className={`relative top-10 cursor-pointer ${translateCardThree} transition-all transition_duration`}
       >
-        <div className="bg-white px-3 py-4 space-y-3 rounded-2xl shadow-2xl shadow-white">
+        <div className="bg-white px-1.5 md:px-3 py-2 md:py-4 space-y-3 rounded-2xl shadow-2xl shadow-white">
           <div className="w-full px-1 py-1 flex items-center space-x-2">
             <span className="w-3 md:w-4 h-3 md:h-4 rounded-full bg-BlueChalk"></span>
-            <span className="text-CharcoalGrey text-sm md:text-base">
+            <span className="text-CharcoalGrey text-[8px] md:text-base">
               ISO27001
             </span>
           </div>
           <div className="bg-Oasis flex flex-col items-center space-y-6 py-12 rounded-lg md:w-56 md:h-60">
-            <div className="flex flex-col text-[10px] md:text-base font-test-sohne-light ">
+            <div className="flex flex-col text-[6px] md:text-base font-test-sohne-light ">
               <span>PCI Scans Completed</span>
               <span>Documents uploaded</span>
             </div>
-            <div className="bg-white rounded-[4px] py-1.5 px-2 flex items-center space-x-2 relative -right-2 md:-right-6">
-              <span className="w-12 md:w-24 h-[5px] rounded-3xl bg-Chardonnay"></span>
-              <span className="text-[5px] sm:text-[7px] font-test-sohne-light">
+            <div className="bg-white rounded-[4px] py-0.5 md:py-1.5 px-2 flex items-center space-x-2 relative -right-2 md:-right-6">
+              <span className="w-8 md:w-24 h-0.5 md:h-[5px] rounded-3xl bg-Chardonnay"></span>
+              <span className="text-[3px] sm:text-[7px] font-test-sohne-light">
                 95% completion
               </span>
             </div>

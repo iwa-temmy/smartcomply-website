@@ -12,7 +12,9 @@ const SignupHeroSection = () => {
         <div className="w-full md:w-1/2 space-y-4 md:space-y-6">
           <span className="relative">
             <img src={create_account_text_bg} alt="" />
-            <span className="absolute top-2.5 left-8">Create account</span>
+            <p className="absolute top-2.5 left-8 md:top-2.5 md:left-8 text-sm md:text-base flex space-x-1">
+              <span>Create</span> <span>account</span>
+            </p>
           </span>
           <h2 className="text-4xl sm:text-5xl lg:text-[75px] lg:leading-[5rem] font-test-sohne-medium">
             Provide credentials to create your account

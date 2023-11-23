@@ -35,7 +35,7 @@ const GlossaryBody = () => {
           ))}
         </div>
         <div className="w-full md:w-[70%] ">
-          <div className="space-y-7 grid grid-cols-2 gap-8">
+          <div className="space-y-7 grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-8">
             {activeTab === "all" && (
               <>
                 {allGlossaryInfo.map((card, index) => (

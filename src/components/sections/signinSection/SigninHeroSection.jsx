@@ -14,7 +14,9 @@ const SigninHeroSection = () => {
           <div className="w-full md:w-1/2 space-y-4 md:space-y-2">
             <span className="relative">
               <img src={signin_text_bg} alt="" />
-              <span className="absolute top-2.5 left-10">Sign in</span>
+              <p className="absolute top-3 left-10 md:top-2.5 md:left-8 text-sm md:text-base flex space-x-1">
+                <span>Sign</span> <span>in</span>
+              </p>
             </span>
             <h2 className="text-4xl sm:text-5xl lg:text-[75px] lg:leading-[5rem] font-test-sohne-medium">
               Input your credentials
@@ -114,7 +116,7 @@ const SigninHeroSection = () => {
                     className="bg-Oasis text-sm md:text-base text-Ebony"
                     inital_arrow={initial_black_icon}
                     hover_arrow={hover_black_icon}
-                 />
+                  />
                 </div>
               </div>
             </div>
