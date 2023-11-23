@@ -67,5 +67,8 @@ module.exports = {
       "2xl": "1100px",
     },
   },
-  plugins: [require("tailwind-scrollbar-hide")],
+  plugins: [
+    require("tailwind-scrollbar-hide"),
+    "@babel/plugin-proposal-private-property-in-object",
+  ],
 };
