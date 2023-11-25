@@ -27,7 +27,7 @@ const ResourcesDropdown = () => {
                   className="flex flex-row items-center space-x-3"
                 >
                   <img src={img_5} alt="" />
-                  <span className="text-sm">Blog</span>
+                  <span className="text-sm">Blogs</span>
                 </Link>
               </div>
               <div className="border-b-[0.1px] border-b-Wisteria pb-3">

@@ -18,11 +18,11 @@ const CertificationAudit = () => {
     <div className="relative pb-8 md:pb-24 space-y-10">
       <div className="container mx-auto space-y-2 md:space-y-4">
         <h2 className="text-3xl lg:text-[56px] lg:leading-[4rem] font-test-sohne-medium max-w-5xl text-CharcoalGrey">
-          Certification Audit <br className="hidden xl:block" /> available on
-          paid request
+          Certification Audit <br className="hidden xl:block" /> Available on
+          Paid Request
         </h2>
         <p className="font-test-sohne-light max-w-xs">
-          Compare and check out what you might miss
+          Compare and explore potential oversights
         </p>
       </div>
       <div className="px-[1.5rem] md:px-0 w-full flex flex-col md:space-y-0 md:flex-row md:space-x-6 md:pl-16 xl:pl-24">
@@ -119,9 +119,9 @@ const CertificationAudit = () => {
                 </div>
               </div>
             </div>
-            <div className="h-full pr-1.5 bg-CaribbeanGreen rounded-b-3xl">
+            <div className="w-full h-full pr-1.5 bg-CaribbeanGreen rounded-b-3xl">
               <div
-                className={`h-full relative inline-flex items-center justify-center bg-purple-600 hover:bg-purple-700 rounded-tl-full rounded-bl-full focus:outline-none transition-all duration-300 ${
+                className={`w-full h-full relative inline-flex items-center justify-center bg-purple-600 hover:bg-purple-700 rounded-tl-full rounded-bl-full focus:outline-none transition-all duration-300 ${
                   isMenuOpen
                     ? "bg-white hover:bg-white"
                     : "rounded-tr-full rounded-br-full"
@@ -262,10 +262,10 @@ const CertificationAudit = () => {
                 </div>
               </div>
             </div>
-            <div className="h-full pr-1.5 bg-PaleViolet rounded-3xl">
+            <div className="wh-full pr-1.5 bg-PaleViolet rounded-3xl">
               {/* <p className="text-white text-2xl py-4 px-3">Popular choice</p> */}
               <div
-                className={`h-full relative inline-flex items-center justify-center bg-purple-600 hover:bg-purple-700 rounded-tl-full rounded-bl-full focus:outline-none transition-all duration-300 ${
+                className={`w-full h-full relative inline-flex items-center justify-center bg-purple-600 hover:bg-purple-700 rounded-tl-full rounded-bl-full focus:outline-none transition-all duration-300 ${
                   isMenuOpen_2
                     ? "bg-white hover:bg-white"
                     : "rounded-tr-full rounded-br-full"
@@ -409,9 +409,9 @@ const CertificationAudit = () => {
                 </div>
               </div>
             </div>
-            <div className="h-full pr-1.5 bg-CrystalBlue rounded-3xl">
+            <div className="w-full h-full pr-1.5 bg-CrystalBlue rounded-3xl">
               <div
-                className={`h-full relative inline-flex items-center justify-center bg-purple-600 hover:bg-purple-700 rounded-tl-full rounded-bl-full focus:outline-none transition-all duration-300 ${
+                className={`w-full h-full relative inline-flex items-center justify-center bg-purple-600 hover:bg-purple-700 rounded-tl-full rounded-bl-full focus:outline-none transition-all duration-300 ${
                   isMenuOpen_3
                     ? "bg-white hover:bg-white"
                     : "rounded-tr-full rounded-br-full"

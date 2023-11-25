@@ -55,8 +55,8 @@ const MobileSidebar = () => {
             <img src={smart_comply_logo} alt="" />
           </Link>
           <div className="pr-3 pt-10">
-            <div className="flex flex-col space-y-5 text-sm font-test-sohne-light">
-              <div className="border-b-[0.1px] border-b-black w-full pb-1">
+            <div className="flex flex-col space-y-5 text-sm font-test-sohne-light text-right">
+              <div className=" border-b-[0.1px] border-b-black w-full pb-1">
                 <Link to="/">Home</Link>
               </div>
               <div className="border-b-[0.1px] border-b-black w-full pb-3.5">
@@ -69,12 +69,9 @@ const MobileSidebar = () => {
                   }`}
                 >
                   <div
-                    className="flex items-center gap-1 cursor-pointer"
+                    className="flex items-center justify-end gap-1 cursor-pointer"
                     onClick={toggleFramework}
                   >
-                    <h2 className="text-sm font-test-sohne-light flex items-center">
-                      Framworks
-                    </h2>
                     <span
                       className={`pt-[0.5px] transition-all duration-500 ${
                         showFrameWork && "rotate-180"
@@ -88,6 +85,9 @@ const MobileSidebar = () => {
                         <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                       </svg>
                     </span>
+                    <h2 className="text-sm font-test-sohne-light flex items-center">
+                      Frameworks
+                    </h2>
                   </div>
 
                   <div
@@ -115,12 +115,9 @@ const MobileSidebar = () => {
                   }`}
                 >
                   <div
-                    className="flex items-center gap-1 cursor-pointer"
+                    className="flex items-center justify-end gap-1 cursor-pointer"
                     onClick={toggleResources}
                   >
-                    <h2 className="text-sm font-test-sohne-light flex items-center">
-                      Resources
-                    </h2>
                     <span
                       className={`pt-[0.5px] transition-all duration-500 ${
                         showResources && "rotate-180"
@@ -134,6 +131,9 @@ const MobileSidebar = () => {
                         <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                       </svg>
                     </span>
+                    <h2 className="text-sm font-test-sohne-light flex items-center">
+                      Resources
+                    </h2>
                   </div>
 
                   <div
@@ -154,7 +154,7 @@ const MobileSidebar = () => {
               <div className="border-b-[0.1px] border-b-black w-full pb-3.5">
                 <Link to="/about-us">About us</Link>
               </div>
-              <div>
+              <div className="flex justify-end">
                 <CustomLink
                   to="/auth/sign-up"
                   title="Get started"

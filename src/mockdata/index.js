@@ -17,7 +17,7 @@ export const allIntegrationInfo = [
   {
     logo: slack_logo,
     name: "slack",
-    category: "Employee management",
+    category: "Employee Management",
   },
   {
     logo: heroku_logo,
@@ -27,7 +27,7 @@ export const allIntegrationInfo = [
   {
     logo: rippling_logo,
     name: "rippling",
-    category: "Employee management",
+    category: "Employee Management",
   },
   {
     logo: google_cloud_logo,
@@ -52,7 +52,7 @@ export const allIntegrationInfo = [
   {
     logo: knowbe4_logo,
     name: "knowbe4",
-    category: "Privacy and Risk management",
+    category: "Privacy and Risk Management",
   },
   {
     logo: shortcut_logo,
@@ -62,12 +62,12 @@ export const allIntegrationInfo = [
   {
     logo: lacework_logo,
     name: "lacework",
-    category: "Privacy and Risk management",
+    category: "Privacy and Risk Management",
   },
   {
     logo: snyk_logo,
     name: "snyk",
-    category: "Privacy and Risk management",
+    category: "Privacy and Risk Management",
   },
   {
     logo: jira_logo,
@@ -82,7 +82,7 @@ export const allIntegrationInfo = [
   {
     logo: sage_logo,
     name: "sage",
-    category: "Employee management",
+    category: "Employee Management",
   },
 ];
 
@@ -90,17 +90,17 @@ export const employeeManagementIntegrationInfo = [
   {
     logo: slack_logo,
     name: "Slack",
-    category: "Employee management",
+    category: "Employee Management",
   },
   {
     logo: rippling_logo,
     name: "Slack",
-    category: "Employee management",
+    category: "Employee Management",
   },
   {
     logo: sage_logo,
     name: "Slack",
-    category: "Employee management",
+    category: "Employee Management",
   },
 ];
 
@@ -144,17 +144,17 @@ export const privacyAndRiskmanagementIntegrationInfo = [
   {
     logo: knowbe4_logo,
     name: "knowbe4",
-    category: "Privacy and Risk management",
+    category: "Privacy and Risk Management",
   },
   {
     logo: lacework_logo,
     name: "lacework",
-    category: "Privacy and Risk management",
+    category: "Privacy and Risk Management",
   },
   {
     logo: snyk_logo,
     name: "snyk",
-    category: "Privacy and Risk management",
+    category: "Privacy and Risk Management",
   },
 ];
 

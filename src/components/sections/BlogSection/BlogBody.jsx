@@ -3,6 +3,7 @@ import Tab from "../../controls/Tab";
 import BlogCard from "../../primitive/cards/BlogCard";
 import {
   allBlogInfo,
+  ai_BlogInfo,
   complianceBlogInfo,
   cybersecurityBlogInfo,
   productUpdatesBlogInfo,
@@ -11,6 +12,7 @@ import {
 
 const tabLists = [
   { tabName: "All", id: "all" },
+  { tabName: "AI", id: "ai" },
   { tabName: "Compliance", id: "compliance" },
   { tabName: "Cybersecurity", id: "cybersecurity" },
   { tabName: "Product Updates", id: "product_updates" },
@@ -37,6 +39,21 @@ const BlogBody = () => {
             {activeTab === "all" && (
               <>
                 {allBlogInfo.map((card, index) => (
+                  <BlogCard
+                    key={index}
+                    date_posted={card.date_posted}
+                    heading={card.heading}
+                    link={card.link}
+                    blog_post_image={card.blog_post_image}
+                    category={card.category}
+                    blog_title={card.blog_title}
+                  />
+                ))}
+              </>
+            )}
+            {activeTab === "ai" && (
+              <>
+                {ai_BlogInfo.map((card, index) => (
                   <BlogCard
                     key={index}
                     date_posted={card.date_posted}

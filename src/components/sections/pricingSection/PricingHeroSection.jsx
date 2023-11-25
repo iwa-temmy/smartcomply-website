@@ -11,7 +11,7 @@ const PricingHeroSection = () => {
               <span> Cost-Effective</span> <span>Pricing</span>
             </h2>
             <p className="font-test-sohne-light max-w-xs">
-              Bringing you the best thing.
+              Delivering the best value
             </p>
           </div>
           <div className="w-full md:w-1/2">

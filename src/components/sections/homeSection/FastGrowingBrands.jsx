@@ -18,9 +18,9 @@ const FastGrowingBrands = () => {
         <div className="flex flex-col space-y-8 md:space-y-0 md:flex-row">
           <div className="w-full md:w-1/2">
             <h4 className="text-3xl md:text-4xl max-w-sm font-test-sohne-medium">
-              Fast Growing brands that trusts us
+              Trusted by Rapidly Growing Brands
             </h4>
-            <p className="font-test-sohne-light">Because we are inevitable</p>
+            <p className="font-test-sohne-light">We're Inevitable!</p>
           </div>
           <div className="w-full md:w-1/2 space-y-3 md:space-y-4">
             <div className="flex flex-row items-center space-x-6">

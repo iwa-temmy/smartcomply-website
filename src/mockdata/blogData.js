@@ -7,20 +7,20 @@ import blog_img_5 from "../assets/images/blog_img_5.svg";
 export const allBlogInfo = [
   {
     blog_post_image: blog_img_1,
-    blog_title: "SmartComplyApp is Now Accessible in French!",
+    blog_title: "Smartcomply is Now Accessible in French!",
     category: "compliance",
     date_posted: "October 29, 2023",
     heading:
-      "We’re thrilled to announce that SmartComplyApp is now accessible in French language, making it even easier for French-speaking businesses to onboard the SmartComplyApp.",
+      "We’re thrilled to announce that Smartcomply is now accessible in French language, making it even easier for French-speaking businesses to onboard the Smartcomply.",
     link: "",
   },
   {
     blog_post_image: blog_img_2,
-    blog_title: "Partnership: 386konsult and SmartComplyApp",
+    blog_title: "Partnership: 386konsult and Smartcomply",
     category: "cybersecurity",
     date_posted: "October 26, 2023",
     heading:
-      "386konsult and SmartComplyApp Set to Revolutionise AI-Driven Compliance",
+      "386konsult and Smartcomply Set to Revolutionise AI-Driven Compliance",
     link: "",
   },
   {
@@ -57,11 +57,11 @@ export const allBlogInfo = [
 export const complianceBlogInfo = [
   {
     blog_post_image: blog_img_1,
-    blog_title: "SmartComplyApp is Now Accessible in French!",
+    blog_title: "Smartcomply is Now Accessible in French!",
     category: "compliance",
     date_posted: "October 29, 2023",
     heading:
-      "We’re thrilled to announce that SmartComplyApp is now accessible in French language, making it even easier for French-speaking businesses to onboard the SmartComplyApp.",
+      "We’re thrilled to announce that Smartcomply is now accessible in French language, making it even easier for French-speaking businesses to onboard the Smartcomply.",
     link: "",
   },
   {
@@ -76,14 +76,26 @@ export const complianceBlogInfo = [
   },
 ];
 
+export const ai_BlogInfo = [
+  {
+    blog_post_image: blog_img_1,
+    blog_title: "Smartcomply is Now Accessible in French!",
+    category: "ai",
+    date_posted: "October 29, 2023",
+    heading:
+      "We’re thrilled to announce that Smartcomply is now accessible in French language, making it even easier for French-speaking businesses to onboard the Smartcomply.",
+    link: "",
+  },
+];
+
 export const cybersecurityBlogInfo = [
   {
     blog_post_image: blog_img_2,
-    blog_title: "Partnership: 386konsult and SmartComplyApp",
+    blog_title: "Partnership: 386konsult and Smartcomply",
     category: "cybersecurity",
     date_posted: "October 26, 2023",
     heading:
-      "386konsult and SmartComplyApp Set to Revolutionise AI-Driven Compliance",
+      "386konsult and Smartcomply Set to Revolutionise AI-Driven Compliance",
     link: "",
   },
 ];

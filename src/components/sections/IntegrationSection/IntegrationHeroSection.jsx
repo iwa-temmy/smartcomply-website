@@ -11,7 +11,7 @@ const IntegrationHeroSection = () => {
               Integrations
             </h2>
             <p className="font-test-sohne-light max-w-xs">
-              Connect your infrastructures & applications forcontinuous
+              Connect your infrastructures & applications for continuous
               monitoring
             </p>
           </div>

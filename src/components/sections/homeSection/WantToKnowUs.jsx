@@ -5,16 +5,16 @@ import image_s_2 from "../../../assets/images/image_s_2.png";
 
 const WantToKnowUs = () => {
   const tabLists = [
-    { tabName: "What is SmartComplyApp", border_color: "border-b-AztecPurple" },
+    { tabName: "What is Smartcomply", border_color: "border-b-AztecPurple" },
     { tabName: "How it works", border_color: "border-b-SunsetOrange" },
-    { tabName: "Why smartcomplyApp", border_color: "border-b-Chardonnay" },
+    { tabName: "Why Smartcomply", border_color: "border-b-Chardonnay" },
   ];
   return (
     <div className="container mx-auto pb-72 md:pb-44">
       <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-16">
         <div className="w-full md:w-3/12">
           <h3 className="flex flex-col text-3xl lg:text-[56px] lg:leading-[4rem] font-test-sohne-medium">
-            <span>Want to</span>
+            <span>Get to</span>
             <span> Know Us?</span>
           </h3>
           <div>

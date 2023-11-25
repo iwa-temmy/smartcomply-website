@@ -42,7 +42,7 @@ const FeatureHeroSectionAnimationImg = () => {
           <div className="w-full px-1 py-1 flex items-center space-x-2">
             <span className="w-3 md:w-4 h-3 md:h-4 rounded-full bg-BlueChalk"></span>
             <span className="text-CharcoalGrey text-[8px] md:text-base">
-              ISO27001
+              ISO-27001
             </span>
           </div>
           <div className="bg-BlueChalk flex flex-col items-center space-y-6 py-12 rounded-lg md:w-56 md:h-60">
@@ -67,9 +67,9 @@ const FeatureHeroSectionAnimationImg = () => {
       >
         <div className="bg-white px-1.5 md:px-3 py-2 md:py-4 space-y-3 rounded-2xl shadow-2xl shadow-white">
           <div className="w-full px-1 py-1 flex items-center space-x-2">
-            <span className="w-3 md:w-4 h-3 md:h-4 rounded-full bg-BlueChalk"></span>
+            <span className="w-3 md:w-4 h-3 md:h-4 rounded-full bg-PastelPink"></span>
             <span className="text-CharcoalGrey text-[8px] md:text-base">
-              ISO27001
+              NDPR
             </span>
           </div>
           <div className="bg-PastelPink flex flex-col items-center space-y-6 py-12 rounded-lg md:w-56 md:h-60">
@@ -94,9 +94,9 @@ const FeatureHeroSectionAnimationImg = () => {
       >
         <div className="bg-white px-1.5 md:px-3 py-2 md:py-4 space-y-3 rounded-2xl shadow-2xl shadow-white">
           <div className="w-full px-1 py-1 flex items-center space-x-2">
-            <span className="w-3 md:w-4 h-3 md:h-4 rounded-full bg-BlueChalk"></span>
+            <span className="w-3 md:w-4 h-3 md:h-4 rounded-full bg-Oasis"></span>
             <span className="text-CharcoalGrey text-[8px] md:text-base">
-              ISO27001
+              PCIDSS
             </span>
           </div>
           <div className="bg-Oasis flex flex-col items-center space-y-6 py-12 rounded-lg md:w-56 md:h-60">

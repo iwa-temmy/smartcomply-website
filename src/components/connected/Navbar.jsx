@@ -2,7 +2,7 @@ import React from "react";
 import smart_comply_logo from "../../assets/icons/smart-comply-logo.svg";
 import { Link } from "react-router-dom";
 import CustomLink from "../primitive/CustomLink";
-import FramworkDropdown from "../primitive/dropdown/FramworkDropdown";
+import FrameworkDropdown from "../primitive/dropdown/FrameworkDropdown";
 import initial_white_icon from "../../assets/icons/inital_white_arrow.svg";
 import hover_white_icon from "../../assets/icons/hover_white_arrow.svg";
 import ResourcesDropdown from "../primitive/dropdown/ResourcesDropdown";
@@ -33,7 +33,7 @@ const Navbar = () => {
           <div className="hidden xl:flex flex-row items-center space-x-6 text-base">
             <Link to="/">Home</Link>
             <Link to="/features">Features</Link>
-            <FramworkDropdown />
+            <FrameworkDropdown />
             <Link to="/pricing">Pricing</Link>
             <ResourcesDropdown />
             <Link to="/about-us">About us</Link>

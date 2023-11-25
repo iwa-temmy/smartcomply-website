@@ -1,5 +1,4 @@
 import React from "react";
-import search_icon from "../../../assets/icons/search_icon.svg";
 
 const BlogHeroSection = () => {
   return (
@@ -7,7 +6,7 @@ const BlogHeroSection = () => {
       <div className="container mx-auto py-5 md:py-10 mb-6 space-y-12">
         <div className="w-full space-y-4">
           <p className="font-test-sohne-light max-w-xs">
-            smartComply Newsletter
+            smartcomply Newsletter
           </p>
           <h2 className="flex flex-col text-4xl sm:text-5xl lg:text-[75px] lg:leading-[5rem] font-test-sohne-medium">
             <span> Get latest news about</span>{" "}
@@ -22,9 +21,9 @@ const BlogHeroSection = () => {
                 name=""
                 id=""
                 class="w-full bg-transparent focus:outline-0 px-3 text-lg placeholder:text-Nobel"
-                placeholder="Email enter"
+                placeholder="Enter Email"
               />
-              <img src={search_icon} className="cursor-pointer" alt="" />
+              <span className="text-3xl">&#x2192;</span>
             </div>
           </div>
           <p>

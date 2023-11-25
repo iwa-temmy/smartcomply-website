@@ -26,7 +26,7 @@ const EasyQuickAndEfficient = () => {
               </div>
               <div className="space-y-2 md:space-y-3 lg:border-l lg:border-l-Seashell lg:pl-8 lg:pt-52 lg:pb-8">
                 <h4 className="max-w-[16rem] text-SunsetOrange font-test-sohne-medium text-base md:text-xl text-opacity-60">
-                  Automated Scan
+                  Penetration Test
                 </h4>
                 <p className="max-w-[16rem] text-sm md:text-[15px] text-CharcoalGrey">
                   With qualified testers, run penetration test quickly and with
@@ -35,7 +35,7 @@ const EasyQuickAndEfficient = () => {
               </div>
               <div className="space-y-2 md:space-y-3 lg:border-l lg:border-l-Seashell lg:pl-8 lg:pt-52 lg:pb-8">
                 <h4 className="max-w-[16rem] text-SunsetOrange font-test-sohne-medium text-base md:text-xl text-opacity-60">
-                  Automated Scan
+                  Risk Management
                 </h4>
                 <p className="max-w-[16rem] text-sm md:text-[15px] text-CharcoalGrey">
                   Simplify annual risk assessment for your business with
@@ -92,7 +92,7 @@ const EasyQuickAndEfficient = () => {
                   PCI Scans
                 </h4>
                 <p className="max-w-[16rem] text-sm md:text-[15px] text-CharcoalGrey">
-                  Don't risk a data breach, get your PCI scan today!
+                Automate your PCI Scans to eliminate the risk of a data breach!
                 </p>
               </div>
               <div className="space-y-2 md:space-y-3 lg:border-l lg:border-l-Seashell lg:pl-8 lg:py-8">
@@ -100,7 +100,7 @@ const EasyQuickAndEfficient = () => {
                   Asset Inventory
                 </h4>
                 <p className="max-w-[16rem] text-sm md:text-[15px] text-CharcoalGrey">
-                  Protect valuable assets awhile ensuring compliance with
+                  Protect valuable assets while ensuring compliance with
                   industry standards.
                 </p>
               </div>

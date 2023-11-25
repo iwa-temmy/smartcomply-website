@@ -9,6 +9,8 @@ import arr_3 from "../../../assets/icons/arr_3.svg";
 const HomeHeroSectionAnimationImg = () => {
   const [isScaled, setIsScaled] = useState(true);
   const [isSecondScaled, setIsSecondScaled] = useState(true);
+  const [isThirdScaled, setIsThirdScaled] = useState(true);
+  const [isForthScaled, setIsForthScaled] = useState(true);
   const [isRotate, setIsRotate] = useState(true);
   const [isTranslate, setIsTranslate] = useState(true);
 
@@ -19,6 +21,14 @@ const HomeHeroSectionAnimationImg = () => {
 
     const secondIntervalId = setInterval(() => {
       setIsSecondScaled((prev) => !prev);
+    }, 3000);
+
+    const thirdIntervalId = setInterval(() => {
+      setIsThirdScaled((prev) => !prev);
+    }, 3000);
+
+    const fourthIntervalId = setInterval(() => {
+      setIsForthScaled((prev) => !prev);
     }, 3000);
 
     const isRotate = setInterval(() => {
@@ -32,6 +42,8 @@ const HomeHeroSectionAnimationImg = () => {
     return () => {
       clearInterval(intervalId);
       clearInterval(secondIntervalId);
+      clearInterval(thirdIntervalId);
+      clearInterval(fourthIntervalId);
       clearInterval(isRotate);
       clearInterval(isTranslateId);
     };
@@ -39,11 +51,14 @@ const HomeHeroSectionAnimationImg = () => {
 
   const scaleClass = isScaled ? "scale-50" : "scale-100";
   const secondScaleClass = isSecondScaled ? "scale-150" : "scale-125";
+  const thirdScaleClass = isThirdScaled ? "scale-110" : "scale-90";
+  const fouthScaleClass = isForthScaled ? "scale-100" : "scale-125";
   const rotateClass = isRotate ? "rotate-45" : "rotate-0";
-  const translateClass = isTranslate ? "-translate-x-4" : "translate-x-4";
+  // const translateClass = isTranslate ? "-translate-x-4" : "translate-x-4";
+  const translateClass = isTranslate ? "0" : "rotate-12";
 
   return (
-    <div className="relative">
+    <div className="relative scale-75 md:scale-100 -mr-16 md:-mr-0">
       <div className="relative">
         <div className="absolute -top-2 -right-2 md:-right-9">
           <div className="bg-white flex flex-col items-center justify-center rounded-3xl px-5 py-6 space-y-2 w-36 scale-75 z-40">
@@ -86,8 +101,10 @@ const HomeHeroSectionAnimationImg = () => {
         </div>
 
         <div className="w-[300px] h-[400px] lg:w-[450px] lg:h-[500px] rounded-xl border-2 border-white bg-white/[.2] backdrop-blur-[4px] relative z-30">
-          <div className="absolute bottom-32 -left-20 z-30 fadeInClass">
-            <div className="bg-white flex flex-col items-center justify-center rounded-3xl px-4 pt-3 pb-5 w-32 scale-125 transition-all duration-1000">
+          <div className="absolute bottom-32 -left-20 z-30 ">
+            <div
+              className={`bg-white flex flex-col items-center justify-center rounded-3xl px-4 pt-3 pb-5 w-32 transition-all transition_duration ${fouthScaleClass}`}
+            >
               <img src={jira_logo} className="w-16" alt="" />
               <h3 className="text-[5px] lg:text-[8px] text-DeepSapphire font-test-sohne-medium">
                 Jira cloud
@@ -103,25 +120,11 @@ const HomeHeroSectionAnimationImg = () => {
               </div>
             </div>
           </div>
-          <div className="absolute bottom-32 -left-16 z-20">
-            <div className="bg-white flex flex-col items-center justify-center rounded-3xl px-4 pt-3 pb-5 w-32 scale-100 transition-all duration-1000">
-              <img src={jira_logo} className="w-16" alt="" />
-              <h3 className="text-[5px] lg:text-[8px] text-DeepSapphire font-test-sohne-medium">
-                Jira cloud
-              </h3>
-
-              <div className="flex flex-col items-center justify-center space-y-2.5">
-                <p className="text-[5px]">
-                  Connect to Snyke to automate document collection.
-                </p>
-                <button className="w-full rounded-sm py-2 bg-Iron text-DeepSapphire text-[6px] lg:text-[10px]">
-                  Connect
-                </button>
-              </div>
-            </div>
-          </div>{" "}
-          <div className="absolute bottom-5 right-12">
-            <div className="bg-white flex flex-col items-center justify-center rounded-3xl px-4 py-6 space-y-2 w-36 scale-100 transition-all duration-1000 z-40">
+          <div className="absolute bottom-32 -left-16 z-20"></div>{" "}
+          <div className="hidden md:block absolute bottom-5 right-12">
+            <div
+              className={`bg-white flex flex-col items-center justify-center rounded-3xl px-4 pt-3 space-y-1 pb-5 w-32 transition-all transition_duration ${fouthScaleClass}`}
+            >
               <img src={snyk_logo} className="w-16" alt="" />
               <h3 className="text-[5px] lg:text-[8px] text-DeepSapphire font-test-sohne-medium">
                 Snyk
@@ -136,15 +139,19 @@ const HomeHeroSectionAnimationImg = () => {
               </button>
             </div>
           </div>
-          <div className="absolute bottom-10 left-2">
+          <div className="absolute bottom-5 left-5">
             <img
               src={arr_3}
-              className={`${translateClass} transition-all transition_duration`}
+              className={`${rotateClass} transition-all transition_duration`}
               alt=""
             />
           </div>
           <div className="absolute bottom-32 left-16">
-            <img src={arr_2} alt="" />
+            <img
+              src={arr_2}
+              className={`${translateClass} transition-all transition_duration`}
+              alt=""
+            />
           </div>
           <div className="absolute bottom-32 -right-2">
             <img
@@ -178,25 +185,11 @@ const HomeHeroSectionAnimationImg = () => {
               </div>
             </div>
           </div>
-          <div className="absolute bottom-4 left-24 z-20 ">
-            <div className="bg-white flex flex-col items-center justify-center rounded-3xl p-4 space-y-1 w-32 scale-100 transition-all duration-1000">
-              <img src={google_cloud_logo} className="w-16" alt="" />
-              <h3 className="text-[7px] text-DeepSapphire font-test-sohne-medium">
-                Google cloud
-              </h3>
-              <div className="flex items-center space-x-2">
-                <p className="text-[6px]">
-                  Connect to Snyke to automate document collection.
-                </p>
-              </div>
-              <button className="w-full rounded-sm py-1 border border-Iron text-DeepSapphire text-[6px] lg:text-[10px]">
-                Connect
-              </button>
-              <p className="text-[6px]">Disconnect</p>
-            </div>
-          </div>
-          <div className="absolute -bottom-1 left-20 z-30 fadeInClass">
-            <div className="bg-white flex flex-col items-center justify-center rounded-3xl p-4 space-y-1 w-32 scale-125 transition-all duration-1000">
+          <div className="absolute bottom-4 left-24 z-20 "></div>
+          <div className="absolute -bottom-1 left-20 z-30">
+            <div
+              className={`bg-white flex flex-col items-center justify-center rounded-3xl p-4 space-y-1 w-32 scale-125 transition-all transition_duration ${thirdScaleClass}`}
+            >
               <img src={google_cloud_logo} className="w-16" alt="" />
               <h3 className="text-[7px] text-DeepSapphire font-test-sohne-medium">
                 Google cloud

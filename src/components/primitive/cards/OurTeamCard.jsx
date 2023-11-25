@@ -17,7 +17,7 @@ const OurTeamCard = ({
           {image === "" ? (
             <span className="w-full h-full bg-red-200"></span>
           ) : (
-            <img src={image} className="w-full h-full object-cover" alt="" />
+            <img src={image} className="w-full h-full object-cover rounded-3xl" alt="" />
           )}
         </div>
         <div className="w-full bg-BlueChalk rounded-b-3xl px-6 py-4 space-y-3">

@@ -2,16 +2,6 @@ import React from "react";
 import CustomLink from "../../primitive/CustomLink";
 import BookDemoIconsTransition from "./BookDemoIconsTransition";
 import HomeHeroSectionAnimationImg from "./HomeHeroSectionAnimationImg";
-// import pennyTreeLogo from "../../../assets/logos/pennyTreeLogo.svg";
-// import smile_identify from "../../../assets/logos/smile_identify.svg";
-// import simplifyLogo from "../../../assets/logos/simplifyLogo.svg";
-// import crus_logo from "../../../assets/logos/crus_logo.svg";
-// import swiftendLogo from "../../../assets/logos/swiftendLogo.svg";
-// import veend_logo from "../../../assets/logos/veend_logo.svg";
-// import swifcard_logo from "../../../assets/logos/swifcard_logo.svg";
-// import three_LineLogo from "../../../assets/logos/three_LineLogo.svg";
-// import appZoneLogo from "../../../assets/logos/appZoneLogo.svg";
-// import blackcopper_logo from "../../../assets/logos/blackcopper_logo.svg";
 import initial_white_icon from "../../../assets/icons/inital_white_arrow.svg";
 import hover_white_icon from "../../../assets/icons/hover_white_arrow.svg";
 
@@ -24,10 +14,11 @@ const HomeHeroSection = () => {
             Embrace Automation and AI for Seamless Compliance!
           </h2>
           <p>
-            An automated and AI-powered compliance platform, SmartcomplyApp
-            provides the most in-demand standards, risk assessment and
-            monitoring, and privacy frameworks in the business, allowing you to
-            gain your customers' trust and grow your business safely.
+            Smartcomply, an automated and AI-powered compliance platform, offers
+            the most sought-after compliance standards, risk assessment and
+            monitoring, as well as privacy and cybersecurity frameworks for
+            businesses. This empowers businesses to build trust with their
+            customers and foster secure business growth.
           </p>
           <div className="w-full flex items-center space-x-10 md:space-x-4 ">
             <CustomLink

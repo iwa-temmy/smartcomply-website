@@ -64,7 +64,7 @@ const LanguageSwitcher = () => {
           isFrenchActive ? "opacity-100" : "opacity-20"
         }`}
       >
-        Fren
+        Eng
       </span>
       <div className="toggle-switch" onClick={toggleLanguage}>
         <div className={`switch-state ${isFrenchActive ? "chart" : ""}`}>
@@ -79,7 +79,7 @@ const LanguageSwitcher = () => {
           !isFrenchActive ? "opacity-100" : "opacity-20"
         }`}
       >
-        Eng
+        Fren
       </span>
     </div>
   );

@@ -7,17 +7,17 @@ const Slide = () => {
     {
       id: 1,
       content:
-        "Make smart and cost-effective decisions on compliance by simplifying and automating your compliance process with SmartComplyApp",
+        "Make smart and cost-effective decisions on compliance by simplifying and automating your compliance process with Smartcomply.",
     },
     {
       id: 2,
       content:
-        "Make it smart and cost-effective decisions on compliance by simplifying and automating your compliance process with SmartComplyApp",
+        "Your all-in-one compliance solution suite helps you consolidate your compliance process end-to-end at a very affordable rate with monthly spaced payment.",
     },
     {
       id: 3,
       content:
-        "Make that smart and cost-effective decisions on compliance by simplifying and automating your compliance process with SmartComplyApp",
+        "Integrate all your technology stack into Smartcomply and allow the platform to continuously monitor your infrastructure and collect evidence for compliance.",
     },
   ];
 

@@ -20,11 +20,12 @@ const ISO27001Body = () => {
                   <span>Document</span> <span>Preparation Tools</span>
                 </h3>
                 <p className="text-Boulder text-sm md:text-[15px] font-test-sohne-light">
-                  Smartcomplyapp encompasses all of the document templates
-                  required for your compliance activity. You can use our
-                  automated feature to generate baseline policies and
-                  documentation for governance, security, risk, incident,
-                  system, and change management.
+                  Smartcomply encompasses document templates required for
+                  businesses’ cybersecurity and compliance activity. You can use
+                  the Smartcomply automated feature to generate baseline
+                  policies and documentation for governance, cybersecurity, risk
+                  management, incident report, system management, and change
+                  management.
                 </p>
               </div>
             </div>
@@ -36,17 +37,17 @@ const ISO27001Body = () => {
               />
               <div className="space-y-4 md:space-y-8 relative -top-10">
                 <h3 className="text-2xl md:text-4xl font-test-sohne-medium flex flex-col">
-                  <span>Automate your Risk</span> <span>assessment</span>
+                  <span>Automated Risk</span> <span>assessment</span>
                 </h3>
                 <p className="text-Boulder text-sm md:text-[15px] font-test-sohne-light">
-                  Risk assessment is an important component of ISO 270001
-                  because the standard requires an organization to establish and
-                  maintain information security risk assessment processes that
-                  include risk acceptance and assessment criteria.
-                  Smartcomplyapp offers comprehensive risk assessment
-                  capabilities, and the results can be used to identify gaps,
-                  improve security posture, and easily communicate the
-                  importance of the certification audit across the organization.
+                  Risk assessment constitutes a vital element of ISO 27001, as
+                  the standard mandates organisations to institute and uphold
+                  information security risk assessment processes, encompassing
+                  criteria for both risk acceptance and assessment. Smartcomply
+                  provides extensive capabilities for risk assessment, enabling
+                  organisations to pinpoint gaps, enhance their security
+                  posture, and effortlessly convey the significance of the
+                  certification audit throughout the entire organisation.
                 </p>
               </div>
             </div>
@@ -61,11 +62,12 @@ const ISO27001Body = () => {
               Status Updates and Analytics
             </h2>
             <p className="text-sm md:text-base font-test-sohne-light max-w-md">
-              Our dashboard can provide valuable insight into your current
-              security posture. Management can use these findings to make
-              consistent decisions to drive business objectives and track
-              control activities, risks, compliance requirements, and related
-              documentation to support audits and monitoring.
+              Smartcomply dashboard offers valuable insights into your present
+              security posture. These findings empower management to make
+              informed decisions that align with business objectives. The
+              dashboard facilitates tracking of control activities, risk
+              management, compliance requirements, and associated documentation
+              supporting the audit process and ongoing monitoring efforts.
             </p>
           </div>
           <div className="lg:absolute lg:-top-12 lg:right-0">

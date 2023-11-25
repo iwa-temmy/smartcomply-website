@@ -6,12 +6,12 @@ import img_3 from "../../../assets/icons/SOC2__.svg";
 import img_4 from "../../../assets/icons/NDPR__.svg";
 import img_5 from "../../../assets/icons/integration__.svg";
 
-const FramworkDropdown = () => {
+const FrameworkDropdown = () => {
   return (
     <div className="relative z-40">
       <div className="group inline-block">
         <button className="outline-none focus:outline-none flex items-center">
-          <span>Framworks</span>
+          <span>Frameworks</span>
           <span className="pt-1">
             <svg
               className="fill-current h-4 w-4 transform group-hover:-rotate-180 transition duration-150 ease-in-out"
@@ -25,23 +25,29 @@ const FramworkDropdown = () => {
         <div className="">
           <ul className="pt-4 transform scale-0 group-hover:scale-100 absolute transition duration-150 space-y-2 py-3 ease-in-out origin-top xl:w-fit px-4">
             <div className="rounded-lg px-4 py-6 space-y-3 bg-white z-40">
-              <div className="flex items-center space-x-5 border-b-[0.1px] border-b-Wisteria pb-3">
+              <div className="flex items-center justify-center space-x-5 border-b-[0.1px] border-b-Wisteria pb-3">
                 <Link
                   to="/frameworks/iso27001"
-                  className="flex flex-col items-center space-y-2"
+                  className="flex flex-col items-center space-y-1"
                 >
                   <img src={img_1} alt="" />
-                  <span className="text-sm">ISO27001</span>
+                  <span className="text-sm flex items-center space-x-1">
+                    <span>ISO </span>
+                    <span> 27001</span>
+                  </span>
                 </Link>
                 <Link
                   to="/frameworks/pcidss"
-                  className="flex flex-col items-center space-y-2"
+                  className="flex flex-col items-center space-y-1"
                 >
                   <img src={img_2} alt="" />
-                  <span className="text-sm">PCIDSS</span>
+                  <span className="text-sm flex items-center space-x-1">
+                    <span>PCI </span>
+                    <span> DSS</span>
+                  </span>
                 </Link>
               </div>
-              <div className="flex items-center space-x-5 border-b-[0.1px] border-b-Wisteria pb-3">
+              <div className="flex items-center justify-center space-x-5 border-b-[0.1px] border-b-Wisteria pb-3">
                 <Link
                   to="/frameworks/soc2"
                   className="flex flex-col items-center space-y-2"
@@ -74,4 +80,4 @@ const FramworkDropdown = () => {
   );
 };
 
-export default FramworkDropdown;
+export default FrameworkDropdown;

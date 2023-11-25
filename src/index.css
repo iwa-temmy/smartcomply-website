@@ -48,36 +48,6 @@
   src: url(./assets/fonts/test-sohne/test-sohne-Halbfett.otf);
 }
 
-/* @font-face {
-  font-family: "test-sohne-regular";
-  src: url(./assets/fonts/test-sohne/TestSöhne-Buch.otf);
-}
-
-@font-face {
-  font-family: "test-sohne-medium";
-  src: url(./assets/fonts/test-sohne/TestSöhne-Kräftig.otf);
-}
-
-@font-face {
-  font-family: "test-sohne-light";
-  src: url(./assets/fonts/test-sohne/TestSöhne-Leicht.otf);
-}
-
-@font-face {
-  font-family: "test-sohne-extralight";
-  src: url(./assets/fonts/test-sohne/TestSöhne-Extraleicht.otf);
-}
-
-@font-face {
-  font-family: "test-sohne-bold";
-  src: url(./assets/fonts/test-sohne/TestSöhne-Fett.otf);
-}
-
-@font-face {
-  font-family: "test-sohne-semibold";
-  src: url(./assets/fonts/test-sohne/TestSöhne-Halbfett.otf);
-} */
-
 body {
   font-family: "test-sohne-regular";
 }
@@ -267,14 +237,7 @@ body {
   background: url("./assets/images/pricing_hero_section_line.svg") no-repeat
     left 0% top 80%;
   background-size: contain;
-  /* background-position: center; */
 }
-/* .iso27001_hero_bg_line {
-  background: url("./assets/images/iso27001_hero_bg_line.svg") no-repeat left 0%
-    top 80%;
-  background-size: contain;
-  background-position: center;
-} */
 
 @keyframes fadeIn {
   0% {
@@ -293,7 +256,7 @@ body {
 
 .fadeInClass {
   animation-name: fadeIn;
-  animation-duration: 4s;
+  animation-duration: 10s;
   /* animation-delay: 2s; */
   animation-iteration-count: infinite;
   animation-direction: alternate;

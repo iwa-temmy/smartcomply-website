@@ -30,7 +30,7 @@ const GetInTouch = () => {
         <div className="flex items-center space-x-3">
           <CustomLink
             to=""
-            title="Give us a message"
+            title="Contact Us"
             className="bg-PaleViolet text-sm md:text-base text-Ebony"
             inital_arrow={initial_black_icon}
             hover_arrow={hover_black_icon}

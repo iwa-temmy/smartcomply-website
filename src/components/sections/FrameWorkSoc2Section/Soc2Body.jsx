@@ -20,7 +20,7 @@ const Soc2Body = () => {
                   <span>Achieve </span> <span>Compliance Faster</span>
                 </h3>
                 <p className="text-Boulder text-sm md:text-[15px] font-test-sohne-light">
-                  Smartcomplyapp accelerates your SOC 2 compliance by providing
+                  Smartcomply accelerates your SOC 2 compliance by providing
                   a platform for easy onboarding and smart questionnaires that
                   get you started in minutes and manage your data collection for
                   you. Designed with an automated documentation and evidence
@@ -40,11 +40,11 @@ const Soc2Body = () => {
                   <span>Smart Control </span> <span>Mapping</span>
                 </h3>
                 <p className="text-Boulder text-sm md:text-[15px] font-test-sohne-light">
-                  Use Smartcomplyapp preloaded frameworks to provide all of the
-                  SOC 2 controls list, eliminating the notion of missing any
-                  applicable controls for your organization. Smartcomplyapp
-                  applies compliance controls to your systems, endpoints, and
-                  processes in an efficient and effective way.
+                  Smartcomply preloaded frameworks provides all SOC2 controls
+                  list, eliminating the notion of missing any applicable
+                  controls for businesses. Smartcomply applies compliance
+                  controls to organisation’s systems, endpoints, and processes
+                  in an efficient and effective way.
                 </p>
               </div>
             </div>
@@ -59,17 +59,18 @@ const Soc2Body = () => {
               Effective Risk Management
             </h2>
             <p className="text-sm md:text-base font-test-sohne-light max-w-md">
-              Smartcomplyapp provides you with an automated risk register to
-              help you simplify annual risk assessments for your organization.
-              The automated risk register combines efforts to track your assets,
-              identify applicable threats & relevant vulnerabilities, and map
-              mitigating controls. When it comes time for your annual SOC 2
-              audit, Smartcomplyapp ensures a smooth audit process by
-              eliminating the stress of using manual spreadsheets.
+              Smartcomply provides businesses with an automated risk register to
+              help simplify annual risk assessments. The automated risk register
+              combines efforts to track business's assets, identify applicable
+              threats & relevant vulnerabilities, and map mitigating controls.
             </p>
           </div>
           <div className="w-full md:w-1/2 py-2 md:py-4 relative lg:-bottom-16">
-            <img src={effective_risk_management} className="bg-white px-10 pt-6 rounded-2xl" alt="" />
+            <img
+              src={effective_risk_management}
+              className="bg-white px-10 pt-6 rounded-2xl"
+              alt=""
+            />
           </div>
         </div>
       </div>

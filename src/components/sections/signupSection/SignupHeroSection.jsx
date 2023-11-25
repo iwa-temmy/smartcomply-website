@@ -1,5 +1,6 @@
 import React from "react";
 import create_account_text_bg from "../../../assets/icons/create_account_text_bg.svg";
+import signup_img from "../../../assets/images/signup_img.svg";
 import CustomLink from "../../primitive/CustomLink";
 import Slide from "./Slide";
 import initial_black_icon from "../../../assets/icons/inital_black_arrow.svg";
@@ -10,14 +11,17 @@ const SignupHeroSection = () => {
     <div className="py-5 md:py-10">
       <div className="container mx-auto flex flex-col space-y-8 md:space-y-0 md:flex-row">
         <div className="w-full md:w-1/2 space-y-4 md:space-y-6">
-          <span className="relative">
+          <span className="relative hidden md:block">
             <img src={create_account_text_bg} alt="" />
-            <p className="absolute top-2.5 left-8 md:top-2.5 md:left-8 text-sm md:text-base flex space-x-1">
+            <p className="absolute top-2.5 left-8 md:top-2.5 md:left-8 text-sm md:text-base flex space-x-1 text-CharcoalGrey">
               <span>Create</span> <span>account</span>
             </p>
           </span>
+          <div className="md:hidden">
+            <img src={signup_img} alt="" />
+          </div>
           <h2 className="text-4xl sm:text-5xl lg:text-[75px] lg:leading-[5rem] font-test-sohne-medium">
-            Provide credentials to create your account
+            Provide your credentials to create an account
           </h2>
           <Slide />
         </div>

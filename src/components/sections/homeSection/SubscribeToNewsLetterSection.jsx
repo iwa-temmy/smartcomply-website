@@ -9,11 +9,12 @@ const SubscribeToNewsLetterSection = () => {
       <div className="flex flex-col items-center space-y-4 md:space-y-0 md:flex-row">
         <div className="w-full md:w-[40%]">
           <h3 className="flex flex-col text-3xl lg:text-[56px] lg:leading-[4rem] font-test-sohne-medium">
-            <span>Subscribe to </span>
-            <span>our Newsletter</span>
+            <span>Be in the</span>
+            <span>Loop!</span>
           </h3>
-          <p className="text-sm md:text-base text-CharcoalGrey">
-            Get latest news about security and compliance
+          <p className="text-sm md:text-base text-CharcoalGrey md:max-w-sm">
+            Read the Latest News About Smartcomply, AI, Automation,
+            Cybersecurity and Compliance.
           </p>
         </div>
         <div className="w-full md:w-[60%]">

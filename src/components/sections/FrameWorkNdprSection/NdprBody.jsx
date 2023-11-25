@@ -15,9 +15,9 @@ const NdprBody = () => {
                 Flexible Integration
               </h2>
               <p className="text-Boulder text-sm md:text-[15px] md:leading-6 font-test-sohne-light md:max-w-xs">
-                With easy options for producing audit logs, the Smartcomplyapp
-                automation tool allows you to integrate with any other system or
-                application that touches your data.
+                Smartcomply automation tool allows businesses to integrate with
+                any other system or application that touches the business’s data
+                with easy options for producing audit logs.
               </p>
             </div>
           </div>

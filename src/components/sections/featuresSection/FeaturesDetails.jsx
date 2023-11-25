@@ -21,22 +21,24 @@ const FeaturesDetails = () => {
                 Dedicated Support
               </h3>
               <p className="text-Boulder text-base md:text-xl">
-                You don't need to be an expert user to use the platform.
+                Businesses don't need to be expert users to use SmartComply.
               </p>
               <div className="space-y-3">
                 <div className="flex flex-row items-start space-x-3">
                   <img src={checked_icon} className="" alt="" />
                   <p className="text-CharcoalGrey font-test-sohne-light xl:max-w-4xl">
                     While gathering audit questions and evidence can be
-                    laborious, with help, it becomes simpler and quicker.
+                    laborious, with Smartcomply help, it becomes simpler and
+                    quicker.
                   </p>
                 </div>
                 <hr className="border-t border-AshGrey" />
                 <div className="flex flex-row items-start space-x-3">
                   <img src={checked_icon} className="" alt="" />
                   <p className="text-CharcoalGrey font-test-sohne-light xl:max-w-4xl">
-                    While gathering audit questions and evidence can be
-                    laborious, with help, it becomes simpler and quicker.
+                    If your business is new to the Smartcomply platform, our
+                    dedicated support team is here to expedite your onboarding
+                    process and ensure a smooth beginning.
                   </p>
                 </div>
               </div>
@@ -56,14 +58,16 @@ const FeaturesDetails = () => {
               </h3>
               <p className="text-Boulder text-base md:text-xl xl:max-w-sm">
                 Get assisted with server data that will be essential to your
-                compliance process
+                compliance process.
               </p>
               <div className="space-y-3">
                 <div className="flex flex-row items-start space-x-3">
                   <img src={checked_icon} className="" alt="" />
                   <p className="text-CharcoalGrey font-test-sohne-light xl:max-w-4xl">
-                    You can use this service to verify the open ports and active
-                    services on your servers.
+                    If your business needs help verifying that only the correct
+                    ports are open and ensuring business security, Smartcomply
+                    solution empowers you to achieve this in just a matter of
+                    minutes.
                   </p>
                 </div>
                 <hr className="border-t border-AshGrey" />
@@ -116,10 +120,10 @@ const FeaturesDetails = () => {
             <img src={pci_scan} className="relative xl:-left-16" alt="" />
             <div className="space-y-4 md:space-y-8 relative -top-10">
               <h3 className="text-2xl md:text-4xl font-test-sohne-medium">
-                PCI scans
+                PCI Scans
               </h3>
               <p className="text-Boulder text-base md:text-xl">
-                Schedule PCI scans to execute automatically on servers
+                Schedule PCI Scans to execute automatically on servers
               </p>
               <div className="space-y-3">
                 <div className="flex flex-row items-start space-x-3">
@@ -157,14 +161,14 @@ const FeaturesDetails = () => {
                   <img src={checked_icon} className="" alt="" />
                   <p className="text-CharcoalGrey font-test-sohne-light xl:max-w-4xl">
                     Your cloud environments can be regularly checked for
-                    potential weaknesses
+                    potential weaknesses.
                   </p>
                 </div>
                 <hr className="border-t border-AshGrey" />
                 <div className="flex flex-row items-start space-x-3">
                   <img src={checked_icon} className="" alt="" />
                   <p className="text-CharcoalGrey font-test-sohne-light xl:max-w-4xl">
-                    Evidence submissions from cloud-based platforms
+                    Evidence submissions from cloud-based platforms.
                   </p>
                 </div>
               </div>

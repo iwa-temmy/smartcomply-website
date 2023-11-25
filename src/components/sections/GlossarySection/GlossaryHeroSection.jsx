@@ -9,7 +9,7 @@ const GlossaryHeroSection = () => {
             Glossary
           </h2>
           <p className="font-test-sohne-light">
-            Eazyguide to understanding security and compliance terms
+          Easy guide to understanding cybersecurity and compliance terms
           </p>
         </div>
       </div>
