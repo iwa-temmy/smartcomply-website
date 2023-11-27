@@ -30,14 +30,14 @@ const StillTryingToGetTheHang = () => {
         </div>
         <div className="flex items-center space-x-3">
           <CustomLink
-            to=""
+            to="/book-a-demo"
             title="Schedule a demo"
             className="bg-PaleViolet text-sm md:text-base text-Ebony"
             inital_arrow={initial_black_icon}
             hover_arrow={hover_black_icon}
           />
           <CustomLink
-            to=""
+            to="/book-a-demo"
             title="Try for free"
             className="bg-Chardonnay text-sm md:text-base text-Ebony"
             inital_arrow={initial_black_icon}

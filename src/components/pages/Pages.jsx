@@ -4,6 +4,7 @@ import Home from "./Home";
 import AboutUs from "./AboutUs";
 import Signin from "./Signin";
 import Signup from "./Signup";
+import BookADemo from "./BookADemo";
 import Features from "./Features";
 import FrameWorkIso27001 from "./FrameWorkIso27001";
 import FrameWorkSoc2 from "./FrameWorkSoc2";
@@ -34,6 +35,7 @@ const Pages = () => {
       <Route path="/frameworks/integration" element={<Integration />} />
       <Route path="/auth/sign-in" element={<Signin />} />
       <Route path="/auth/sign-up" element={<Signup />} />
+      <Route path="/book-a-demo" element={<BookADemo />} />
       <Route path="/auth/reset-password" element={<ForgetPassword />} />
       <Route path="*" element={<ErrorPage />} />
     </Routes>

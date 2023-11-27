@@ -66,7 +66,7 @@ const EasyQuickAndEfficient = () => {
               </div>
               <div className="space-y-2 md:space-y-3 lg:border-l lg:border-l-Seashell lg:pl-8 lg:pt-8 lg:pb-5">
                 <h4 className="max-w-[16rem] text-LavendarIndigo font-test-sohne-medium text-base md:text-xl text-opacity-60">
-                  Security questionnaire Response bot
+                  Security Questionnaire Response bot
                 </h4>
                 <p className="max-w-[16rem] text-sm md:text-[15px] text-CharcoalGrey">
                   Save time! Revolutionize your security questionnaire process
@@ -112,7 +112,7 @@ const EasyQuickAndEfficient = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-3 gap-x-2 gap-y-4 md:gap-y-0">
               <div className="space-y-2 md:space-y-3 lg:pt-8 pb-5">
                 <h4 className="max-w-[16rem] text-MountainMist font-test-sohne-medium text-base md:text-xl">
-                  Personnel management
+                  Personnel Management
                 </h4>
                 <p className="max-w-[16rem] text-sm md:text-[15px] text-CharcoalGrey">
                   Evaluate employee performance and analyze data on key
@@ -121,7 +121,7 @@ const EasyQuickAndEfficient = () => {
               </div>
               <div className="space-y-2 md:space-y-3 md:border-l md:border-l-Seashell lg:pl-8 lg:pt-8 pb-5">
                 <h4 className="max-w-[16rem] text-MountainMist font-test-sohne-medium text-base md:text-xl">
-                  Vendor risk assessment
+                  Vendor Risk Assessment
                 </h4>
                 <p className="max-w-[16rem] text-sm md:text-[15px] text-CharcoalGrey">
                   Automate the monitoring,collection and analysis of vendor
@@ -130,7 +130,7 @@ const EasyQuickAndEfficient = () => {
               </div>
               <div className="space-y-2 md:space-y-3 md:border-l md:border-l-Seashell lg:pl-8 lg:pt-8 pb-5">
                 <h4 className="max-w-[16rem] text-MountainMist font-test-sohne-medium text-base md:text-xl">
-                  Security questionnaire Response bot
+                  Security Questionnaire Response bot
                 </h4>
                 <p className="max-w-[16rem] text-sm md:text-[15px] text-CharcoalGrey">
                   Save time! Revolutionize your security questionnaire process

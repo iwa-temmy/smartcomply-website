@@ -53,6 +53,7 @@ module.exports = {
         OldLace: "#FFF5E8",
         CrystalBlue: "#47B2FF",
         LilyWhite: "#ECF7FF",
+        WhiteTitanic: "#F2EFFF",
       },
     },
     container: {
