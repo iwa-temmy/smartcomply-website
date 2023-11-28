@@ -1,6 +1,5 @@
 import React from "react";
 import soc2_hero_img from "../../../assets/images/soc2_hero_img.svg";
-import Soc2Body from "./Soc2Body";
 
 const FrameWorkSoc2HeroSection = () => {
   return (
@@ -25,7 +24,6 @@ const FrameWorkSoc2HeroSection = () => {
           </div>
         </div>
       </div>
-      <Soc2Body />
     </div>
   );
 };

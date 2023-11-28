@@ -55,7 +55,7 @@ const MobileSidebar = () => {
             <img src={smart_comply_logo} alt="" />
           </Link>
           <div className="pr-3 pt-10">
-            <div className="flex flex-col space-y-5 text-sm font-test-sohne-light text-right">
+            <div className="flex flex-col space-y-5 text-sm font-test-sohne-light text-center">
               <div className=" border-b-[0.1px] border-b-black w-full pb-1">
                 <Link to="/">Home</Link>
               </div>
@@ -69,7 +69,7 @@ const MobileSidebar = () => {
                   }`}
                 >
                   <div
-                    className="flex items-center justify-end gap-1 cursor-pointer"
+                    className="flex items-center justify-center gap-1 cursor-pointer"
                     onClick={toggleFramework}
                   >
                     <span
@@ -85,23 +85,24 @@ const MobileSidebar = () => {
                         <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                       </svg>
                     </span>
-                    <h2 className="text-sm font-test-sohne-light flex items-center">
+                    <h2 className="text-sm font-test-sohne-light flex items-center justify-center">
                       Frameworks
                     </h2>
                   </div>
-
-                  <div
-                    className={`max-w-[295px] px-2 flex flex-col gap-3 ${
-                      showFrameWork ? "pt-3" : "pt-5"
-                    }`}
-                  >
-                    {frameworkdata?.map((item, index) => (
-                      <Link key={index} to={item?.link}>
-                        <h2 className="text-[11px] font-medium">
-                          {item?.title}
-                        </h2>
-                      </Link>
-                    ))}
+                  <div className="flex justify-center">
+                    <div
+                      className={`max-w-[295px] px-2 flex flex-col items-center justify-center gap-3 ${
+                        showFrameWork ? "pt-3" : "pt-5"
+                      }`}
+                    >
+                      {frameworkdata?.map((item, index) => (
+                        <Link key={index} to={item?.link}>
+                          <h2 className="text-[11px] font-medium">
+                            {item?.title}
+                          </h2>
+                        </Link>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -115,7 +116,7 @@ const MobileSidebar = () => {
                   }`}
                 >
                   <div
-                    className="flex items-center justify-end gap-1 cursor-pointer"
+                    className="flex items-center justify-center gap-1 cursor-pointer"
                     onClick={toggleResources}
                   >
                     <span
@@ -135,26 +136,27 @@ const MobileSidebar = () => {
                       Resources
                     </h2>
                   </div>
-
-                  <div
-                    className={`max-w-[295px] px-2 flex flex-col gap-3 ${
-                      showResources ? "pt-3" : "pt-5"
-                    }`}
-                  >
-                    {resourcesdata?.map((item, index) => (
-                      <Link key={index} to={item?.link}>
-                        <h2 className="text-[11px] font-medium">
-                          {item?.title}
-                        </h2>
-                      </Link>
-                    ))}
+                  <div className="flex justify-center">
+                    <div
+                      className={`max-w-[295px] px-2 flex flex-col gap-3 ${
+                        showResources ? "pt-3" : "pt-5"
+                      }`}
+                    >
+                      {resourcesdata?.map((item, index) => (
+                        <Link key={index} to={item?.link}>
+                          <h2 className="text-[11px] font-medium">
+                            {item?.title}
+                          </h2>
+                        </Link>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
               <div className="border-b-[0.1px] border-b-black w-full pb-3.5">
                 <Link to="/about-us">About us</Link>
               </div>
-              <div className="flex justify-end">
+              <div className="flex justify-center">
                 <CustomLink
                   to="/auth/sign-up"
                   title="Get started"

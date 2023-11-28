@@ -81,7 +81,8 @@ const BookADemoHeroSection = () => {
                   placeholder="Country"
                 />
               </div>
-              <div className="px-8">
+              <div className="px-8 flex items-start space-x-3">
+                <input type="checkbox" name="" className="mt-1.5 cursor-pointer" id="" />
                 <p>
                   I agree to receive marketing communications from Smartcomply
                   and also subjected to our{" "}
@@ -95,11 +96,11 @@ const BookADemoHeroSection = () => {
                 </p>
               </div>
               <div className="flex flex-col items-center space-y-20 md:space-y-0 md:flex-row  md:space-x-4 px-8 w-[90%]">
-                <div className="w-[50%] border-b border-PaleViolet"></div>
+                <div className="w-full md:w-[40%] xl:w-[60%] border-b border-PaleViolet"></div>
                 <CustomLink
-                  to=""
-                  title="Book demo"
-                  className="bg-Oasis text-sm md:text-base text-Ebony mb-2"
+                  to="/auth/sign-up"
+                  title="Get started"
+                  className="bg-Oasis text-sm md:text-base text-Ebony hover:opacity-90"
                   inital_arrow={initial_black_icon}
                   hover_arrow={hover_black_icon}
                 />

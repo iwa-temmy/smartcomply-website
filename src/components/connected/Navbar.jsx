@@ -10,18 +10,6 @@ import LanguageSwitcher from "../primitive/LanguageSwitcher";
 import MobileSidebar from "./MobileSidebar";
 
 const Navbar = () => {
-  // const [isChartActive, setIsChartActive] = useState(false);
-  // const [isTableActive, setIsTableActive] = useState(true);
-
-  // const toggleSwitch = (role) => {
-  //   if (role === "chart") {
-  //     setIsChartActive(true);
-  //     setIsTableActive(false);
-  //   } else if (role === "table") {
-  //     setIsChartActive(false);
-  //     setIsTableActive(true);
-  //   }
-  // };
 
   return (
     <div className="">
@@ -45,26 +33,6 @@ const Navbar = () => {
               hover_arrow={hover_white_icon}
             />
             <LanguageSwitcher />
-            {/* <div className="flex items-center space-x-2">
-            <span className="font-test-sohne-semibold">Fren</span>
-            <div className="toggle-switch">
-              <div
-                className={`switch-state ${isChartActive ? "chart" : ""}`}
-                onClick={() => toggleSwitch("chart")}
-              >
-                <span className="text-transparent">F</span>
-              </div>
-              <div
-                className={`switch-state ${isTableActive ? "table" : ""}`}
-                onClick={() => toggleSwitch("table")}
-              >
-                <span className="text-transparent">E</span>
-              </div>
-            </div>
-            <span className="text-SeaMist test-sohne-semibold opacity-20">
-              Eng
-            </span>
-          </div> */}
           </div>
           <div className="block xl:hidden">
             <MobileSidebar />

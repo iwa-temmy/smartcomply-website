@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
 .toggle-switch {
   @apply w-fit h-fit bg-AeroBlue rounded-full flex justify-between items-center p-1 cursor-pointer transition duration-300;
 }
@@ -118,6 +126,24 @@ body {
 }
 .slides div {
   width: 10rem !important;
+}
+
+.logo_slide {
+  border-radius: 50%;
+  animation: scroll 30s linear infinite;
+}
+
+.logo_slide_reverse {
+  border-radius: 50%;
+  animation: scroll 30s linear infinite reverse;
+}
+
+.logo_slide_reverse div {
+  width: 5rem !important;
+}
+
+.logo_slide div {
+  width: 5rem !important;
 }
 
 .slide div {
@@ -237,6 +263,40 @@ body {
   background: url("./assets/images/pricing_hero_section_line.svg") no-repeat
     left 0% top 80%;
   background-size: contain;
+}
+
+.iso27001_hero_bg_section_line {
+  background: url("./assets/images/iso27001_hero_bg_section_line.svg") no-repeat
+    left 0% top 80%;
+  background-size: contain;
+}
+
+.pcidss_hero_bg_section_line {
+  background: url("./assets/images/pcidss_hero_bg_section_line.svg") no-repeat
+    left 0% top 80%;
+  background-size: contain;
+}
+
+.soc2_hero_bg_section_line {
+  background: url("./assets/images/soc2_hero_bg_section_line.svg") no-repeat
+    left 0% top 80%;
+  background-size: contain;
+}
+
+.ndpr_hero_bg_section_line {
+  background: url("./assets/images/ndpr_hero_bg_section_line.svg") no-repeat
+    left 0% top 80%;
+  background-size: contain;
+}
+
+.integration_hero_bg_section_line {
+  background: url("./assets/images/integration_hero_bg_section_line.svg") no-repeat
+    left 0% top 80%;
+  background-size: contain;
+}
+
+.shadow_bg {
+  box-shadow: 0 0 50px #fff;
 }
 
 @keyframes fadeIn {

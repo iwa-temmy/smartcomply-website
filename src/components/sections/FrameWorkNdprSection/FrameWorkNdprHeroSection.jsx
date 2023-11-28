@@ -1,6 +1,5 @@
 import React from "react";
 import protect_pravacy_hero_img from "../../../assets/images/protect_pravacy_hero_img.svg";
-import NdprBody from "./NdprBody";
 
 const FrameWorkNdprHeroSection = () => {
   return (
@@ -26,7 +25,6 @@ const FrameWorkNdprHeroSection = () => {
           </div>
         </div>
       </div>
-      <NdprBody />
     </div>
   );
 };

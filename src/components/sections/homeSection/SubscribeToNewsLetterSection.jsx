@@ -8,9 +8,8 @@ const SubscribeToNewsLetterSection = () => {
     <div className="container mx-auto py-8 md:py-16">
       <div className="flex flex-col items-center space-y-4 md:space-y-0 md:flex-row">
         <div className="w-full md:w-[40%] space-y-4">
-          <h3 className="flex flex-col text-3xl lg:text-[56px] lg:leading-[4rem] font-test-sohne-medium">
-            <span>Be in the</span>
-            <span>Loop!</span>
+          <h3 className="flex flex-col text-3xl lg:text-[56px] lg:leading-[4rem] font-test-sohne-medium md:max-w-[16rem]">
+            Be in the Loop!
           </h3>
           <p className="text-sm md:text-base text-CharcoalGrey md:max-w-sm">
             Read the Latest News About Smartcomply, AI, Automation,

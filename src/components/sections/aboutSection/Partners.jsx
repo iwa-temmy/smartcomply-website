@@ -1,5 +1,6 @@
 import React from "react";
 import cobal_logo from "../../../assets/logos/cobal_logo.svg";
+import consult_logo from "../../../assets/logos/360_consult_logo.svg";
 import platview_logo from "../../../assets/logos/platview_logo.svg";
 import techhive_logo from "../../../assets/logos/techhive_logo.svg";
 import clone_systems_logo from "../../../assets/logos/clone_systems_logo.svg";
@@ -22,22 +23,7 @@ const Partners = () => {
             </div>
             <div className="slides">
               <div>
-                <img src={platview_logo} alt="" />
-              </div>
-            </div>
-            <div className="slides">
-              <div>
-                <img src={techhive_logo} alt="" />
-              </div>
-            </div>
-            <div className="slides">
-              <div>
-                <img src={clone_systems_logo} alt="" />
-              </div>
-            </div>
-            <div className="slides">
-              <div>
-                <img src={cobal_logo} alt="" />
+                <img src={consult_logo} alt="" />
               </div>
             </div>
             <div className="slides">
@@ -58,6 +44,36 @@ const Partners = () => {
             <div className="slides">
               <div>
                 <img src={cobal_logo} alt="" />
+              </div>
+            </div>
+            <div className="slides">
+              <div>
+                <img src={consult_logo} alt="" />
+              </div>
+            </div>
+            <div className="slides">
+              <div>
+                <img src={platview_logo} alt="" />
+              </div>
+            </div>
+            <div className="slides">
+              <div>
+                <img src={techhive_logo} alt="" />
+              </div>
+            </div>
+            <div className="slides">
+              <div>
+                <img src={clone_systems_logo} alt="" />
+              </div>
+            </div>
+            <div className="slides">
+              <div>
+                <img src={cobal_logo} alt="" />
+              </div>
+            </div>
+            <div className="slides">
+              <div>
+                <img src={consult_logo} alt="" />
               </div>
             </div>
             <div className="slides">

@@ -1,6 +1,5 @@
 import React from "react";
 import pcidss_hero_img from "../../../assets/images/pcidss_hero_img.svg";
-import PcidssBody from "./PcidssBody";
 
 const FrameWorkPcidssHeroSection = () => {
   return (
@@ -22,7 +21,6 @@ const FrameWorkPcidssHeroSection = () => {
           </div>
         </div>
       </div>
-      <PcidssBody />
     </div>
   );
 };

@@ -54,6 +54,8 @@ module.exports = {
         CrystalBlue: "#47B2FF",
         LilyWhite: "#ECF7FF",
         WhiteTitanic: "#F2EFFF",
+        Nobel: "#B0B0B0",
+        OldLace: "#FFF4E5",
       },
     },
     container: {
