@@ -15,8 +15,8 @@ const OurTeam = () => {
         </p>
       </div>
 
-      <div className="w-full">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-10 md:gap-x-0 w-full lg:w-[70%] gap-y-8">
+      <div className="w-full lg:w-[70%]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-6 sm:gap-x-4 sm:gap-y-8 md:grid-cols-3 md:gap-y-6">
           <>
             {ourTeamInfo.map((card, index) => (
               <div key={index}>

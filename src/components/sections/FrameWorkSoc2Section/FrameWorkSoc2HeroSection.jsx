@@ -1,5 +1,5 @@
 import React from "react";
-import soc2_hero_img from "../../../assets/images/soc2_hero_img.svg";
+import FrameWorkSoc2HeroSectionAnnimation from "../FrameWorkSoc2Section/FrameWorkSoc2HeroSectionAnnimation";
 
 const FrameWorkSoc2HeroSection = () => {
   return (
@@ -19,9 +19,7 @@ const FrameWorkSoc2HeroSection = () => {
               remediation and process improvement.
             </p>
           </div>
-          <div className="w-full md:w-1/2">
-            <img src={soc2_hero_img} alt="" />
-          </div>
+          <FrameWorkSoc2HeroSectionAnnimation />
         </div>
       </div>
     </div>

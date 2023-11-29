@@ -2,22 +2,19 @@ import React from "react";
 import linkdin_icon from "../../../assets/icons/linkdin_icon.svg";
 import { Link } from "react-router-dom";
 
-const OurTeamCard = ({
-  image,
-  name,
-  title,
-  social_medial_name,
-  social_media_link,
-  bio,
-}) => {
+const OurTeamCard = ({ image, name, title }) => {
   return (
     <div>
-      <div className="w-56 bg-BlueChalk  rounded-3xl hover:shadow-2xl shadow-red-500 transition-all duration-500 hover:cursor-pointer">
-        <div className="w-full h-52 border border-white rounded-3xl">
+      <div className="w-full md:w-56 bg-BlueChalk  rounded-3xl hover:shadow-2xl shadow-red-500 transition-all duration-500 hover:cursor-pointer">
+        <div className="w-full h-64 md:h-52 border border-white rounded-3xl">
           {image === "" ? (
             <span className="w-full h-full bg-red-200"></span>
           ) : (
-            <img src={image} className="w-full h-full object-cover rounded-3xl" alt="" />
+            <img
+              src={image}
+              className="w-full h-full object-cover rounded-3xl"
+              alt=""
+            />
           )}
         </div>
         <div className="w-full bg-BlueChalk rounded-b-3xl px-6 py-4 space-y-3">

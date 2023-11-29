@@ -56,6 +56,7 @@ module.exports = {
         WhiteTitanic: "#F2EFFF",
         Nobel: "#B0B0B0",
         OldLace: "#FFF4E5",
+        LavenderMist_2: "#E2E3FF",
       },
     },
     container: {

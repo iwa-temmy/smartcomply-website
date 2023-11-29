@@ -19,7 +19,7 @@ const GetInTouch = () => {
           <div className="absolute left-28 top-12 md:left-44 md:top-24">
             <span className="relative">
               <img src={we_are_bg} alt="" />
-              <div className="text-CharcoalGrey text-xl w-full absolute inset-0 left-12 flex flex-col items-start justify-center">
+              <div className="text-CharcoalGrey text-sm md:text-xl w-full absolute inset-0 left-12 flex flex-col items-start justify-center">
                 <span>We are looking </span>
                 <span>forward to </span>
                 <span>connecting with you.</span>

@@ -8,7 +8,7 @@ import clone_systems_logo from "../../../assets/logos/clone_systems_logo.svg";
 const Partners = () => {
   return (
     <div className="container mx-auto border-y border-AshGrey py-10 mt-10">
-      <div className="flex flex-col items-center md:flex-row justify-between">
+      <div className="flex flex-col space-y-5 md:space-y-0 items-center md:flex-row justify-between">
         <div className="w-full md:w-[40%]">
           <h4 className="font-test-sohne-semibold  text-3xl md:text-4xl">
             Partners

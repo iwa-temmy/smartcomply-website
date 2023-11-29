@@ -28,7 +28,7 @@ const CertificationAudit = () => {
       <div className="px-[1.5rem] md:px-0 w-full flex flex-col md:space-y-0 md:flex-row md:space-x-6 md:pl-16 xl:pl-24">
         <div className="w-full md:w-fit h-fit md:h-[730px]">
           <div className="bg-CaribbeanGreen rounded-t-3xl">
-            <p className=" text-white text-2xl py-4 px-3">Popular choice</p>
+            <p className="text-white text-2xl py-4 px-3">Popular choice</p>
           </div>
           <div className="relative md:z-40 h-full">
             <div
@@ -169,9 +169,9 @@ const CertificationAudit = () => {
             </div>
           </div>
         </div>
-        <div className="w-full md:w-fit h-fit md:md:h-[730px]">
+        <div className="w-full md:w-fit h-fit md:h-[730px]">
           <div className="">
-            <p className=" text-white text-2xl py-4 px-3">Popular choice</p>
+            <p className="text-white text-2xl py-4 px-3">Popular choice</p>
           </div>
           <div className="relative md:z-30 h-full">
             <div
@@ -262,8 +262,7 @@ const CertificationAudit = () => {
                 </div>
               </div>
             </div>
-            <div className="wh-full pr-1.5 bg-PaleViolet rounded-3xl">
-              {/* <p className="text-white text-2xl py-4 px-3">Popular choice</p> */}
+            <div className="w-full h-full pr-1.5 bg-PaleViolet rounded-3xl">
               <div
                 className={`w-full h-full relative inline-flex items-center justify-center bg-purple-600 hover:bg-purple-700 rounded-tl-full rounded-bl-full focus:outline-none transition-all duration-300 ${
                   isMenuOpen_2

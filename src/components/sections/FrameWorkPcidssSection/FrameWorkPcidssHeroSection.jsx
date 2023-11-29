@@ -1,5 +1,5 @@
 import React from "react";
-import pcidss_hero_img from "../../../assets/images/pcidss_hero_img.svg";
+import FrameWorkPcidssHeroSectionAnnimation from "../FrameWorkPcidssSection/FrameWorkPcidssHeroSectionAnnimation";
 
 const FrameWorkPcidssHeroSection = () => {
   return (
@@ -16,9 +16,7 @@ const FrameWorkPcidssHeroSection = () => {
               any company engaging with credit card information.
             </p>
           </div>
-          <div className="w-full md:w-1/2">
-            <img src={pcidss_hero_img} alt="" />
-          </div>
+          <FrameWorkPcidssHeroSectionAnnimation />
         </div>
       </div>
     </div>
