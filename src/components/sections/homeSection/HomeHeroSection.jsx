@@ -22,7 +22,7 @@ const HomeHeroSection = () => {
           </p>
           <div className="w-full flex items-center space-x-10 md:space-x-4 ">
             <CustomLink
-              to=""
+              to="/book-a-demo"
               title="Book a demo"
               className="bg-Ebony text-sm md:text-base text-white hover:bg-ShipGrey"
               inital_arrow={initial_white_icon}
