@@ -290,8 +290,8 @@ body {
 }
 
 .integration_hero_bg_section_line {
-  background: url("./assets/images/integration_hero_bg_section_line.svg") no-repeat
-    left 0% top 80%;
+  background: url("./assets/images/integration_hero_bg_section_line.svg")
+    no-repeat left 0% top 80%;
   background-size: contain;
 }
 

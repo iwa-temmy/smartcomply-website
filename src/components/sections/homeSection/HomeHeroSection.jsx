@@ -10,8 +10,7 @@ const HomeHeroSection = () => {
     <div className="container mx-auto space-y-10">
       <div className="flex flex-col items-center space-y-8 md:space-y-0 md:flex-row md:justify-between md:space-x-10 py-4">
         <div className="w-full md:w-1/2 space-y-8 md:space-y-6">
-          <h2 className="text-4xl sm:text-5xl lg:text-[62px] lg:leading-[4.5rem] font-test-sohne-medium">
-            {/* Embrace Automation and AI for Seamless Compliance! text-[70px] lg:leading-[5rem] */}
+          <h2 className="text-4xl sm:text-5xl md:text-4xl lg:text-[62px] lg:leading-[4.5rem] font-test-sohne-medium">
             Embrace Automation and AI for Seamless Cybersecurity and Compliance!
           </h2>
           <p>

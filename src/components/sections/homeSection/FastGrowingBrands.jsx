@@ -39,57 +39,12 @@ const FastGrowingBrands = () => {
             <div className="flex flex-row items-center w-full sm:w-full overflow-auto scrollbar-hide space-x-2 md:space-x-4 relative">
               <div className="logo_slide">
                 <div>
-                  <img className="w-24" src={logo_11} alt="" />
+                  <img className="w-24 scale-75" src={logo_11} alt="" />
                 </div>
               </div>
               <div className="logo_slide">
                 <div>
-                  <img className="w-24" src={logo_12} alt="" />
-                </div>
-              </div>
-              <div className="logo_slide">
-                <div>
-                  <img className="w-24" src={pennyTreeLogo} alt="" />
-                </div>
-              </div>
-              <div className="logo_slide">
-                <div>
-                  <img className="w-24" src={smile_identify} alt="" />
-                </div>
-              </div>
-              <div className="logo_slide">
-                <div>
-                  <img className="w-24" src={simplifyLogo} alt="" />
-                </div>
-              </div>
-              <div className="logo_slide">
-                <div>
-                  <img className="w-24" src={logo_13} alt="" />
-                </div>
-              </div>
-              <div className="logo_slide">
-                <div>
-                  <img className="w-24" src={logo_14} alt="" />
-                </div>
-              </div>
-              <div className="logo_slide">
-                <div>
-                  <img className="w-24" src={logo_15} alt="" />
-                </div>
-              </div>
-              <div className="logo_slide">
-                <div>
-                  <img className="w-24" src={logo_16} alt="" />
-                </div>
-              </div>
-              <div className="logo_slide">
-                <div>
-                  <img className="w-24" src={logo_11} alt="" />
-                </div>
-              </div>
-              <div className="logo_slide">
-                <div>
-                  <img className="w-24" src={logo_12} alt="" />
+                  <img className="w-24 scale-75" src={logo_12} alt="" />
                 </div>
               </div>
               <div className="logo_slide">
@@ -109,22 +64,67 @@ const FastGrowingBrands = () => {
               </div>
               <div className="logo_slide">
                 <div>
-                  <img className="w-24" src={logo_13} alt="" />
+                  <img className="w-24 scale-75" src={logo_13} alt="" />
                 </div>
               </div>
               <div className="logo_slide">
                 <div>
-                  <img className="w-24" src={logo_14} alt="" />
+                  <img className="w-24 scale-75" src={logo_14} alt="" />
                 </div>
               </div>
               <div className="logo_slide">
                 <div>
-                  <img className="w-24" src={logo_15} alt="" />
+                  <img className="w-24 scale-75" src={logo_15} alt="" />
                 </div>
               </div>
               <div className="logo_slide">
                 <div>
-                  <img className="w-24" src={logo_16} alt="" />
+                  <img className="w-24 scale-75" src={logo_16} alt="" />
+                </div>
+              </div>
+              <div className="logo_slide">
+                <div>
+                  <img className="w-24 scale-75" src={logo_11} alt="" />
+                </div>
+              </div>
+              <div className="logo_slide">
+                <div>
+                  <img className="w-24 scale-75" src={logo_12} alt="" />
+                </div>
+              </div>
+              <div className="logo_slide">
+                <div>
+                  <img className="w-24" src={pennyTreeLogo} alt="" />
+                </div>
+              </div>
+              <div className="logo_slide">
+                <div>
+                  <img className="w-24" src={smile_identify} alt="" />
+                </div>
+              </div>
+              <div className="logo_slide">
+                <div>
+                  <img className="w-24" src={simplifyLogo} alt="" />
+                </div>
+              </div>
+              <div className="logo_slide">
+                <div>
+                  <img className="w-24 scale-75" src={logo_13} alt="" />
+                </div>
+              </div>
+              <div className="logo_slide">
+                <div>
+                  <img className="w-24 scale-75" src={logo_14} alt="" />
+                </div>
+              </div>
+              <div className="logo_slide">
+                <div>
+                  <img className="w-24 scale-75" src={logo_15} alt="" />
+                </div>
+              </div>
+              <div className="logo_slide">
+                <div>
+                  <img className="w-24 scale-75" src={logo_16} alt="" />
                 </div>
               </div>
             </div>
@@ -136,7 +136,7 @@ const FastGrowingBrands = () => {
               </div>
               <div className="logo_slide_reverse">
                 <div>
-                  <img className="w-24" src={logo_8} alt="" />
+                  <img className="w-24 scale-50" src={logo_8} alt="" />
                 </div>
               </div>
               <div className="logo_slide_reverse">
@@ -151,7 +151,7 @@ const FastGrowingBrands = () => {
               </div>
               <div className="logo_slide_reverse">
                 <div>
-                  <img className="w-24" src={crus_logo} alt="" />
+                  <img className="w-24 scale-75" src={crus_logo} alt="" />
                 </div>
               </div>
               <div className="logo_slide_reverse">
@@ -161,7 +161,7 @@ const FastGrowingBrands = () => {
               </div>
               <div className="logo_slide_reverse">
                 <div>
-                  <img className="w-24" src={veend_logo} alt="" />
+                  <img className="w-24 scale-75" src={veend_logo} alt="" />
                 </div>
               </div>
               <div className="logo_slide_reverse">
@@ -176,7 +176,7 @@ const FastGrowingBrands = () => {
               </div>
               <div className="logo_slide_reverse">
                 <div>
-                  <img className="w-24" src={logo_8} alt="" />
+                  <img className="w-24 scale-50" src={logo_8} alt="" />
                 </div>
               </div>
               <div className="logo_slide_reverse">
@@ -191,7 +191,7 @@ const FastGrowingBrands = () => {
               </div>
               <div className="logo_slide_reverse">
                 <div>
-                  <img className="w-24" src={crus_logo} alt="" />
+                  <img className="w-24 scale-75" src={crus_logo} alt="" />
                 </div>
               </div>
               <div className="logo_slide_reverse">
@@ -201,7 +201,7 @@ const FastGrowingBrands = () => {
               </div>
               <div className="logo_slide_reverse">
                 <div>
-                  <img className="w-24" src={veend_logo} alt="" />
+                  <img className="w-24 scale-75" src={veend_logo} alt="" />
                 </div>
               </div>
               <div className="logo_slide_reverse">
