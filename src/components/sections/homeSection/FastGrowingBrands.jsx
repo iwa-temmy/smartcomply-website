@@ -218,12 +218,12 @@ const FastGrowingBrands = () => {
               </div>
               <div className="logo_slide">
                 <div>
-                  <img className="w-24" src={logo_5} alt="" />
+                  <img className="w-24 scale-50" src={logo_5} alt="" />
                 </div>
               </div>
               <div className="logo_slide">
                 <div>
-                  <img className="w-24" src={logo_6} alt="" />
+                  <img className="w-24 scale-50" src={logo_6} alt="" />
                 </div>
               </div>
               <div className="logo_slide">
