@@ -9,7 +9,7 @@ const FrameWorkNdpr = () => {
   return (
     <div>
       <div className="relative ndpr_hero_bg_section_line">
-        <div className="absolute top-0 right-0 framework_ndpr_hero_bg w-[65%] h-[100vh] rounded-bl-[226px] -z-20"></div>
+        <div className="absolute top-0 right-0 framework_ndpr_hero_bg w-[70%] h-[100vh] rounded-bl-[226px] -z-20"></div>
         <Navbar />
         <FrameWorkNdprHeroSection />
       </div>

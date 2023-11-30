@@ -22,7 +22,7 @@ const FrameWorkPcidssHeroSectionAnnimation = () => {
   const scaleClass = isScaled ? "scale-100" : "scale-110";
   const secondScaleClass = isSecondScaled ? "scale-110" : "scale-100";
   return (
-    <div className="w-full md:w-1/2 relative py-64 md:py-0">
+    <div className="w-full md:w-1/2 relative pt-64 pb-44 md:pt-0 md:pb-0">
       <div
         className={`w-fit h-fit bg-white rounded-2xl pl-8 py-5 space-y-10 absolute top-[60%] transform -translate-y-1/2 shadow_bg ${scaleClass} transition-all transition_duration`}
       >
@@ -44,7 +44,7 @@ const FrameWorkPcidssHeroSectionAnnimation = () => {
         </div>
       </div>
       <div
-        className={`w-fit h-fit bg-white rounded-2xl pl-12 pt-10 pb-5 space-y-6 absolute left-1/2 -transform -translate-x-1/4 z-30  shadow_bg ${secondScaleClass} transition-all transition_duration`}
+        className={`w-fit h-fit bg-white rounded-2xl pl-12 pt-10 pb-5 space-y-6 absolute right-0 md:right-auto top-16 md:top-auto md:left-1/2 md:-transform md:-translate-x-1/4 z-30  shadow_bg ${secondScaleClass} transition-all transition_duration`}
       >
         <div className="space-y-2">
           <div className="flex items-start space-x-1 pr-1">
@@ -63,7 +63,7 @@ const FrameWorkPcidssHeroSectionAnnimation = () => {
         </div>
       </div>
       <div
-        className={`w-fit h-fit bg-white rounded-2xl pl-8 py-5 space-y-8 absolute right-10 bottom-6 shadow_bg ${scaleClass} transition-all transition_duration`}
+        className={`w-fit h-fit bg-white rounded-2xl pl-8 py-5 space-y-8 absolute right-0 md:right-10 bottom-6 shadow_bg ${scaleClass} transition-all transition_duration`}
       >
         <div className="space-y-2">
           <p className="text-[10px]">Clause 5</p>

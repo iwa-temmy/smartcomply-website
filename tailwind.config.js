@@ -57,6 +57,9 @@ module.exports = {
         Nobel: "#B0B0B0",
         OldLace: "#FFF4E5",
         LavenderMist_2: "#E2E3FF",
+        LightRose: "#FFC7C7",
+        PapayaWhip: "#FFEFDB",
+        FloraWhite: "#FFF9F2",
       },
     },
     container: {
