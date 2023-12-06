@@ -8,13 +8,17 @@ const IntegrationCard = ({ logo, category, name }) => {
           {name}
         </span>
         <div className="">
-          <img src={logo} alt="" />
+          <img
+            src={logo}
+            alt={name}
+            className="w-[250px] h-[100px] object-contain"
+          />
         </div>
       </div>
       <div className="w-full bg-BleachWhite rounded-b-3xl">
         <p
           className={`text-CharcoalGrey text-sm md:text-[15px] ${
-            category.length < 20 && "max-w-[5rem]"
+            category?.length < 20 && "max-w-[5rem]"
           } font-test-sohne-light p-4`}
         >
           {category}

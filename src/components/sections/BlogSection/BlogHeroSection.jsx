@@ -14,13 +14,13 @@ const BlogHeroSection = () => {
           </h2>
         </div>
         <div className="space-y-4">
-          <div class="bg-FloralWhite w-[60%] flex flex-row items-center justify-between border-[0.1px] border-Chardonnay rounded-md px-3">
-            <div class=" w-full flex items-center justify-between space-x-2 py-3">
+          <div className="bg-FloralWhite w-[60%] flex flex-row items-center justify-between border-[0.1px] border-Chardonnay rounded-md px-3">
+            <div className=" w-full flex items-center justify-between space-x-2 py-3">
               <input
                 type="text"
                 name=""
                 id=""
-                class="w-full bg-transparent focus:outline-0 px-3 text-lg placeholder:text-Nobel"
+                className="w-full bg-transparent focus:outline-0 px-3 text-lg placeholder:text-Nobel"
                 placeholder="Enter Email"
               />
               <span className="text-3xl">&#x2192;</span>

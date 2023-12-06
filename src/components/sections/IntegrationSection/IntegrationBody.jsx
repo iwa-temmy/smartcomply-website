@@ -1,48 +1,58 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Tab from "../../controls/Tab";
 import IntegrationCard from "../../primitive/cards/IntegrationCard";
 import search_icon from "../../../assets/icons/search_icon.svg";
+import axios from "axios";
 
-import {
-  allIntegrationInfo,
-  employeeManagementIntegrationInfo,
-  cloudServicesIntegrationInfo,
-  codeRepositoryIntegrationInfo,
-  privacyAndRiskmanagementIntegrationInfo,
-  taskManagementIntegrationInfo,
-} from "../../../mockdata";
-
-const tabLists = [
-  { tabName: "All", id: "all" },
-  { tabName: "Employee Management", id: "employee_management" },
-  { tabName: "Cloud Services", id: "cloud_services" },
-  { tabName: "Code Repository", id: "code_repository" },
-  { tabName: "Privacy and Risk Management", id: "privacy_and_risk_management" },
-  { tabName: "Task Management", id: "task_management" },
-];
+const tabLists = [{ tabName: "All", id: "all" }];
 
 const IntegrationBody = () => {
   const [activeTab, setActiveTab] = useState(tabLists[0].id);
   const [searchTerm, setSearchTerm] = useState("");
+  const [integrationsGroup, setIntegrationsGroup] = useState([]);
+  const [integrations, setIntegrations] = useState([]);
+  const [data, setData] = useState([]);
 
-  const filterIntegrationCards = (integrationInfo) => {
-    return integrationInfo.filter((card) =>
-      card.name.toLowerCase().includes(searchTerm.toLowerCase())
+  //async
+  const getAllIntegrationsGroup = async () => {
+    const res = await axios.get(
+      `https://api.smartcomplyapp.com/api/integrations/groups/`
+    );
+    setIntegrationsGroup(
+      res?.data?.data?.map((item) => ({
+        tabName: item?.name,
+        id: item?.id,
+      }))
     );
   };
-
-  const renderIntegrationCards = (integrationInfo) => {
-    return filterIntegrationCards(integrationInfo).map((card, index) => (
-      <div key={index}>
-        <IntegrationCard
-          logo={card.logo}
-          category={card.category}
-          name={card.name}
-        />
-      </div>
-    ));
+  const getAllIntegrations = async () => {
+    const res = await axios.get(
+      `https://api.smartcomplyapp.com/api/integrations/integration/`
+    );
+    setIntegrations(res?.data?.data);
   };
-
+  //useEffect
+  useEffect(() => {
+    getAllIntegrationsGroup();
+    getAllIntegrations();
+  }, []);
+  useEffect(() => {
+    if (integrations) {
+      if (searchTerm?.length) {
+        const filteredContentByInput = integrations?.filter((item) =>
+          item?.name?.toLowerCase()?.includes(searchTerm?.toLowerCase())
+        );
+        setData(filteredContentByInput);
+      } else if (activeTab !== "all") {
+        const filteredContentByActiveTab = integrations?.filter(
+          (item) => item?.group === activeTab
+        );
+        setData(filteredContentByActiveTab);
+      } else {
+        setData(integrations);
+      }
+    }
+  }, [activeTab, integrations, searchTerm]);
   return (
     <div className="container mx-auto flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-20 py-6 md:py-16">
       <div className="w-full md:w-[30%]">
@@ -63,7 +73,7 @@ const IntegrationBody = () => {
           </div>
         </div>
         <div>
-          {tabLists.map((tab) => (
+          {[...tabLists, ...integrationsGroup]?.map((tab) => (
             <Tab
               key={tab.id}
               tabName={tab.tabName}
@@ -74,21 +84,22 @@ const IntegrationBody = () => {
         </div>
       </div>
       <div className="w-full md:w-[70%]">
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-x-24 gap-y-8">
-          {activeTab === "all" && renderIntegrationCards(allIntegrationInfo)}
-          {activeTab === "employee_management" &&
-            renderIntegrationCards(employeeManagementIntegrationInfo)}
-          {activeTab === "cloud_services" &&
-            renderIntegrationCards(cloudServicesIntegrationInfo)}
-          {activeTab === "code_repository" &&
-            renderIntegrationCards(codeRepositoryIntegrationInfo)}
-          {activeTab === "privacy_and_risk_management" &&
-            renderIntegrationCards(privacyAndRiskmanagementIntegrationInfo)}
-          {activeTab === "task_management" &&
-            renderIntegrationCards(taskManagementIntegrationInfo)}
-          {filterIntegrationCards(allIntegrationInfo).length === 0 && (
-            <p>No item found</p>
-          )}
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8">
+          {data?.map((card, index) => {
+            const groupName = integrationsGroup?.find(
+              (integration) => integration?.id === card?.group
+            )?.tabName;
+
+            return (
+              <div key={index}>
+                <IntegrationCard
+                  logo={card.logo}
+                  category={groupName}
+                  name={card.name}
+                />
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>
