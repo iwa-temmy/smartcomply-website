@@ -29,7 +29,6 @@ const SubscribeToNewsLetterSection = () => {
     } catch (err) {
       if (err?.response.status === 400) {
         const { data } = err?.response || {};
-        console.log(data?.message);
         toast.error(data?.message);
       } else {
         toast.error("Error while processing your request");
@@ -92,6 +91,7 @@ const SubscribeToNewsLetterSection = () => {
               </div>
               <Button
                 title="Subscribe"
+                type="submit"
                 loading={loading}
                 className="bg-Ebony text-sm md:text-base text-white hover:bg-ShipGrey"
                 inital_arrow={initial_white_icon}

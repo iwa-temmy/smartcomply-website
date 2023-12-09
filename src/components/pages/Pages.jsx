@@ -19,6 +19,7 @@ import ForgetPassword from "./ForgetPassword";
 import Privacy from "./Privacy";
 import Terms from "./Terms";
 import ErrorPage from "./ErrorPage";
+import Success from "./Success";
 
 const Pages = () => {
   return (
@@ -41,6 +42,7 @@ const Pages = () => {
       <Route path="/auth/reset-password" element={<ForgetPassword />} />
       <Route path="/privacy" element={<Privacy />} />
       <Route path="/terms" element={<Terms />} />
+      <Route path="/success" element={<Success />} />
       <Route path="*" element={<ErrorPage />} />
     </Routes>
   );

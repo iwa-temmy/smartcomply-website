@@ -5,8 +5,68 @@ import CustomLink from "../../primitive/CustomLink";
 import Slide from "./Slide";
 import initial_black_icon from "../../../assets/icons/inital_black_arrow.svg";
 import hover_black_icon from "../../../assets/icons/hover_black_arrow.svg";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
+import useFormValidation from "../../../hooks/useFormValidation";
+import { GET_STARTED_VALIDATION } from "../../../utils/fieldValidations";
+import Button from "../../primitive/Button";
+import Input from "../../primitive/Input";
+import FormHelperText from "../../primitive/FormHelperText";
 
 const SignupHeroSection = () => {
+  const navigate = useNavigate();
+
+  //form submission
+  const submitForm = async (values) => {
+    if (values?.password !== values?.confirm_password) {
+      toast.error("Password does not match, please confirm and retry");
+      return;
+    }
+    delete data?.confirm_password;
+    try {
+      const response = await axios.post(
+        "https://api.smartcomplyapp.com/api/user_mgt/users/",
+        values,
+        {
+          headers: {
+            "Content-type": "application/json; charset=UTF-8",
+          },
+        }
+      );
+      if (response?.data?.status) {
+        clearFormState();
+        navigate("/success", { state: "register" });
+      }
+    } catch (err) {
+      if (err?.response.status === 400) {
+        const { data } = err?.response || {};
+        toast.error(data.message);
+      } else {
+        toast.error("Error while processing your request");
+      }
+    }
+  };
+
+  //   validation hook
+  const {
+    data,
+    loading,
+    setFieldValue,
+    setFieldTouched,
+    showError,
+    handleFormSubmit,
+    resetForm,
+  } = useFormValidation(GET_STARTED_VALIDATION, submitForm);
+
+  // functions
+  const clearFormState = () => {
+    resetForm();
+  };
+  const handleTextChange = (e) => {
+    const { name, value } = e.target;
+    setFieldValue(name, value);
+  };
   return (
     <div className="py-5 md:py-10">
       <div className="container mx-auto flex flex-col space-y-8 md:space-y-0 md:flex-row">
@@ -68,59 +128,86 @@ const SignupHeroSection = () => {
                 </div>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-x-2 gap-y-2.5 px-8">
+            <form
+              onSubmit={handleFormSubmit}
+              className="grid grid-cols-2 gap-x-2 gap-y-2.5 px-8"
+            >
               <div className="w-full">
-                <input
+                <Input
                   className="w-full border border-Chardonnay rounded-xl px-6 py-4 text-sm md:text-lg font-test-sohne-light placeholder:text-CharcoalGrey"
                   type="text"
-                  name=""
-                  id=""
+                  name="first_name"
+                  id="first_name"
+                  onChange={handleTextChange}
+                  onBlur={() => setFieldTouched("first_name")}
+                  value={data?.first_name || ""}
+                  error={showError("first_name")}
                   placeholder="First name"
                 />
               </div>
               <div className="w-full">
-                <input
+                <Input
                   className="w-full border border-Chardonnay rounded-xl px-6 py-4 text-sm md:text-lg font-test-sohne-light placeholder:text-CharcoalGrey"
                   type="text"
-                  name=""
-                  id=""
+                  name="last_name"
+                  id="last_name"
+                  onChange={handleTextChange}
+                  onBlur={() => setFieldTouched("last_name")}
+                  value={data?.last_name || ""}
+                  error={showError("last_name")}
                   placeholder="Last name"
                 />
               </div>
               <div className="w-full">
-                <input
+                <Input
                   className="w-full border border-Chardonnay rounded-xl px-6 py-4 text-sm md:text-lg font-test-sohne-light placeholder:text-CharcoalGrey"
                   type="text"
-                  name=""
-                  id=""
+                  name="company_name"
+                  id="company_name"
+                  onChange={handleTextChange}
+                  onBlur={() => setFieldTouched("company_name")}
+                  value={data?.company_name || ""}
+                  error={showError("company_name")}
                   placeholder="Company"
                 />
               </div>
               <div className="w-full">
-                <input
+                <Input
                   className="w-full border border-Chardonnay rounded-xl px-6 py-4 text-sm md:text-lg font-test-sohne-light placeholder:text-CharcoalGrey"
                   type="email"
-                  name=""
-                  id=""
-                  placeholder="Email address name"
+                  name="email"
+                  id="email"
+                  onChange={handleTextChange}
+                  onBlur={() => setFieldTouched("email")}
+                  value={data?.email || ""}
+                  error={showError("email")}
+                  placeholder="Email address"
                 />
               </div>
               <div className="col-span-2 w-full">
-                <input
+                <Input
                   className="w-full border border-Chardonnay rounded-xl px-6 py-4 text-sm md:text-lg font-test-sohne-light placeholder:text-CharcoalGrey"
                   type="password"
-                  name=""
-                  id=""
+                  name="password"
+                  id="password"
+                  onChange={handleTextChange}
+                  onBlur={() => setFieldTouched("password")}
+                  value={data?.password || ""}
+                  error={showError("password")}
                   placeholder="Password"
                 />
               </div>
-              <div className="col-span-2 w-full mb-6">
-                <input
+              <div className="col-span-2 w-full mb-2">
+                <Input
                   className="w-full border border-Chardonnay rounded-xl px-6 py-4 text-sm md:text-lg font-test-sohne-light placeholder:text-CharcoalGrey"
                   type="password"
-                  name=""
-                  id=""
-                  placeholder="Password"
+                  name="confirm_password"
+                  id="confirm_password"
+                  onChange={handleTextChange}
+                  onBlur={() => setFieldTouched("confirm_password")}
+                  value={data?.confirm_password || ""}
+                  error={showError("confirm_password")}
+                  placeholder="Confirm Password"
                 />
               </div>
               <div className="col-span-2  w-full">
@@ -133,23 +220,32 @@ const SignupHeroSection = () => {
                 <select
                   className="w-full border border-Chardonnay rounded-xl px-6 py-4 text-sm md:text-lg font-test-sohne-light placeholder:text-CharcoalGrey placeholder:opacity-40 mt-2"
                   type="text"
-                  name=""
-                  id=""
+                  name="user_type"
+                  id="user_type"
                   placeholder="What are you registering as?"
+                  onChange={handleTextChange}
+                  onBlur={() => setFieldTouched("user_type")}
+                  value={data?.user_type || ""}
                 >
+                  <option value="">What are you registering as?</option>
                   <option value="merchant">Merchant</option>
                 </select>
+                {showError("user_type") ? (
+                  <FormHelperText text={showError("user_type")} />
+                ) : null}
               </div>
-            </div>
-            <div className="px-8">
-              <CustomLink
-                to=""
-                title="Create Account"
-                className="bg-Oasis text-sm md:text-base text-Ebony mb-2"
-                inital_arrow={initial_black_icon}
-                hover_arrow={hover_black_icon}
-              />
-            </div>
+              <div className="pt-3">
+                <Button
+                  type="submit"
+                  title="Create Account"
+                  loading={loading}
+                  className="bg-Oasis text-sm md:text-base text-Ebony mb-2"
+                  inital_arrow={initial_black_icon}
+                  hover_arrow={hover_black_icon}
+                />
+              </div>
+            </form>
+
             <div className="p-2.5">
               <div className="w-full bg-Oasis py-4 px-5 rounded-xl flex items-center justify-between">
                 <div className="md:flex md:items-center md:space-x-4">
@@ -159,7 +255,8 @@ const SignupHeroSection = () => {
                   <div className="hidden xl:block w-24 border-b border-PaleViolet"></div>
                 </div>
                 <CustomLink
-                  to="/auth/sign-in"
+                  to="https://app.smartcomply.com/auth/login"
+                  target="_blank"
                   title="Sign in"
                   className="bg-PaleViolet text-sm md:text-base text-Ebony"
                   inital_arrow={initial_black_icon}

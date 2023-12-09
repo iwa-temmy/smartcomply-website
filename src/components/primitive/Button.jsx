@@ -7,6 +7,7 @@ const Button = ({
   inital_arrow,
   onClick,
   loading,
+  type
 }) => {
   const [isHovered, setIsHovered] = useState(false);
   return (
@@ -16,6 +17,7 @@ const Button = ({
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         onClick={onClick}
+        type={type}
       >
         {loading ? (
           "....."
