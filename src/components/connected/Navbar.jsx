@@ -6,7 +6,7 @@ import FrameworkDropdown from "../primitive/dropdown/FrameworkDropdown";
 import initial_white_icon from "../../assets/icons/inital_white_arrow.svg";
 import hover_white_icon from "../../assets/icons/hover_white_arrow.svg";
 import ResourcesDropdown from "../primitive/dropdown/ResourcesDropdown";
-import LanguageSwitcher from "../primitive/LanguageSwitcher";
+// import LanguageSwitcher from "../primitive/LanguageSwitcher";
 import MobileSidebar from "./MobileSidebar";
 
 const Navbar = () => {
@@ -32,7 +32,7 @@ const Navbar = () => {
               inital_arrow={initial_white_icon}
               hover_arrow={hover_white_icon}
             />
-            <LanguageSwitcher />
+            {/* <LanguageSwitcher /> */}
           </div>
           <div className="block xl:hidden">
             <MobileSidebar />
