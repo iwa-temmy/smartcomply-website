@@ -5,6 +5,7 @@ import CustomLink from "../../primitive/CustomLink";
 import initial_black_icon from "../../../assets/icons/inital_black_arrow.svg";
 import hover_black_icon from "../../../assets/icons/hover_black_arrow.svg";
 import { Link } from "react-router-dom";
+import { Countries } from "../../../utils/data";
 
 const BookADemoHeroSection = () => {
   return (
@@ -65,7 +66,7 @@ const BookADemoHeroSection = () => {
               </div>
               <div className="w-full px-8">
                 <input
-                  className="w-full border border-SunsetOrange rounded-xl px-6 py-5 text-sm md:text-lg font-test-sohne-light placeholder:text-CharcoalGrey"
+                  className="w-full border-none outline outline-offset-1 outline-SunsetOrange rounded-xl px-6 py-5 text-sm md:text-lg font-test-sohne-light placeholder:text-CharcoalGrey"
                   type="number"
                   name=""
                   id=""
@@ -73,16 +74,27 @@ const BookADemoHeroSection = () => {
                 />
               </div>
               <div className="w-full px-8">
-                <input
-                  className="w-full border border-SunsetOrange rounded-xl px-6 py-5 text-sm md:text-lg font-test-sohne-light placeholder:text-CharcoalGrey"
+                <select
+                  className="w-full border-r-[12px] border-0 border-solid border-white outline outline-offset-1 outline-SunsetOrange rounded-xl px-6 py-5 text-sm md:text-lg font-test-sohne-light placeholder:text-CharcoalGrey"
                   type="text"
                   name=""
                   id=""
                   placeholder="Country"
-                />
+                >
+                  {Countries?.map((country, index) => (
+                    <option key={index} value={country?.name}>
+                      {country?.name}
+                    </option>
+                  ))}
+                </select>
               </div>
               <div className="px-8 flex items-start space-x-3">
-                <input type="checkbox" name="" className="mt-1.5 cursor-pointer" id="" />
+                <input
+                  type="checkbox"
+                  name=""
+                  className="mt-1.5 cursor-pointer"
+                  id=""
+                />
                 <p>
                   I agree to receive marketing communications from Smartcomply
                   and also subjected to our{" "}

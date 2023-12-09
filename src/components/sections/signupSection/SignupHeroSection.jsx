@@ -130,13 +130,15 @@ const SignupHeroSection = () => {
                 >
                   User Type
                 </label>
-                <input
+                <select
                   className="w-full border border-Chardonnay rounded-xl px-6 py-4 text-sm md:text-lg font-test-sohne-light placeholder:text-CharcoalGrey placeholder:opacity-40 mt-2"
                   type="text"
                   name=""
                   id=""
                   placeholder="What are you registering as?"
-                />
+                >
+                  <option value="merchant">Merchant</option>
+                </select>
               </div>
             </div>
             <div className="px-8">
