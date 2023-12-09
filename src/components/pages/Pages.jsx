@@ -20,25 +20,27 @@ import ErrorPage from "./ErrorPage";
 
 const Pages = () => {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about-us" element={<AboutUs />} />
-      <Route path="/features" element={<Features />} />
-      <Route path="/frameworks/iso27001" element={<FrameWorkIso27001 />} />
-      <Route path="/frameworks/soc2" element={<FrameWorkSoc2 />} />
-      <Route path="/faq" element={<Faq />} />
-      <Route path="/frameworks/pcidss" element={<FrameWorkPcidss />} />
-      <Route path="/blog" element={<Blog />} />
-      <Route path="/glossary" element={<Glossary />} />
-      <Route path="/pricing" element={<Pricing />} />
-      <Route path="/frameworks/ndpr" element={<FrameWorkNdpr />} />
-      <Route path="/frameworks/integration" element={<Integration />} />
-      <Route path="/auth/sign-in" element={<Signin />} />
-      <Route path="/auth/sign-up" element={<Signup />} />
-      <Route path="/book-a-demo" element={<BookADemo />} />
-      <Route path="/auth/reset-password" element={<ForgetPassword />} />
-      <Route path="*" element={<ErrorPage />} />
-    </Routes>
+    <>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/features" element={<Features />} />
+        <Route path="/frameworks/iso27001" element={<FrameWorkIso27001 />} />
+        <Route path="/frameworks/soc2" element={<FrameWorkSoc2 />} />
+        <Route path="/faq" element={<Faq />} />
+        <Route path="/frameworks/pcidss" element={<FrameWorkPcidss />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/glossary" element={<Glossary />} />
+        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/frameworks/ndpr" element={<FrameWorkNdpr />} />
+        <Route path="/frameworks/integration" element={<Integration />} />
+        <Route path="/auth/sign-in" element={<Signin />} />
+        <Route path="/auth/sign-up" element={<Signup />} />
+        <Route path="/book-a-demo" element={<BookADemo />} />
+        <Route path="/auth/reset-password" element={<ForgetPassword />} />
+        <Route path="*" element={<ErrorPage />} />
+      </Routes>
+    </>
   );
 };
 

@@ -37,7 +37,7 @@ const StillTryingToGetTheHang = () => {
             hover_arrow={hover_black_icon}
           />
           <CustomLink
-            to="/book-a-demo"
+            to="/auth/sign-up"
             title="Try for free"
             className="bg-Chardonnay text-sm md:text-base text-Ebony"
             inital_arrow={initial_black_icon}
