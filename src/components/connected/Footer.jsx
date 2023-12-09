@@ -71,8 +71,8 @@ const Footer = () => {
         </div>
       </div>
       <div className="container mx-auto py-5 flex flex-row items-center space-x-5 font-test-sohne-light">
-        <Link to="">Privacy</Link>
-        <Link to="">Terms</Link>
+        <Link to="/privacy">Privacy</Link>
+        <Link to="/terms">Terms</Link>
         <Link to="">Copyright &copy; 2023</Link>
       </div>
     </div>

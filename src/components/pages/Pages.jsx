@@ -16,6 +16,8 @@ import Glossary from "./Glossary";
 import Pricing from "./Pricing";
 import Faq from "./Faq";
 import ForgetPassword from "./ForgetPassword";
+import Privacy from "./Privacy";
+import Terms from "./Terms";
 import ErrorPage from "./ErrorPage";
 
 const Pages = () => {
@@ -37,6 +39,8 @@ const Pages = () => {
       <Route path="/auth/sign-up" element={<Signup />} />
       <Route path="/book-a-demo" element={<BookADemo />} />
       <Route path="/auth/reset-password" element={<ForgetPassword />} />
+      <Route path="/privacy" element={<Privacy />} />
+      <Route path="/terms" element={<Terms />} />
       <Route path="*" element={<ErrorPage />} />
     </Routes>
   );
