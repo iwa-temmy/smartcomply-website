@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 const Button = ({
-  to,
   title,
   className,
   hover_arrow,

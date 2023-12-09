@@ -24,16 +24,17 @@ const SubscribeToNewsLetterSection = () => {
         toast.success(
           `${values?.email} successfully subscribed to updates from SmartComply`
         );
+        clearFormState();
       }
     } catch (err) {
       if (err?.response.status === 400) {
         const { data } = err?.response || {};
+        console.log(data?.message);
         toast.error(data?.message);
       } else {
         toast.error("Error while processing your request");
       }
     }
-    clearFormState();
   };
 
   //   validation hook
