@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Dropdown } from "primereact/dropdown";
 import forgot_password_text_bg from "../../../assets/icons/forgot_password_text_bg.svg";
 import book_a_demo from "../../../assets/images/book_a_demo.svg";
 import initial_black_icon from "../../../assets/icons/inital_black_arrow.svg";
@@ -72,6 +73,9 @@ const BookADemoHeroSection = () => {
   const handleTextChange = (e) => {
     const { name, value } = e.target;
     setFieldValue(name, value);
+  };
+  const handleSelectChange = (e) => {
+    setFieldValue("country", e.value);
   };
 
   const tickConsent = (e) => {
@@ -180,22 +184,17 @@ const BookADemoHeroSection = () => {
                 />
               </div>
               <div className="w-full px-8">
-                <select
-                  className="w-full border-r-[12px] border-0 border-solid border-white outline outline-offset-1 outline-SunsetOrange rounded-xl px-6 py-5 text-sm md:text-lg font-test-sohne-light placeholder:text-CharcoalGrey"
-                  type="text"
+                <Dropdown
+                  className="w-full border-solid bg-white border border-1 border-SunsetOrange rounded-xl px-6 py-5 text-sm md:text-lg font-test-sohne-light placeholder:text-CharcoalGrey"
                   name="country"
                   id="country"
                   placeholder="Country"
-                  onChange={handleTextChange}
-                  onBlur={() => setFieldTouched("country")}
-                  value={data?.country || ""}
-                >
-                  {Countries?.map((country, index) => (
-                    <option key={index} value={country?.name}>
-                      {country?.name}
-                    </option>
-                  ))}
-                </select>
+                  onChange={handleSelectChange}
+                  options={Countries}
+                  // onBlur={() => setFieldTouched("country")}
+                  // value={data?.country || {}}
+                />
+
                 {showError("country") ? (
                   <FormHelperText text={showError("country")} />
                 ) : null}

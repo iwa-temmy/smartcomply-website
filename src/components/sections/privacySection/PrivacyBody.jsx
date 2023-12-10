@@ -5,7 +5,7 @@ const PrivacyBody = () => {
     <div className="container mx-auto py-12 md:py-24 ">
       <div className="space-y-5 mb-4 md:mb-16">
         <h3 className="text-center text-3xl lg:text-[56px] lg:leading-[4rem] font-test-sohne-medium">
-          SmartComply Privacy Notice
+          Smartcomply Privacy Notice
         </h3>
         <p className="font-test-sohne-semibold text-xs">
           Last updated: 25 October, 2023
@@ -33,7 +33,7 @@ const PrivacyBody = () => {
           Privacy notice overview
         </h4>
         <p className="text-sm md:text-[15px] text-CharcoalGrey">
-          SmartComply Technology Solutions Limited is dedicated to protecting
+          Smartcomply Technology Solutions Limited is dedicated to protecting
           the privacy of its merchant and users. As such, we have implemented
           the necessary measures to comply with the Nigeria Data Protection
           Regulation (NDPR), Nigeria Data Protection Act (NDPA), which is
@@ -44,8 +44,8 @@ const PrivacyBody = () => {
           Who we are
         </h4>
         <p className="text-sm md:text-[15px] text-CharcoalGrey">
-          We are SmartComply Technology Solutions Limited (hereinafter referred
-          to as ‘SmartComplyApp’). Our address is 47, Karimu Ikotun close, Sabo,
+          We are Smartcomply Technology Solutions Limited (hereinafter referred
+          to as ‘SmartComply’). Our address is 47, Karimu Ikotun close, Sabo,
           Yaba, Lagos, Nigeria. You can contact us at the above address, by
           email at support@smartcomplyapp.com or by telephone on +234 813 326
           2024.
@@ -54,7 +54,7 @@ const PrivacyBody = () => {
           Personal Information Collected
         </h4>
         <p className="text-sm md:text-[15px] text-CharcoalGrey">
-          As a user or merchant using the SmartComplyApp website/web-app, we may
+          As a user or merchant using the Smartcomply website/web-app, we may
           collect your personal information including your full name, email
           address, phone number, and postal/company address. We may also collect
           your billing and transaction details, as well as demographic
@@ -218,7 +218,7 @@ const PrivacyBody = () => {
             Protection of Personal Information
           </h4>
           <p className="text-sm md:text-[15px] text-CharcoalGrey">
-            SmartComplyApp is committed to protecting your personal information
+            Smartcomply is committed to protecting your personal information
             from unauthorized access, misuse, loss, modification, or disclosure.
             We have implemented appropriate technical, physical, and
             administrative safeguards to ensure the confidentiality, integrity,
@@ -229,12 +229,12 @@ const PrivacyBody = () => {
           </h4>
           <p className="text-sm md:text-[15px] text-CharcoalGrey">
             To protect your privacy is our priority, we limit the sharing of
-            your Personal Information outside of SmartComplyApp. We will not
+            your Personal Information outside of Smartcomply. We will not
             share Personal Information about you except under the circumstances
             listed below.
           </p>
           <p className="text-sm md:text-[15px] text-CharcoalGrey">
-            SmartComplyApp may disclose personal information to its service
+            Smartcomply may disclose personal information to its service
             providers and third-party vendors who work on our behalf. The
             service providers we use are obligated by contract to keep your
             personal information private and secure and only use it for its
@@ -254,7 +254,7 @@ const PrivacyBody = () => {
             your account.
           </p>
           <p className="text-sm md:text-[15px] text-CharcoalGrey">
-            SmartComplyApp also reserves the right to disclose your personal
+            Smartcomply also reserves the right to disclose your personal
             information where required by law to regulatory, law enforcement, or
             other government authorities, including during routine regulatory
             inspections.
@@ -294,7 +294,7 @@ const PrivacyBody = () => {
           </ul>
           <p className="text-sm md:text-[15px] text-CharcoalGrey">
             To exercise these rights or lodge a complaint, please contact
-            SmartComplyApp's Data Protection Officer.
+            Smartcomply's Data Protection Officer.
           </p>
         </div>
         <div>
@@ -390,7 +390,7 @@ const PrivacyBody = () => {
         <p className="text-sm md:text-[15px] text-CharcoalGrey">
           The most current version of this Notice governs our processing of your
           personal data and we may revise this Notice from time to time as
-          needed. SmartComplyApp reserves the right to change its Notice as
+          needed. Smartcomply reserves the right to change its Notice as
           needed for compliance with NDPA & NDPR. Any changes to this Notice
           will be posted on our website, and the effective date will be
           indicated.

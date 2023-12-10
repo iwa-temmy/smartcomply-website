@@ -5,7 +5,7 @@ const TermsBody = () => {
     <div className="container mx-auto py-12 md:py-24 ">
       <div className="space-y-5 mb-4 md:mb-16">
         <h3 className="text-center text-3xl lg:text-[56px] lg:leading-[4rem] font-test-sohne-medium">
-          SmartComplyApp Terms & Condition
+          Smartcomply Terms & Condition
         </h3>
         <div className="space-y-6">
           <div className="space-y-2">
@@ -13,12 +13,12 @@ const TermsBody = () => {
               1. THE SmartComply PLATFORM
             </h4>
             <p className="text-sm md:text-[15px] text-CharcoalGrey">
-              The SmartComplyApp Platform is an app-based compliance platform
+              The Smartcomply Platform is an app-based compliance platform
               which provides ISO, PCIDSS etc compliance certification to its
               Users. “Clients” are businesses seeking to obtain
               ************************* DESCRIBE SERVICES IN DETAIL (“Services”)
               from the Company. Clients are hereinafter referred to as “Users.”
-              The SmartComplyApp Platform enables connections to Users for the
+              The Smartcomply Platform enables connections to Users for the
               fulfilment of Services. SmartComply makes no warranties or
               representations about the suitability, reliability, timeliness, or
               accuracy of the Services requested or services provided by, or the
