@@ -16,247 +16,12 @@ const ApraisalFromCustomer = () => {
           <div className="bg-BlueChalk px-6 py-8 rounded-2xl space-y-8 text-CharcoalGrey">
             <img src={customer_reviews_icon} alt="" />
             <p className="text-sm md:text-[15px] h-52">
-              Smartcomply has the best compliance tool ever, the platform aided
-              us to achieve the dreaded PCI DSS certification for our virtual
-              card product without stress! The operations team did an excellent
-              job of managing our expectations in such a way that we were no
-              longer afraid to meet the QSA when the time came for the final
-              audit. I recommend the Smartcomply platform for any compliance
-              audit task 110%
-            </p>
-
-            <div className="flex flex-row items-center space-x-3">
-              <img
-                src={custom_img}
-                className="rounded-full w-12 h-12"
-                alt="customer"
-              />
-              <div className="">
-                <h4 className="font-test-sohne-medium text-base md:text-xl">
-                  John Atomode
-                </h4>
-                <p className="text-[10px] md:text-xs">
-                  Chief Operating officer
-                </p>
-                <p className="text-[10px] md:text-xs">
-                  D'Accubin Technology Limited
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="slide">
-          <div className="bg-BlueChalk px-6 py-8 rounded-2xl space-y-8 text-CharcoalGrey">
-            <img src={customer_reviews_icon} alt="" />
-            <p className="text-sm md:text-[15px] h-52">
-              The Smartcomply platform is very easy to understand and use, it is
-              both engaging and instructive for any compliance audit task.
-              Finding this compliance management tool was the best thing for our
-              company, as the operations team were very helpful in providing all
-              necessary guidance regarding the achievement of our first PCI DSS
-              certification effortlessly.
-            </p>
-
-            <div className="flex flex-row items-center space-x-3">
-              <img
-                src={custom_img}
-                className="rounded-full w-12 h-12"
-                alt="customer"
-              />
-              <div className="">
-                <h4 className="font-test-sohne-medium text-base md:text-xl">
-                  Shile Owoka
-                </h4>
-                <p className="text-[10px] md:text-xs">Country manager</p>
-                <p className="text-[10px] md:text-xs">Smile Identity Nigeria</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="slide">
-          <div className="bg-BlueChalk px-6 py-8 rounded-2xl space-y-8 text-CharcoalGrey">
-            <img src={customer_reviews_icon} alt="" />
-            <p className="text-sm md:text-[15px] h-52">
-              As a business, one thing we always value is efficiency. And we
-              believe that is something Smartcomply embodies. All round
-              efficiency and a keen commitment to ensuring goals are met. We
-              would gladly recommend them to any of our partners and customers
-              looking to ensure regulatory compliance and certification.
-            </p>
-
-            <div className="flex flex-row items-center space-x-3">
-              <img
-                src={custom_img}
-                className="rounded-full w-12 h-12"
-                alt="customer"
-              />
-              <div className="">
-                <h4 className="font-test-sohne-medium text-base md:text-xl">
-                  Omotola
-                </h4>
-                <p className="text-[10px] md:text-xs">
-                  Legal and Compliance Officer
-                </p>
-                <p className="text-[10px] md:text-xs">VeendHQ</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="slide">
-          <div className="bg-BlueChalk px-6 py-8 rounded-2xl space-y-8 text-CharcoalGrey">
-            <img src={customer_reviews_icon} alt="" />
-            <p className="text-sm md:text-[15px] h-52">
-              For any company in a regulated space, it is important to ensure
-              compliance with required provisions and laws. Smartcomply helped
-              us achieve a standard level of compliance with ease. We
-              particularly appreciated the efforts of Opeyemi and Valerie in
-              ensuring we completed our NDPR certification as a Lending Company.
-            </p>
-
-            <div className="flex flex-row items-center space-x-3">
-              <img
-                src={custom_img}
-                className="rounded-full w-12 h-12"
-                alt="customer"
-              />
-              <div className="">
-                <h4 className="font-test-sohne-medium text-base md:text-xl">
-                  Tola
-                </h4>
-                <p className="text-[10px] md:text-xs">Eden Core Beta Limited</p>
-                <p className="text-[10px] md:text-xs">Company Secretary</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="slide">
-          <div className="bg-BlueChalk px-6 py-8 rounded-2xl space-y-8 text-CharcoalGrey">
-            <img src={customer_reviews_icon} alt="" />
-            <p className="text-sm md:text-[15px] h-52">
-              Smartcomply has the best compliance tool ever, the platform aided
-              us to achieve the dreaded PCI DSS certification for our virtual
-              card product without stress! The operations team did an excellent
-              job of managing our expectations in such a way that we were no
-              longer afraid to meet the QSA when the time came for the final
-              audit. I recommend the Smartcomply platform for any compliance
-              audit task 110%
-            </p>
-
-            <div className="flex flex-row items-center space-x-3">
-              <img
-                src={custom_img}
-                className="rounded-full w-12 h-12"
-                alt="customer"
-              />
-              <div className="">
-                <h4 className="font-test-sohne-medium text-base md:text-xl">
-                  John Atomode
-                </h4>
-                <p className="text-[10px] md:text-xs">
-                  Chief Operating officer
-                </p>
-                <p className="text-[10px] md:text-xs">
-                  D'Accubin Technology Limited
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="slide">
-          <div className="bg-BlueChalk px-6 py-8 rounded-2xl space-y-8 text-CharcoalGrey">
-            <img src={customer_reviews_icon} alt="" />
-            <p className="text-sm md:text-[15px] h-52">
-              The Smartcomply platform is very easy to understand and use, it is
-              both engaging and instructive for any compliance audit task.
-              Finding this compliance management tool was the best thing for our
-              company, as the operations team were very helpful in providing all
-              necessary guidance regarding the achievement of our first PCI DSS
-              certification effortlessly.
-            </p>
-
-            <div className="flex flex-row items-center space-x-3">
-              <img
-                src={custom_img}
-                className="rounded-full w-12 h-12"
-                alt="customer"
-              />
-              <div className="">
-                <h4 className="font-test-sohne-medium text-base md:text-xl">
-                  Shile Owoka
-                </h4>
-                <p className="text-[10px] md:text-xs">Country manager</p>
-                <p className="text-[10px] md:text-xs">Smile Identity Nigeria</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="slide">
-          <div className="bg-BlueChalk px-6 py-8 rounded-2xl space-y-8 text-CharcoalGrey">
-            <img src={customer_reviews_icon} alt="" />
-            <p className="text-sm md:text-[15px] h-52">
-              As a business, one thing we always value is efficiency. And we
-              believe that is something Smartcomply embodies. All round
-              efficiency and a keen commitment to ensuring goals are met. We
-              would gladly recommend them to any of our partners and customers
-              looking to ensure regulatory compliance and certification.
-            </p>
-
-            <div className="flex flex-row items-center space-x-3">
-              <img
-                src={custom_img}
-                className="rounded-full w-12 h-12"
-                alt="customer"
-              />
-              <div className="">
-                <h4 className="font-test-sohne-medium text-base md:text-xl">
-                  Omotola
-                </h4>
-                <p className="text-[10px] md:text-xs">
-                  Legal and Compliance Officer
-                </p>
-                <p className="text-[10px] md:text-xs">VeendHQ</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="slide">
-          <div className="bg-BlueChalk px-6 py-8 rounded-2xl space-y-8 text-CharcoalGrey">
-            <img src={customer_reviews_icon} alt="" />
-            <p className="text-sm md:text-[15px] h-52">
-              For any company in a regulated space, it is important to ensure
-              compliance with required provisions and laws. Smartcomply helped
-              us achieve a standard level of compliance with ease. We
-              particularly appreciated the efforts of Opeyemi and Valerie in
-              ensuring we completed our NDPR certification as a Lending Company.
-            </p>
-
-            <div className="flex flex-row items-center space-x-3">
-              <img
-                src={custom_img}
-                className="rounded-full w-12 h-12"
-                alt="customer"
-              />
-              <div className="">
-                <h4 className="font-test-sohne-medium text-base md:text-xl">
-                  Tola
-                </h4>
-                <p className="text-[10px] md:text-xs">Eden Core Beta Limited</p>
-                <p className="text-[10px] md:text-xs">Company Secretary</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="slide">
-          <div className="bg-BlueChalk px-6 py-8 rounded-2xl space-y-8 text-CharcoalGrey">
-            <img src={customer_reviews_icon} alt="" />
-            <p className="text-sm md:text-[15px] h-52">
-              Smartcomply has the best compliance tool ever, the platform aided
-              us to achieve the dreaded PCI DSS certification for our virtual
-              card product without stress! The operations team did an excellent
-              job of managing our expectations in such a way that we were no
-              longer afraid to meet the QSA when the time came for the final
-              audit. I recommend the Smartcomply platform for any compliance
-              audit task 110%
+              I recently had the pleasure of working with Smartcomply to achieve
+              PCI DSS compliance for my business, and I must say that the
+              experience was truly exceptional. From the very beginning, their
+              team demonstrated a deep understanding of the complex world of
+              payment card data security, and they guided us through the entire
+              process with expertise and professionalism.
             </p>
 
             <div className="flex flex-row items-center space-x-3">
@@ -483,13 +248,12 @@ const ApraisalFromCustomer = () => {
           <div className="bg-BlueChalk px-6 py-8 rounded-2xl space-y-8 text-CharcoalGrey">
             <img src={customer_reviews_icon} alt="" />
             <p className="text-sm md:text-[15px] h-52">
-              Smartcomply has the best compliance tool ever, the platform aided
-              us to achieve the dreaded PCI DSS certification for our virtual
-              card product without stress! The operations team did an excellent
-              job of managing our expectations in such a way that we were no
-              longer afraid to meet the QSA when the time came for the final
-              audit. I recommend the Smartcomply platform for any compliance
-              audit task 110%
+              I recently had the pleasure of working with Smartcomply to achieve
+              PCI DSS compliance for my business, and I must say that the
+              experience was truly exceptional. From the very beginning, their
+              team demonstrated a deep understanding of the complex world of
+              payment card data security, and they guided us through the entire
+              process with expertise and professionalism.
             </p>
 
             <div className="flex flex-row items-center space-x-3">
@@ -600,13 +364,12 @@ const ApraisalFromCustomer = () => {
           <div className="bg-BlueChalk px-6 py-8 rounded-2xl space-y-8 text-CharcoalGrey">
             <img src={customer_reviews_icon} alt="" />
             <p className="text-sm md:text-[15px] h-52">
-              Smartcomply has the best compliance tool ever, the platform aided
-              us to achieve the dreaded PCI DSS certification for our virtual
-              card product without stress! The operations team did an excellent
-              job of managing our expectations in such a way that we were no
-              longer afraid to meet the QSA when the time came for the final
-              audit. I recommend the Smartcomply platform for any compliance
-              audit task 110%
+              I recently had the pleasure of working with Smartcomply to achieve
+              PCI DSS compliance for my business, and I must say that the
+              experience was truly exceptional. From the very beginning, their
+              team demonstrated a deep understanding of the complex world of
+              payment card data security, and they guided us through the entire
+              process with expertise and professionalism.
             </p>
 
             <div className="flex flex-row items-center space-x-3">
@@ -717,13 +480,244 @@ const ApraisalFromCustomer = () => {
           <div className="bg-BlueChalk px-6 py-8 rounded-2xl space-y-8 text-CharcoalGrey">
             <img src={customer_reviews_icon} alt="" />
             <p className="text-sm md:text-[15px] h-52">
-              Smartcomply has the best compliance tool ever, the platform aided
-              us to achieve the dreaded PCI DSS certification for our virtual
-              card product without stress! The operations team did an excellent
-              job of managing our expectations in such a way that we were no
-              longer afraid to meet the QSA when the time came for the final
-              audit. I recommend the Smartcomply platform for any compliance
-              audit task 110%
+              I recently had the pleasure of working with Smartcomply to achieve
+              PCI DSS compliance for my business, and I must say that the
+              experience was truly exceptional. From the very beginning, their
+              team demonstrated a deep understanding of the complex world of
+              payment card data security, and they guided us through the entire
+              process with expertise and professionalism.
+            </p>
+
+            <div className="flex flex-row items-center space-x-3">
+              <img
+                src={custom_img}
+                className="rounded-full w-12 h-12"
+                alt="customer"
+              />
+              <div className="">
+                <h4 className="font-test-sohne-medium text-base md:text-xl">
+                  John Atomode
+                </h4>
+                <p className="text-[10px] md:text-xs">
+                  Chief Operating officer
+                </p>
+                <p className="text-[10px] md:text-xs">
+                  D'Accubin Technology Limited
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="slide">
+          <div className="bg-BlueChalk px-6 py-8 rounded-2xl space-y-8 text-CharcoalGrey">
+            <img src={customer_reviews_icon} alt="" />
+            <p className="text-sm md:text-[15px] h-52">
+              The Smartcomply platform is very easy to understand and use, it is
+              both engaging and instructive for any compliance audit task.
+              Finding this compliance management tool was the best thing for our
+              company, as the operations team were very helpful in providing all
+              necessary guidance regarding the achievement of our first PCI DSS
+              certification effortlessly.
+            </p>
+
+            <div className="flex flex-row items-center space-x-3">
+              <img
+                src={custom_img}
+                className="rounded-full w-12 h-12"
+                alt="customer"
+              />
+              <div className="">
+                <h4 className="font-test-sohne-medium text-base md:text-xl">
+                  Shile Owoka
+                </h4>
+                <p className="text-[10px] md:text-xs">Country manager</p>
+                <p className="text-[10px] md:text-xs">Smile Identity Nigeria</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="slide">
+          <div className="bg-BlueChalk px-6 py-8 rounded-2xl space-y-8 text-CharcoalGrey">
+            <img src={customer_reviews_icon} alt="" />
+            <p className="text-sm md:text-[15px] h-52">
+              As a business, one thing we always value is efficiency. And we
+              believe that is something Smartcomply embodies. All round
+              efficiency and a keen commitment to ensuring goals are met. We
+              would gladly recommend them to any of our partners and customers
+              looking to ensure regulatory compliance and certification.
+            </p>
+
+            <div className="flex flex-row items-center space-x-3">
+              <img
+                src={custom_img}
+                className="rounded-full w-12 h-12"
+                alt="customer"
+              />
+              <div className="">
+                <h4 className="font-test-sohne-medium text-base md:text-xl">
+                  Omotola
+                </h4>
+                <p className="text-[10px] md:text-xs">
+                  Legal and Compliance Officer
+                </p>
+                <p className="text-[10px] md:text-xs">VeendHQ</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="slide">
+          <div className="bg-BlueChalk px-6 py-8 rounded-2xl space-y-8 text-CharcoalGrey">
+            <img src={customer_reviews_icon} alt="" />
+            <p className="text-sm md:text-[15px] h-52">
+              For any company in a regulated space, it is important to ensure
+              compliance with required provisions and laws. Smartcomply helped
+              us achieve a standard level of compliance with ease. We
+              particularly appreciated the efforts of Opeyemi and Valerie in
+              ensuring we completed our NDPR certification as a Lending Company.
+            </p>
+
+            <div className="flex flex-row items-center space-x-3">
+              <img
+                src={custom_img}
+                className="rounded-full w-12 h-12"
+                alt="customer"
+              />
+              <div className="">
+                <h4 className="font-test-sohne-medium text-base md:text-xl">
+                  Tola
+                </h4>
+                <p className="text-[10px] md:text-xs">Eden Core Beta Limited</p>
+                <p className="text-[10px] md:text-xs">Company Secretary</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="slide">
+          <div className="bg-BlueChalk px-6 py-8 rounded-2xl space-y-8 text-CharcoalGrey">
+            <img src={customer_reviews_icon} alt="" />
+            <p className="text-sm md:text-[15px] h-52">
+              I recently had the pleasure of working with Smartcomply to achieve
+              PCI DSS compliance for my business, and I must say that the
+              experience was truly exceptional. From the very beginning, their
+              team demonstrated a deep understanding of the complex world of
+              payment card data security, and they guided us through the entire
+              process with expertise and professionalism.
+            </p>
+
+            <div className="flex flex-row items-center space-x-3">
+              <img
+                src={custom_img}
+                className="rounded-full w-12 h-12"
+                alt="customer"
+              />
+              <div className="">
+                <h4 className="font-test-sohne-medium text-base md:text-xl">
+                  John Atomode
+                </h4>
+                <p className="text-[10px] md:text-xs">
+                  Chief Operating officer
+                </p>
+                <p className="text-[10px] md:text-xs">
+                  D'Accubin Technology Limited
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="slide">
+          <div className="bg-BlueChalk px-6 py-8 rounded-2xl space-y-8 text-CharcoalGrey">
+            <img src={customer_reviews_icon} alt="" />
+            <p className="text-sm md:text-[15px] h-52">
+              The Smartcomply platform is very easy to understand and use, it is
+              both engaging and instructive for any compliance audit task.
+              Finding this compliance management tool was the best thing for our
+              company, as the operations team were very helpful in providing all
+              necessary guidance regarding the achievement of our first PCI DSS
+              certification effortlessly.
+            </p>
+
+            <div className="flex flex-row items-center space-x-3">
+              <img
+                src={custom_img}
+                className="rounded-full w-12 h-12"
+                alt="customer"
+              />
+              <div className="">
+                <h4 className="font-test-sohne-medium text-base md:text-xl">
+                  Shile Owoka
+                </h4>
+                <p className="text-[10px] md:text-xs">Country manager</p>
+                <p className="text-[10px] md:text-xs">Smile Identity Nigeria</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="slide">
+          <div className="bg-BlueChalk px-6 py-8 rounded-2xl space-y-8 text-CharcoalGrey">
+            <img src={customer_reviews_icon} alt="" />
+            <p className="text-sm md:text-[15px] h-52">
+              As a business, one thing we always value is efficiency. And we
+              believe that is something Smartcomply embodies. All round
+              efficiency and a keen commitment to ensuring goals are met. We
+              would gladly recommend them to any of our partners and customers
+              looking to ensure regulatory compliance and certification.
+            </p>
+
+            <div className="flex flex-row items-center space-x-3">
+              <img
+                src={custom_img}
+                className="rounded-full w-12 h-12"
+                alt="customer"
+              />
+              <div className="">
+                <h4 className="font-test-sohne-medium text-base md:text-xl">
+                  Omotola
+                </h4>
+                <p className="text-[10px] md:text-xs">
+                  Legal and Compliance Officer
+                </p>
+                <p className="text-[10px] md:text-xs">VeendHQ</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="slide">
+          <div className="bg-BlueChalk px-6 py-8 rounded-2xl space-y-8 text-CharcoalGrey">
+            <img src={customer_reviews_icon} alt="" />
+            <p className="text-sm md:text-[15px] h-52">
+              For any company in a regulated space, it is important to ensure
+              compliance with required provisions and laws. Smartcomply helped
+              us achieve a standard level of compliance with ease. We
+              particularly appreciated the efforts of Opeyemi and Valerie in
+              ensuring we completed our NDPR certification as a Lending Company.
+            </p>
+
+            <div className="flex flex-row items-center space-x-3">
+              <img
+                src={custom_img}
+                className="rounded-full w-12 h-12"
+                alt="customer"
+              />
+              <div className="">
+                <h4 className="font-test-sohne-medium text-base md:text-xl">
+                  Tola
+                </h4>
+                <p className="text-[10px] md:text-xs">Eden Core Beta Limited</p>
+                <p className="text-[10px] md:text-xs">Company Secretary</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="slide">
+          <div className="bg-BlueChalk px-6 py-8 rounded-2xl space-y-8 text-CharcoalGrey">
+            <img src={customer_reviews_icon} alt="" />
+            <p className="text-sm md:text-[15px] h-52">
+              I recently had the pleasure of working with Smartcomply to achieve
+              PCI DSS compliance for my business, and I must say that the
+              experience was truly exceptional. From the very beginning, their
+              team demonstrated a deep understanding of the complex world of
+              payment card data security, and they guided us through the entire
+              process with expertise and professionalism.
             </p>
 
             <div className="flex flex-row items-center space-x-3">
