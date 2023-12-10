@@ -21,7 +21,7 @@ const ResourcesDropdown = () => {
         <div className="">
           <ul className="pt-4 transform scale-0 group-hover:scale-100 absolute transition duration-150 space-y-2 py-3 ease-in-out origin-top xl:w-44 px-4 z-40">
             <div className="rounded-lg px-4 py-6 space-y-3 bg-white relative ">
-              <div className="border-b-[0.1px] border-b-Wisteria pb-3">
+              {/* <div className="border-b-[0.1px] border-b-Wisteria pb-3">
                 <Link
                   to="/blog"
                   className="flex flex-row items-center space-x-3"
@@ -29,7 +29,7 @@ const ResourcesDropdown = () => {
                   <img src={img_5} alt="" />
                   <span className="text-sm">Blogs</span>
                 </Link>
-              </div>
+              </div> */}
               <div className="border-b-[0.1px] border-b-Wisteria pb-3">
                 <Link
                   to="/faq"
