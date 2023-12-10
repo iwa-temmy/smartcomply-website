@@ -5,9 +5,9 @@ import image_s_2 from "../../../assets/images/image_s_2.png";
 
 const WantToKnowUs = () => {
   const tabLists = [
-    { tabName: "What is Smartcomply", border_color: "border-b-AztecPurple" },
-    { tabName: "How it works", border_color: "border-b-SunsetOrange" },
-    { tabName: "Why Smartcomply", border_color: "border-b-Chardonnay" },
+    { tabName: "What is Smartcomply?", border_color: "border-b-AztecPurple" },
+    { tabName: "How it works?", border_color: "border-b-SunsetOrange" },
+    { tabName: "Why Smartcomply?", border_color: "border-b-Chardonnay" },
   ];
   return (
     <div className="container mx-auto pb-72 md:pb-44">

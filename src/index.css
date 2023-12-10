@@ -295,12 +295,27 @@ body {
   background-size: contain;
 }
 
-select:not([multiple]):not([size]) {
-  -webkit-appearance: menulist-button; /* Mac Aqua off */
-}
-@supports (-ms-accelerator: true) {
-  select:not([multiple]):not([size]) {
-    -webkit-appearance: menulist; /* Revert to default for Edge */
+.p-dropdown-panel {
+  background: #fff;
+  color: #495057;
+  border: 0;
+  border-radius: 6px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  .p-dropdown-items {
+    .p-dropdown-item {
+      margin: 0;
+      padding: 0.75rem 1.25rem;
+      border: 0;
+      color: #495057;
+      background: transparent;
+      transition: box-shadow 0.2s;
+      border-radius: 0;
+
+      &:not(.p-highlight):not(.p-disabled):hover {
+        color: #495057;
+        background: #e9ecef;
+      }
+    }
   }
 }
 .shadow_bg {

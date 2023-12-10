@@ -13,6 +13,7 @@ import { GET_STARTED_VALIDATION } from "../../../utils/fieldValidations";
 import Button from "../../primitive/Button";
 import Input from "../../primitive/Input";
 import FormHelperText from "../../primitive/FormHelperText";
+import { Dropdown } from "primereact/dropdown";
 
 const SignupHeroSection = () => {
   const navigate = useNavigate();
@@ -66,6 +67,10 @@ const SignupHeroSection = () => {
   const handleTextChange = (e) => {
     const { name, value } = e.target;
     setFieldValue(name, value);
+  };
+
+  const handleSelectChange = (e) => {
+    setFieldValue("user_type", e.value);
   };
   return (
     <div className="py-5 md:py-10">
@@ -217,19 +222,17 @@ const SignupHeroSection = () => {
                 >
                   User Type
                 </label>
-                <select
+                <Dropdown
                   className="w-full border border-Chardonnay rounded-xl px-6 py-4 text-sm md:text-lg font-test-sohne-light placeholder:text-CharcoalGrey placeholder:opacity-40 mt-2"
                   type="text"
                   name="user_type"
                   id="user_type"
                   placeholder="What are you registering as?"
-                  onChange={handleTextChange}
+                  onChange={handleSelectChange}
+                  options={[{ label: "Merchant", value: "merchant" }]}
                   onBlur={() => setFieldTouched("user_type")}
                   value={data?.user_type || ""}
-                >
-                  <option value="">What are you registering as?</option>
-                  <option value="merchant">Merchant</option>
-                </select>
+                />
                 {showError("user_type") ? (
                   <FormHelperText text={showError("user_type")} />
                 ) : null}

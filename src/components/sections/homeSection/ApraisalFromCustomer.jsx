@@ -7,7 +7,7 @@ const ApraisalFromCustomer = () => {
     <div className="py-20 md:py-32 space-y-6 md:space-y-12">
       <div className="container mx-auto">
         <h3 className="max-w-2xl flex flex-col text-3xl lg:text-[56px] lg:leading-[4rem] font-test-sohne-medium">
-          Appraisal From Our Esteem Customers
+          Appraisals From Our Esteemed Customers
         </h3>
       </div>
 
@@ -367,13 +367,12 @@ const ApraisalFromCustomer = () => {
           <div className="bg-BlueChalk px-6 py-8 rounded-2xl space-y-8 text-CharcoalGrey">
             <img src={customer_reviews_icon} alt="" />
             <p className="text-sm md:text-[15px] h-52">
-              Smartcomply has the best compliance tool ever, the platform aided
-              us to achieve the dreaded PCI DSS certification for our virtual
-              card product without stress! The operations team did an excellent
-              job of managing our expectations in such a way that we were no
-              longer afraid to meet the QSA when the time came for the final
-              audit. I recommend the Smartcomply platform for any compliance
-              audit task 110%
+              I recently had the pleasure of working with Smartcomply to achieve
+              PCI DSS compliance for my business, and I must say that the
+              experience was truly exceptional. From the very beginning, their
+              team demonstrated a deep understanding of the complex world of
+              payment card data security, and they guided us through the entire
+              process with expertise and professionalism.
             </p>
 
             <div className="flex flex-row items-center space-x-3">

@@ -159,7 +159,7 @@ const BookADemoHeroSection = () => {
               </div>
               <div className="w-full px-8">
                 <Input
-                  className="w-full border border-SunsetOrange rounded-xl px-6 py-5 text-sm md:text-lg font-test-sohne-light placeholder:text-CharcoalGrey"
+                  className="w-full border-solid bg-white border border-1 border-SunsetOrange rounded-xl px-6 py-5 text-sm md:text-lg font-test-sohne-light placeholder:text-CharcoalGrey"
                   type="text"
                   name="position"
                   id="position"
@@ -172,7 +172,7 @@ const BookADemoHeroSection = () => {
               </div>
               <div className="w-full px-8">
                 <Input
-                  className="w-full border-none outline outline-offset-1 outline-SunsetOrange rounded-xl px-6 py-5 text-sm md:text-lg font-test-sohne-light placeholder:text-CharcoalGrey"
+                  className="w-full border-solid bg-white border border-1 border-SunsetOrange rounded-xl px-6 py-5 text-sm md:text-lg font-test-sohne-light placeholder:text-CharcoalGrey"
                   type="text"
                   name="phone_number"
                   id="phone_number"
@@ -189,10 +189,11 @@ const BookADemoHeroSection = () => {
                   name="country"
                   id="country"
                   placeholder="Country"
+                  optionLabel="name"
                   onChange={handleSelectChange}
                   options={Countries}
-                  // onBlur={() => setFieldTouched("country")}
-                  // value={data?.country || {}}
+                  onBlur={() => setFieldTouched("country")}
+                  value={data?.country || ""}
                 />
 
                 {showError("country") ? (

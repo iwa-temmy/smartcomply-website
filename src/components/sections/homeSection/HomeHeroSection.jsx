@@ -14,11 +14,12 @@ const HomeHeroSection = () => {
             Embrace Automation and AI for Seamless Cybersecurity and Compliance!
           </h2>
           <p>
-            Smartcomply, an automated and AI-powered compliance platform, offers
-            the most sought-after compliance standards, risk assessment and
-            monitoring, as well as privacy and cybersecurity frameworks for
-            businesses. This empowers businesses to build trust with their
-            customers and foster secure business growth.
+            Smartcomply, an automated and AI-powered compliance and
+            Cybersecurity platform, offers the most sought-after compliance and
+            cybersecurity standards, risk assessment and monitoring, as well as
+            privacy and cybersecurity frameworks for businesses. This empowers
+            businesses to build trust with their customers and foster secure
+            business growth.
           </p>
           <div className="w-full flex items-center space-x-10 md:space-x-4 ">
             <CustomLink
