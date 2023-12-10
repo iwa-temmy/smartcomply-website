@@ -65,7 +65,7 @@ const Pricing = () => {
         <Navbar />
         <PricingHeroSection />
       </div>
-      <CertificationAudit />
+      <CertificationAudit plans={availablePlans} />
       <StillTryingToGetTheHang />
       <Footer />
     </div>
