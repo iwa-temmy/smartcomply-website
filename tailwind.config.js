@@ -75,6 +75,7 @@ module.exports = {
     },
   },
   plugins: [
+    'tailwindcss/nesting': {},
     require("tailwind-scrollbar-hide"),
     "@babel/plugin-proposal-private-property-in-object",
   ],
