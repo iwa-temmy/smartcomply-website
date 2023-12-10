@@ -10,7 +10,7 @@ import {
 } from "../../../mockdata/pricingdata";
 
 const CertificationAudit = ({ plans }) => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(null);
   const [isMenuOpen_2, setIsMenuOpen_2] = useState(false);
   const [isMenuOpen_3, setIsMenuOpen_3] = useState(false);
 
@@ -25,22 +25,40 @@ const CertificationAudit = ({ plans }) => {
           Compare and explore potential oversights
         </p>
       </div>
+      {/* bg-CaribbeanGreen */}
+      {/* bg-PaleViolet */}
+      {/* bg-CrystalBlue */}
       <div className="px-[1.5rem] md:px-0 w-full flex flex-col md:space-y-0 md:flex-row md:space-x-6 md:pl-16 xl:pl-24">
         {plans?.map((plan, index) => (
           <div className="w-full md:w-fit h-fit md:h-[730px]">
-            <div className="bg-CaribbeanGreen rounded-t-3xl">
-              <p className="text-white text-2xl py-4 px-3">Popular choice</p>
-            </div>
+            {index === 0 ? (
+              <div className="bg-CaribbeanGreen rounded-t-3xl">
+                <p className="text-white text-2xl py-4 px-3">Popular choice</p>
+              </div>
+            ) : (
+              <div className="">
+                <p className="text-white text-2xl py-4 px-3">Popular choice</p>
+              </div>
+            )}
+
             <div className="relative md:z-40 h-full">
               <div
                 className={`absolute inset-y-0 -ml-2 left-[100%] flex items-start pl-12 pr-3 space-x-2 bg-white border-r-4 border-r-white rounded-tr-3xl rounded-br-3xl ${
-                  isMenuOpen
+                  isMenuOpen === index
                     ? "opacity-100 transform scale-x-100 translate-x-0"
                     : "opacity-0 transform scale-x-0 -translate-x-1/2"
                 } transition ease-in-out duration-1000`}
               >
                 <div className="flex flex-col md:w-[500px]">
-                  <div className="flex space-x-8 border-b-[0.1px] border-b-CaribbeanGreen">
+                  <div
+                    className={`flex space-x-8 border-b-[0.1px] ${
+                      index === 0
+                        ? "border-b-CaribbeanGreen"
+                        : index === 1
+                        ? "border-b-PaleViolet"
+                        : "border-b-CrystalBlue"
+                    }`}
+                  >
                     <div className="w-[60%] space-y-3 pt-10 md:pb-8 xl:pb-10 startup_right_border_dashed">
                       <h5 className="font-test-sohne-medium text-CharcoalGrey text-base md:text-xl">
                         Auditing
@@ -123,20 +141,20 @@ const CertificationAudit = ({ plans }) => {
               <div className="w-full h-full pr-1.5 bg-CaribbeanGreen rounded-b-3xl">
                 <div
                   className={`w-full h-full relative inline-flex items-center justify-center bg-purple-600 hover:bg-purple-700 rounded-tl-full rounded-bl-full focus:outline-none transition-all duration-300 ${
-                    isMenuOpen
+                    isMenuOpen === index
                       ? "bg-white hover:bg-white"
                       : "rounded-tr-full rounded-br-full"
                   }`}
-                  onMouseEnter={() => setIsMenuOpen(true)}
-                  onMouseLeave={() => setIsMenuOpen(false)}
+                  onMouseEnter={() => setIsMenuOpen(index)}
+                  onMouseLeave={() => setIsMenuOpen(index)}
                 >
                   <div className="w-full md:w-72 h-full space-y-8 bg-HintOfGreen px-4 pt-8 pb-4 md:pb-24 xl:pb-32 rounded-3xl">
                     <div className="flex flex-col space-y-4">
                       <h4 className="font-test-sohne-medium text-2xl md:text-4xl text-CharcoalGrey">
-                        Start Up
+                        {plan?.name}
                       </h4>
                       <span className="w-fit text-CharcoalGrey bg-white px-4 py-2 rounded-md text-sm md:text-[15px]">
-                        1 - 50 Employees
+                        {plan?.employee_range} Employees
                       </span>
                       <div>
                         <CustomLink
