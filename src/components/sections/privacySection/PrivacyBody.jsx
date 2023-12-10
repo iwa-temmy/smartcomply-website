@@ -14,11 +14,11 @@ const PrivacyBody = () => {
       <div className="space-y-8">
         <p className="text-sm md:text-[15px] text-CharcoalGrey">
           This Privacy Notice ('Notice') governs your use of our website:
-          <a href="https://smartcomplyapp.com/">
+          <a href="https://smartcomply.com/">
             https://smartcomplyapp.com/
           </a>{" "}
           ('the website') and our webapp:
-          <a href=" https://app.smartcomplyapp.com/">
+          <a href=" https://app.smartcomply.com/">
             {" "}
             https://app.smartcomplyapp.com/
           </a>{" "}
