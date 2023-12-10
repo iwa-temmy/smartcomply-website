@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import CustomLink from "../../primitive/CustomLink";
 import learn_more_img_1 from "../../../assets/images/learn_more_img-1.png";
-import learn_more_img_2 from "../../../assets/images/learn_more_img-2.png";
-import learn_more_img_3 from "../../../assets/images/learn_more_img-3.png";
+// import learn_more_img_2 from "../../../assets/images/learn_more_img-2.png";
+// import learn_more_img_3 from "../../../assets/images/learn_more_img-3.png";
 import initial_white_icon from "../../../assets/icons/inital_white_arrow.svg";
 import hover_white_icon from "../../../assets/icons/hover_white_arrow.svg";
 import { Link } from "react-router-dom";

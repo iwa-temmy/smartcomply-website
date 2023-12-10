@@ -5,14 +5,14 @@ import hover_white_icon from "../../../assets/icons/hover_white_arrow.svg";
 import entreprise_img from "../../../assets/images/entreprise_img.png";
 import {
   startup_data,
-  growth_data,
-  enterprise_data,
+  // growth_data,
+  // enterprise_data,
 } from "../../../mockdata/pricingdata";
 
 const CertificationAudit = ({ plans }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(null);
-  const [isMenuOpen_2, setIsMenuOpen_2] = useState(false);
-  const [isMenuOpen_3, setIsMenuOpen_3] = useState(false);
+  // const [isMenuOpen_2, setIsMenuOpen_2] = useState(false);
+  // const [isMenuOpen_3, setIsMenuOpen_3] = useState(false);
 
   return (
     <div className="relative pb-8 md:pb-24 space-y-10">
@@ -28,6 +28,10 @@ const CertificationAudit = ({ plans }) => {
       {/* bg-CaribbeanGreen */}
       {/* bg-PaleViolet */}
       {/* bg-CrystalBlue */}
+
+      {/* bg-HintOfGreen */}
+      {/* bg-BlueChalk */}
+      {/* bg-LilyWhite */}
       <div className="px-[1.5rem] md:px-0 w-full flex flex-col md:space-y-0 md:flex-row md:space-x-6 md:pl-16 xl:pl-24">
         {plans?.map((plan, index) => (
           <div className="w-full md:w-fit h-fit md:h-[730px]">
@@ -148,7 +152,9 @@ const CertificationAudit = ({ plans }) => {
                   onMouseEnter={() => setIsMenuOpen(index)}
                   onMouseLeave={() => setIsMenuOpen(index)}
                 >
-                  <div className="w-full md:w-72 h-full space-y-8 bg-HintOfGreen px-4 pt-8 pb-4 md:pb-24 xl:pb-32 rounded-3xl">
+                  <div
+                    className={`w-full md:w-72 h-full space-y-8 ${index === 0 ? "bg-HintOfGreen" : index === 1 ? "bg-BlueChalk": "" } px-4 pt-8 pb-4 md:pb-24 xl:pb-32 rounded-3xl`}
+                  >
                     <div className="flex flex-col space-y-4">
                       <h4 className="font-test-sohne-medium text-2xl md:text-4xl text-CharcoalGrey">
                         {plan?.name}
