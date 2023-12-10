@@ -51,7 +51,7 @@ const Pricing = () => {
     );
     return sortedPlans;
   }, [plans]);
-  console.log(availablePlans);
+  console.log({ availablePlans, features, standardPrice, paymentMethods });
   useEffect(() => {
     fetchAllPlans();
     fetchAllFeatures();
