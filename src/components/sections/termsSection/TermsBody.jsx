@@ -10,7 +10,7 @@ const TermsBody = () => {
         <div className="space-y-6">
           <div className="space-y-2">
             <h4 className="font-test-sohne-medium text-base md:text-lg text-opacity-60">
-              1. THE SmartComplyApp PLATFORM
+              1. THE SmartComply PLATFORM
             </h4>
             <p className="text-sm md:text-[15px] text-CharcoalGrey">
               The SmartComplyApp Platform is an app-based compliance platform

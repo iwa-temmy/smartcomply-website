@@ -5,7 +5,7 @@ const PrivacyBody = () => {
     <div className="container mx-auto py-12 md:py-24 ">
       <div className="space-y-5 mb-4 md:mb-16">
         <h3 className="text-center text-3xl lg:text-[56px] lg:leading-[4rem] font-test-sohne-medium">
-          SmartComplyApp Privacy Notice
+          SmartComply Privacy Notice
         </h3>
         <p className="font-test-sohne-semibold text-xs">
           Last updated: 25 October, 2023
