@@ -5,13 +5,24 @@ import Footer from "../connected/Footer";
 import CertificationAudit from "../sections/pricingSection/CertificationAudit";
 import StillTryingToGetTheHang from "../sections/commonSection/StillTryingToGetTheHang";
 import axios from "axios";
+import PricingModal from "../sections/pricingSection/PricingModal";
 
 const Pricing = () => {
   const [plans, setPlans] = useState([]);
   const [features, setFeatures] = useState([]);
   const [standardPrice, setStandardPrice] = useState([]);
   const [paymentMethods, setPaymentMethods] = useState([]);
+  const [pricingModalOpen, setPricingModalOpen] = useState(false)
+  const [activePlan, setActivePlan] = useState({})
 
+  const openPricingModal = (plan) => {
+    setPricingModalOpen(true)
+    setActivePlan(plan)
+  }
+  const closePricingModal = () => {
+    setPricingModalOpen(false)
+    setActivePlan({})
+  }
   //async actions
   const fetchAllPlans = async () => {
     const res = await axios.get(
@@ -65,9 +76,11 @@ const Pricing = () => {
         <Navbar />
         <PricingHeroSection />
       </div>
-      <CertificationAudit plans={availablePlans} />
+      <CertificationAudit plans={availablePlans} openPricingModal={openPricingModal} />
       <StillTryingToGetTheHang />
       <Footer />
+
+      <PricingModal closeModal={closePricingModal} isOpen={pricingModalOpen} paymentMethods={paymentMethods} activePlan={activePlan} standardPrices={standardPrice} />
     </div>
   );
 };

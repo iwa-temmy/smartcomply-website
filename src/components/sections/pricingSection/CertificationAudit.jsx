@@ -3,14 +3,13 @@ import CustomLink from "../../primitive/CustomLink";
 import initial_white_icon from "../../../assets/icons/inital_white_arrow.svg";
 import hover_white_icon from "../../../assets/icons/hover_white_arrow.svg";
 import entreprise_img from "../../../assets/images/entreprise_img.png";
-import {
-  startup_data,
-  // growth_data,
-  // enterprise_data,
-} from "../../../mockdata/pricingdata";
+import startup_list_icon from "../../../assets/icons/startup_list_icon.svg";
+import growth_list_icon from "../../../assets/icons/growth_list_icon.svg";
+import enterprise_list_icon from "../../../assets/icons/enterprise_list_icon.svg";
+import Button from "../../primitive/Button";
 
 const CertificationAudit = (props) => {
-  const { plans } = props;
+  const { plans, openPricingModal } = props;
 
   console.log(plans);
   const [isMenuOpen, setIsMenuOpen] = useState(null);
@@ -42,22 +41,20 @@ const CertificationAudit = (props) => {
               </div>
             )}
             <div
-              className={`relative ${
-                index === 0
-                  ? "md:z-40"
-                  : index === 1
+              className={`relative ${index === 0
+                ? "md:z-40"
+                : index === 1
                   ? "md:z-30"
                   : index === 2
-                  ? "md:z-20"
-                  : ""
-              } h-full`}
+                    ? "md:z-20"
+                    : ""
+                } h-full`}
             >
               <div
-                className={`absolute inset-y-0 -ml-2 left-[100%] flex items-start pl-12 pr-3 space-x-2 bg-white border-r-4 border-r-white rounded-tr-3xl rounded-br-3xl ${
-                  isMenuOpen === index
-                    ? "opacity-100 transform scale-x-100 translate-x-0"
-                    : "opacity-0 transform scale-x-0 -translate-x-1/2"
-                } transition ease-in-out duration-1000`}
+                className={`absolute inset-y-0 -ml-2 left-[100%] flex items-start pl-12 pr-3 space-x-2 bg-white border-r-4 border-r-white rounded-tr-3xl rounded-br-3xl ${isMenuOpen === index
+                  ? "opacity-100 transform scale-x-100 translate-x-0"
+                  : "opacity-0 transform scale-x-0 -translate-x-1/2"
+                  } transition ease-in-out duration-1000`}
               >
                 <div className="flex flex-col md:w-[500px]">
                   <div className="flex space-x-8 border-b-[0.1px] border-b-CaribbeanGreen">
@@ -140,27 +137,27 @@ const CertificationAudit = (props) => {
                   </div>
                 </div>
               </div>
-              <div className="w-full h-full pr-1.5 bg-CaribbeanGreen rounded-b-3xl">
+              <div className={`w-full h-full pr-1.5 ${index === 0 ? "bg-CaribbeanGreen rounded-b-3xl" : index === 1 ? "bg-PaleViolet rounded-3xl" : "bg-CrystalBlue rounded-3xl"} `}>
                 <div
-                  className={`w-full h-full relative inline-flex items-center justify-center bg-purple-600 hover:bg-purple-700 rounded-tl-full rounded-bl-full focus:outline-none transition-all duration-300 ${
-                    isMenuOpen === index
-                      ? "bg-white hover:bg-white"
-                      : "rounded-tr-full rounded-br-full"
-                  }`}
+                  className={`w-full h-full relative inline-flex items-center justify-center bg-purple-600 hover:bg-purple-700 rounded-tl-full rounded-bl-full focus:outline-none transition-all duration-300 ${isMenuOpen === index
+                    ? "bg-white hover:bg-white"
+                    : "rounded-tr-full rounded-br-full"
+                    }`}
                   onMouseEnter={() => setIsMenuOpen(index)}
                   onMouseLeave={() => setIsMenuOpen(null)}
                 >
-                  <div className="w-full md:w-72 h-full space-y-8 bg-HintOfGreen px-4 pt-8 pb-4 md:pb-24 xl:pb-32 rounded-3xl">
+                  <div className={`w-full md:w-72 h-full space-y-8 ${index === 0 ? "bg-HintOfGreen" : index === 1 ? "bg-BlueChalk" : "bg-LilyWhite"} px-4 pt-8 pb-4 md:pb-24 xl:pb-32 rounded-3xl`}>
                     <div className="flex flex-col space-y-4">
                       <h4 className="font-test-sohne-medium text-2xl md:text-4xl text-CharcoalGrey">
                         {plan?.name}
                       </h4>
                       <span className="w-fit text-CharcoalGrey bg-white px-4 py-2 rounded-md text-sm md:text-[15px]">
-                        1 - 50 Employees
+                        {plan?.employee_range} Employees
                       </span>
                       <div>
-                        <CustomLink
-                          to="/auth/sign-up"
+                        <Button
+                          onClick={() => openPricingModal(plan)}
+                          type="button"
                           title="Get started"
                           className="bg-Ebony text-sm md:text-base text-white hover:bg-ShipGrey"
                           inital_arrow={initial_white_icon}
@@ -169,17 +166,20 @@ const CertificationAudit = (props) => {
                       </div>
                     </div>
                     <div className="space-y-4">
-                      {startup_data.map((start_up_list, index) => {
+                      <p className="font-test-sohne-medium max-w-[12rem] text-lg md:text-xl text-CharcoalGrey">
+                        {plan?.description}
+                      </p>
+                      {plan?.features.map((feature, indx) => {
                         return (
                           <div
-                            key={index}
+                            key={indx}
                             className="flex items-center space-x-3"
                           >
                             <div>
-                              <img src={start_up_list.icon} alt="" />
+                              <img src={index === 0 ? startup_list_icon : index === 1 ? growth_list_icon : enterprise_list_icon} alt="check icon" />
                             </div>
                             <p className="text-sm md:text-base text-CharcoalGrey">
-                              {start_up_list.list}
+                              {feature}
                             </p>
                           </div>
                         );
