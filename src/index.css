@@ -295,6 +295,14 @@ body {
   background-size: contain;
 }
 
+select:not([multiple]):not([size]) {
+  -webkit-appearance: menulist-button; /* Mac Aqua off */
+}
+@supports (-ms-accelerator: true) {
+  select:not([multiple]):not([size]) {
+    -webkit-appearance: menulist; /* Revert to default for Edge */
+  }
+}
 .shadow_bg {
   box-shadow: 0 0 50px #fff;
 }
