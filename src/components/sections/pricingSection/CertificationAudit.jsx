@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import CustomLink from "../../primitive/CustomLink";
 import initial_white_icon from "../../../assets/icons/inital_white_arrow.svg";
 import hover_white_icon from "../../../assets/icons/hover_white_arrow.svg";
 import entreprise_img from "../../../assets/images/entreprise_img.png";
@@ -9,7 +8,7 @@ import enterprise_list_icon from "../../../assets/icons/enterprise_list_icon.svg
 import Button from "../../primitive/Button";
 
 const CertificationAudit = (props) => {
-  const { plans, openPricingModal } = props;
+  const { plans, openPricingModal, openCustomModal } = props;
 
   console.log(plans);
   const [isMenuOpen, setIsMenuOpen] = useState(null);
@@ -666,14 +665,11 @@ const CertificationAudit = (props) => {
                   <div className="flex flex-col space-y-4">
                     <img src={entreprise_img} className="w-24 xl:w-52" alt="" />
                     <h4 className="font-test-sohne-medium text-2xl md:text-4xl text-CharcoalGrey">
-                      Enterprise
+                      Custom
                     </h4>
-                    <span className="w-fit text-CharcoalGrey bg-white px-4 py-2 rounded-md text-sm md:text-[15px]">
-                      100-above Employees
-                    </span>
                     <div>
-                      <CustomLink
-                        to="/auth/sign-up"
+                      <Button
+                        onClick={() => openCustomModal("Custom")}
                         title="Get started"
                         className="bg-Ebony text-sm md:text-base text-white hover:bg-ShipGrey"
                         inital_arrow={initial_white_icon}

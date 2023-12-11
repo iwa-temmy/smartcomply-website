@@ -6,26 +6,37 @@ import CertificationAudit from "../sections/pricingSection/CertificationAudit";
 import StillTryingToGetTheHang from "../sections/commonSection/StillTryingToGetTheHang";
 import axios from "axios";
 import PricingModal from "../sections/pricingSection/PricingModal";
+import CustomPricingModal from "../sections/pricingSection/CustomPricingModal";
 
 const Pricing = () => {
   const [plans, setPlans] = useState([]);
   const [features, setFeatures] = useState([]);
   const [standardPrice, setStandardPrice] = useState([]);
   const [paymentMethods, setPaymentMethods] = useState([]);
-  const [pricingModalOpen, setPricingModalOpen] = useState(false);
+  const [ispricingModalOpen, setIsPricingModalOpen] = useState(false);
+  const [isCustomModalOpen, setisCustomModalOpen] = useState(false);
   const [activePlan, setActivePlan] = useState({});
   const [activePlanIndex, setActivePlanIndex] = useState(null);
+  const [groupedFeature, setGroupedFeatures] = useState([]);
 
   const openPricingModal = (e, plan, planIndex) => {
     e.stopPropagation();
-    setPricingModalOpen(true);
+    setIsPricingModalOpen(true);
     setActivePlan(plan);
     setActivePlanIndex(planIndex);
   };
   const closePricingModal = () => {
-    setPricingModalOpen(false);
+    setIsPricingModalOpen(false);
     setActivePlan({});
     setActivePlanIndex(null);
+  };
+  const openCustomModal = (plan) => {
+    setisCustomModalOpen(true);
+    setActivePlan(plan);
+  };
+  const closeCustomModal = () => {
+    setisCustomModalOpen(false);
+    setActivePlan({});
   };
   //async actions
   const fetchAllPlans = async () => {
@@ -66,6 +77,18 @@ const Pricing = () => {
     );
     return sortedPlans;
   }, [plans]);
+
+  const groupAllFeatures = () => {
+    const groups = {};
+    features?.forEach((feature) => {
+      const featureCategory = feature?.category;
+      if (!groups[featureCategory]) {
+        groups[featureCategory] = {};
+      }
+      groups[featureCategory][feature?.key] = feature;
+    });
+    setGroupedFeatures(groups);
+  };
   console.log({ availablePlans, features, standardPrice, paymentMethods });
   useEffect(() => {
     fetchAllPlans();
@@ -73,6 +96,11 @@ const Pricing = () => {
     fetchAllStandardPrices();
     fetchAllPaymentMethods();
   }, []);
+
+  useEffect(() => {
+    groupAllFeatures();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [features]);
   return (
     <div>
       <div className="relative pricing_hero_bg_line">
@@ -83,17 +111,26 @@ const Pricing = () => {
       <CertificationAudit
         plans={availablePlans}
         openPricingModal={openPricingModal}
+        openCustomModal={openCustomModal}
       />
       <StillTryingToGetTheHang />
       <Footer />
 
       <PricingModal
         closeModal={closePricingModal}
-        isOpen={pricingModalOpen}
+        isOpen={ispricingModalOpen}
         paymentMethods={paymentMethods}
         activePlan={activePlan}
         standardPrices={standardPrice}
         activePlanIndex={activePlanIndex}
+      />
+      <CustomPricingModal
+        isOpen={isCustomModalOpen}
+        closeModal={closeCustomModal}
+        groupedFeature={groupedFeature}
+        standardPrices={standardPrice}
+        activePlan={activePlan}
+        features={features}
       />
     </div>
   );
