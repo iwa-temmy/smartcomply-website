@@ -43,7 +43,7 @@ const PricingModal = ({ closeModal, isOpen, paymentMethods, activePlan, standard
         return standards?.reduce((previous, current) => {
             return standardPrices.find(standard => standard?.standard_type === current)?.amount + previous;
         }, activePlan?.price);
-    }, [activePlan, standards]);
+    }, [activePlan, standards.standardPrices]);
 
     const handleCloseModal = () => {
         setStandards([]);
@@ -127,7 +127,7 @@ const PricingModal = ({ closeModal, isOpen, paymentMethods, activePlan, standard
         });
 
         setPaymentMethod(paymentMethod?.name || '');
-    }, [totalCost, activePlan?.id]);
+    }, [totalCost, activePlan?.id, paymentMethods]);
     return (
         <Modal
             closeModal={handleCloseModal}
