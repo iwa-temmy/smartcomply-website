@@ -175,7 +175,7 @@ const CertificationAudit = (props) => {
                       </span>
                       <div>
                         <Button
-                          onClick={(e) => openPricingModal(e, plan)}
+                          onClick={(e) => openPricingModal(e, plan, index)}
                           type="button"
                           title="Get started"
                           className="bg-Ebony text-sm md:text-base text-white hover:bg-ShipGrey"

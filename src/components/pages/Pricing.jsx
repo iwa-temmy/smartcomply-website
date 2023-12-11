@@ -14,15 +14,18 @@ const Pricing = () => {
   const [paymentMethods, setPaymentMethods] = useState([]);
   const [pricingModalOpen, setPricingModalOpen] = useState(false);
   const [activePlan, setActivePlan] = useState({});
+  const [activePlanIndex, setActivePlanIndex] = useState(null);
 
-  const openPricingModal = (e,plan) => {
-    e.stopPropagation()
+  const openPricingModal = (e, plan, planIndex) => {
+    e.stopPropagation();
     setPricingModalOpen(true);
     setActivePlan(plan);
+    setActivePlanIndex(planIndex);
   };
   const closePricingModal = () => {
     setPricingModalOpen(false);
     setActivePlan({});
+    setActivePlanIndex(null);
   };
   //async actions
   const fetchAllPlans = async () => {
@@ -90,6 +93,7 @@ const Pricing = () => {
         paymentMethods={paymentMethods}
         activePlan={activePlan}
         standardPrices={standardPrice}
+        activePlanIndex={activePlanIndex}
       />
     </div>
   );

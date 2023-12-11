@@ -301,22 +301,24 @@ body {
   border: 0;
   border-radius: 6px;
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
-
 }
 .p-dropdown-items .p-dropdown-item {
-    margin: 0;
-    padding: 0.75rem 1.25rem;
-    border: 0;
-    color: #495057;
-    background: transparent;
-    transition: box-shadow 0.2s;
-    border-radius: 0;
-
-  }
-  .p-dropdown-items .p-dropdown-item:not(.p-highlight):not(.p-disabled):hover {
-    color: #495057;
-    background: #e9ecef;
-  }
+  margin: 0;
+  padding: 0.75rem 1.25rem;
+  border: 0;
+  color: #495057;
+  background: transparent;
+  transition: box-shadow 0.2s;
+  border-radius: 0;
+}
+.p-dropdown-items .p-dropdown-item:not(.p-highlight):not(.p-disabled):hover {
+  color: #495057;
+  background: #e9ecef;
+}
+.p-dialog {
+  background-color: #fff;
+  border-radius: 32px;
+}
 .shadow_bg {
   box-shadow: 0 0 50px #fff;
 }

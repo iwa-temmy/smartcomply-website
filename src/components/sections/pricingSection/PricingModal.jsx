@@ -18,6 +18,7 @@ const PricingModal = ({
   paymentMethods,
   activePlan,
   standardPrices,
+  activePlanIndex,
 }) => {
   const [standards, setStandards] = useState([]);
   const [paymentMethod, setPaymentMethod] = useState("");
@@ -150,23 +151,32 @@ const PricingModal = ({
       dismissableMask={true}
       contentStyle={{ padding: 0, borderRadius: "32px" }}
       headerStyle={{ padding: 0 }}
-      height="h-[75vh]"
+      height="80vh"
     >
       <form
-        className="flex flex-col lg:flex-row w-full h-full relative"
+        className="flex flex-col flex-1 lg:flex-row w-full relative"
         onSubmit={handleSubmit}
       >
         <div className="absolute left-[23%] lg:left-[38%] top-4 textbrandColor text-[24px] lg:text-[32px] font-semibold">
           Calculate your Cost
         </div>
         <div className="w-full lg:w-[55%] h-full relative">
-          <div className="absolute rotate-[-45deg] font-semibold top-3 lg:top-6 left-[-2.3rem] lg:left-[-2.8em] bg-[#0E2C66] h-[44px] w-[40%] text-white flex items-center justify-center">
+          <div
+            className={`absolute rotate-[-45deg] font-semibold top-3 lg:top-6 left-[-2.3rem] lg:left-[-2.8em] ${
+              activePlanIndex === 0
+                ? "bg-HintOfGreen"
+                : activePlanIndex === 1
+                ? "bg-BlueChalk"
+                : "bg-LilyWhite"
+            } h-[44px] w-[40%] text-CharcoalGrey flex items-center justify-center`}
+          >
             {activePlan === "Custom" ? activePlan : activePlan?.name}
           </div>
           <div className="flex flex-col mt-[8rem] px-[3rem] h-full w-full items-center">
             <div className="w-full my-4">
               <Input
                 label="What's your company's size?"
+                className="w-full border border-Chardonnay rounded-xl px-6 py-4 text-sm md:text-lg font-test-sohne-light placeholder:text-CharcoalGrey"
                 onChange={(e) =>
                   /^[0-9]*$/g.test(e.target.value) &&
                   setEmployee(e.target.value)
@@ -175,6 +185,7 @@ const PricingModal = ({
                 type="number"
                 name="employee"
                 id="employee"
+                placeholder="What's your company's size?"
                 error={errorMsg?.employees}
                 min={0}
               />
@@ -239,9 +250,9 @@ const PricingModal = ({
             </div>
           </div>
         </div>
-        <div className="w-full lg:w-[45%] bg-[#EEF0FF] h-full">
-          <div className="flex flex-col mt-[8rem] px-[3rem] h-full w-full ">
-            <div className="textbrandColor font-bold text-[1rem]">
+        <div className="w-full lg:w-[45%] bg-[#EEF0FF]">
+          <div className="flex flex-col pt-[8rem] px-[3rem] h-full w-full ">
+            <div className="text-CharcoalGrey font-bold text-[1rem]">
               TOTAL COST: {CurrencySign}
               {formatAmount(totalCost)}
             </div>
@@ -254,9 +265,10 @@ const PricingModal = ({
               <div className=" my-4">
                 <Input
                   name="work_email"
-                  label="Work Email"
+                  placeholder="Work Email"
+                  className="w-full border border-Chardonnay rounded-xl px-6 py-4 text-sm md:text-lg font-test-sohne-light placeholder:text-CharcoalGrey"
                   onChange={(e) => setWorkEmail(e.target.value)}
-                  value={workEmail}
+                  value={workEmail || ""}
                   error={errorMsg?.workEmail}
                 />
               </div>
@@ -280,10 +292,10 @@ const PricingModal = ({
                 agree to Smartcomply’s privacy and terms
               </div>
               <Button
-                text="submit"
+                title="Submit"
                 variant="primary"
-                styles="w-full my-2"
-                processing={isSubmitting}
+                className="bg-Ebony text-sm md:text-base text-white hover:bg-ShipGrey w-full my-2"
+                loading={isSubmitting}
                 // disabled={!employees?.length}
                 type="submit"
               />
