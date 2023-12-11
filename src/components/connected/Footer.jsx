@@ -45,7 +45,7 @@ const Footer = () => {
               <div className="space-y-7">
                 <h4 className="font-test-sohne-semibold ">Products</h4>
                 <div className="flex flex-col space-y-4">
-                  <Link to="/frameworks/iso27001">ISO27001</Link>
+                  <Link to="/frameworks/iso27001">ISO 27001</Link>
                   <Link to="/frameworks/pcidss">PCI DSS</Link>
                   <Link to="/frameworks/soc2">SOC 2</Link>
                   <Link to="/frameworks/ndpr">NDPR</Link>

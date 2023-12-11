@@ -31,7 +31,7 @@ const StillTryingToGetTheHang = () => {
         <div className="flex items-center space-x-3">
           <CustomLink
             to="/book-a-demo"
-            title="Schedule a demo"
+            title="Book a demo"
             className="bg-PaleViolet text-sm md:text-base text-Ebony"
             inital_arrow={initial_black_icon}
             hover_arrow={hover_black_icon}

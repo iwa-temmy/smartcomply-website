@@ -63,8 +63,7 @@ const SubscribeToNewsLetterSection = () => {
             Be in the Loop!
           </h3>
           <p className="text-sm md:text-base text-CharcoalGrey md:max-w-sm">
-            Read the Latest News About Smartcomply, AI, Automation,
-            Cybersecurity and Compliance.
+            Get latest news about AI, Cybersecurity, and Compliance
           </p>
         </div>
         <div className="w-full md:w-[60%]">

@@ -21,7 +21,7 @@ const FeaturesDetails = () => {
                 Dedicated Support
               </h3>
               <p className="text-Boulder text-base md:text-xl">
-                Businesses don't need to be expert users to use SmartComply.
+                Businesses don't need to be expert users to use Smartcomply.
               </p>
               <div className="space-y-3">
                 <div className="flex flex-row items-start space-x-3">

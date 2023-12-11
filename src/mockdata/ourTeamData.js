@@ -25,7 +25,7 @@ export const ourTeamInfo = [
   {
     image: valerie_img,
     name: "Valerie Azubuike",
-    title: "Operations Lead",
+    title: "COO/HR",
     social_medial_name: "Linkedin",
     social_media_link: "https://www.linkedin.com/in/valerie-azubuike-phri-/",
     bio: `
