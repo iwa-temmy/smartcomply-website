@@ -12,17 +12,17 @@ const Pricing = () => {
   const [features, setFeatures] = useState([]);
   const [standardPrice, setStandardPrice] = useState([]);
   const [paymentMethods, setPaymentMethods] = useState([]);
-  const [pricingModalOpen, setPricingModalOpen] = useState(false)
-  const [activePlan, setActivePlan] = useState({})
+  const [pricingModalOpen, setPricingModalOpen] = useState(false);
+  const [activePlan, setActivePlan] = useState({});
 
   const openPricingModal = (plan) => {
-    setPricingModalOpen(true)
-    setActivePlan(plan)
-  }
+    setPricingModalOpen(true);
+    setActivePlan(plan);
+  };
   const closePricingModal = () => {
-    setPricingModalOpen(false)
-    setActivePlan({})
-  }
+    setPricingModalOpen(false);
+    setActivePlan({});
+  };
   //async actions
   const fetchAllPlans = async () => {
     const res = await axios.get(
@@ -76,11 +76,20 @@ const Pricing = () => {
         <Navbar />
         <PricingHeroSection />
       </div>
-      <CertificationAudit plans={availablePlans} openPricingModal={openPricingModal} />
+      <CertificationAudit
+        plans={availablePlans}
+        openPricingModal={openPricingModal}
+      />
       <StillTryingToGetTheHang />
       <Footer />
 
-      <PricingModal closeModal={closePricingModal} isOpen={pricingModalOpen} paymentMethods={paymentMethods} activePlan={activePlan} standardPrices={standardPrice} />
+      <PricingModal
+        closeModal={closePricingModal}
+        isOpen={pricingModalOpen}
+        paymentMethods={paymentMethods}
+        activePlan={activePlan}
+        standardPrices={standardPrice}
+      />
     </div>
   );
 };
