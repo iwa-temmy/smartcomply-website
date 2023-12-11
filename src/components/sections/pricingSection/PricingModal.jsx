@@ -176,7 +176,7 @@ const PricingModal = ({
             <div className="w-full my-4">
               <Input
                 label="What's your company's size?"
-                className="w-full border border-Chardonnay rounded-xl px-6 py-4 text-sm md:text-lg font-test-sohne-light placeholder:text-CharcoalGrey"
+                className="w-full border border-Ebony rounded-xl px-6 py-4 text-sm md:text-lg font-test-sohne-light placeholder:text-CharcoalGrey"
                 onChange={(e) =>
                   /^[0-9]*$/g.test(e.target.value) &&
                   setEmployee(e.target.value)
@@ -266,7 +266,7 @@ const PricingModal = ({
                 <Input
                   name="work_email"
                   placeholder="Work Email"
-                  className="w-full border border-Chardonnay rounded-xl px-6 py-4 text-sm md:text-lg font-test-sohne-light placeholder:text-CharcoalGrey"
+                  className="w-full border border-Ebony rounded-xl px-6 py-4 text-sm md:text-lg font-test-sohne-light placeholder:text-CharcoalGrey"
                   onChange={(e) => setWorkEmail(e.target.value)}
                   value={workEmail || ""}
                   error={errorMsg?.workEmail}

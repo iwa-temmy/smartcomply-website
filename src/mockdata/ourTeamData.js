@@ -89,6 +89,19 @@ export const ourTeamInfo = [
     `,
   },
   {
+    image: olawale_img,
+    name: "Ononogbo Kolade",
+    title: "Product Designer",
+    social_medial_name: "Linkedin",
+    social_media_link: "https://www.linkedin.com/in/kolade-ononogbo/",
+    bio: `
+    A dedicated frontend engineer with more than 3 years' experience who upholds strict standards when developing software and collaborating with a range of stakeholders from technical and non-technical backgrounds.
+    His main areas of interest are front-end technologies like React, JavaScript, React Native, Sass, Material UI, Next, Tailwind CSS, and CSS.
+    He graduated from the prestigious University of Benin in Benin City, Edo State, with a bachelor of science in computer science.
+    He is an independent thinker with the technical skills necessary to create cutting-edge and fascinating applications using a variety of technologies.
+    `,
+  },
+  {
     image: lateef_img,
     name: "Bola Lateef Odeshina",
     title: "Platform Engineer",
