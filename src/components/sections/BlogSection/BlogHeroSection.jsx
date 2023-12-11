@@ -6,11 +6,11 @@ const BlogHeroSection = () => {
       <div className="container mx-auto py-5 md:py-10 mb-6 space-y-12">
         <div className="w-full space-y-4">
           <p className="font-test-sohne-light max-w-xs">
-            smartcomply Newsletter
+            Smartcomply Newsletter
           </p>
           <h2 className="flex flex-col text-4xl sm:text-5xl lg:text-[75px] lg:leading-[5rem] font-test-sohne-medium">
             <span> Get latest news about</span>{" "}
-            <span>security and compliance</span>
+            <span>cybersecurity and compliance</span>
           </h2>
         </div>
         <div className="space-y-4">

@@ -15,7 +15,8 @@ const Pricing = () => {
   const [pricingModalOpen, setPricingModalOpen] = useState(false);
   const [activePlan, setActivePlan] = useState({});
 
-  const openPricingModal = (plan) => {
+  const openPricingModal = (e,plan) => {
+    e.stopPropagation()
     setPricingModalOpen(true);
     setActivePlan(plan);
   };
