@@ -14,8 +14,7 @@ const Footer = () => {
               <div className="mb-3 md:mb-6 space-y-1.5">
                 <img src={smart_comply_logo} alt="" />
                 <p className="text-CharcoalGrey">
-                  Make your ongoing compliance operations more efficient,
-                  cost-effective and easier.
+                  Make your cybersecurity and compliance process efficient, cost-effective and easier.
                 </p>
               </div>
               <div className="bg-PaleTurquoise rounded-2xl p-6 space-y-5">
